@@ -1,4 +1,4 @@
-import 
+import R
 export default function Navbar(){
     return(
         <>
