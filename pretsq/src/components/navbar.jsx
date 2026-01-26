@@ -2,7 +2,7 @@ export default function Navbar(){
     return(
         <>
         <div className='flex *:flex bg-emerald-400 p-4 justify-between *:justify-between *:gap-4 text-white
-        items-center *:items'>
+        items-center *:items-center'>
             <div>
                 <div>Home</div>
                  <button className='bg-emerald-800 active:scale-95 active:bg-emerald-600 px-2 py-1 rounded-md ml-4'
