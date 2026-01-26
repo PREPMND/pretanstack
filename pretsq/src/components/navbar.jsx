@@ -5,7 +5,7 @@ export default function Navbar(){
         items-center *:items-center text-white font-semibold'>
             <div>
                 <div>Home</div>
-                 <button className='bg-emerald-800 active:scale-95 active:bg-emerald-600 px-2 py-1 rounded-md ml-4 active:'
+                 <button className='bg-emerald-800 active:scale-95 active:bg-emerald-600 px-2 py-1 rounded-md ml-4 active:text-se'
                  >Return</button>
             </div>
             <div>
