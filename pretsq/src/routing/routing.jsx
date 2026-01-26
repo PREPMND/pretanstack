@@ -1,4 +1,4 @@
-import { BrowserRouter , Router , }
+import { BrowserRouter , Routes , Route }
 export default function NavRoutes(){
     return(
         <>
