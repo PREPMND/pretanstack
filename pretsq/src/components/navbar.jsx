@@ -1,4 +1,4 @@
-import R
+import { useNa}
 export default function Navbar(){
     return(
         <>
