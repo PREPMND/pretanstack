@@ -14,7 +14,7 @@ export default function Navbar(){
                     Series
                 </div>
                 <div>
-                    
+                    About
                 </div>
 
             </div>
