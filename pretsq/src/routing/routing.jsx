@@ -1,4 +1,4 @@
-import { Brow}
+import { Browser}
 export default function NavRoutes(){
     return(
         <>
