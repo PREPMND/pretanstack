@@ -6,7 +6,7 @@ export default function Navbar(){
         items-center *:items-center text-white font-semibold'>
             <div>
                 <div>Home</div>
-                 <button onClick={()=>{}}
+                 <button onClick={}
                  className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-2 py-1 rounded-md ml-4 active:text-slate-50'
                  >Return</button>
             </div>
