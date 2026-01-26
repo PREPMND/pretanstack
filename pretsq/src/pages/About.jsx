@@ -1,1 +1,3 @@
-i
+export default function Movie(){
+    
+}
