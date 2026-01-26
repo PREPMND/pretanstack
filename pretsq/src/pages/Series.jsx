@@ -1,9 +1,9 @@
-export default function Movie(){
+export default function Series(){
     return(
         
         <>
         <div>
-            <div>Movies</div>
+            <div>Series</div>
         </div>
         </>
     )
