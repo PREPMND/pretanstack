@@ -13,6 +13,9 @@ export default function Navbar(){
                 <div>
                     Series
                 </div>
+                <div>
+                    
+                </div>
 
             </div>
         </div>
