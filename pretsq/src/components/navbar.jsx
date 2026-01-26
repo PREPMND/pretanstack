@@ -1,7 +1,7 @@
 export default function Navbar(){
     return(
         <>
-        <div className='flex *:flex bg-blue-600'>
+        <div className='flex *:flex bg-eme'>
             <div>
                 <div>Home</div>
                  <button>Return</button>
