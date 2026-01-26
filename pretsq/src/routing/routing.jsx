@@ -1,1 +1,3 @@
-export default function NavRoutes()
+export default function NavRoutes(){
+    reutrn
+}
