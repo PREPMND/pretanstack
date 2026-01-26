@@ -4,7 +4,7 @@ export default function Navbar(){
         <div className='flex *:flex bg-emerald-400 p-4 justify-between *:justify-between *:gap-4 text-white'>
             <div>
                 <div>Home</div>
-                 <button className='bg-emerald-800 active:scale-95 active:'
+                 <button className='bg-emerald-800 active:scale-95 active:bg-emerald-600'
                  >Return</button>
             </div>
             <div>
