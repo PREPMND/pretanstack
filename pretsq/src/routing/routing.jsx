@@ -4,7 +4,7 @@ export default function NavRoutes(){
         <>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Navbar />} />
+                <Route path="/movie" element={<Navbar />} />
             </Routes>
         </BrowserRouter>
         </>
