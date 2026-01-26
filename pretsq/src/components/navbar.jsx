@@ -4,7 +4,7 @@ export default function Navbar(){
         <div>
             <div>
                 <div>Home</div>
-                 <Button>Return</Button>
+                 <button>Return</button>
             </div>
             <div>
 
