@@ -3,7 +3,7 @@ export default function About(){
         
         <>
         <div>
-            <div>Movies</div>
+            <div>About</div>
         </div>
         </>
     )
