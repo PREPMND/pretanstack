@@ -8,7 +8,10 @@ export default function Navbar(){
             </div>
             <div>
                 <div>
-                    
+                    Movies
+                </div>
+                <div>
+                    Series
                 </div>
 
             </div>
