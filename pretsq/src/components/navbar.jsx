@@ -1,7 +1,7 @@
 export default function Navbar(){
     return(
         <>
-        <div className='flex *:flex bg-emerald-400 p-4 justify-between *:justify-between *:gap-4 text-white
+        <div className='flex *:flex bg-emerald-400 p-4 justify-between *:justify-between *:gap-4 
         items-center *:items-center'>
             <div>
                 <div>Home</div>
