@@ -14,7 +14,7 @@ export default function NavRoutes(){
                 <Route path="/favourites" element={<Favourites />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/trending/movies" element={<TrendingMovie />}></Route>
-                <Route path="/" element={Popular}
+                <Route path="/" element={<Popular/>}
             </Routes>
     
         </>
