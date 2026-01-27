@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Navbar(){
     let navigate=useNavigate();
-    
+    const APIKEY=import.meta.env.VITE_API_KEY;
     console.log({KEY});
     
     return(
