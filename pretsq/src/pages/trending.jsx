@@ -3,7 +3,7 @@ export default function TrendingMovie(){
         
         <>
         <div>
-            <div>Movies</div>
+            <div>Trending Movies</div>
         </div>
         </>
     )
