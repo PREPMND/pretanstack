@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom';
+import { KEY } from '../.env';
 export default function Navbar(){
     let navigate=useNavigate();
+    log
     return(
         <>
         <div className='flex *:flex bg-amber-400 p-4 justify-between *:justify-between *:gap-4
