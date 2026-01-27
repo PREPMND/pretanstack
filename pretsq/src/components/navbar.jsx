@@ -2,9 +2,9 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Navbar(){
     let navigate=useNavigate();
-    const APIKEY=import.meta.env.VITE_API_KEY;
-    console.log({KEY});
-    
+    const APIKEY=import.meta.env.KEY;
+    console.log({APIKEY});
+
     return(
         <>
         <div className='flex *:flex bg-amber-400 p-4 justify-between *:justify-between *:gap-4
