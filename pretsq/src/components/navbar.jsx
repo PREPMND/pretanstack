@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Navbar(){
     let navigate=useNavigate();
+    
     console.log({KEY});
     
     return(
