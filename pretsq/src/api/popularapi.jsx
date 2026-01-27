@@ -4,7 +4,9 @@ export function getPopularMovies(){
     let url='https://api.themoviedb.org/3/movie/popular?api_key='+APIKEY+'&language=en-US&page=1';
     async function getPopularMovies(){
         try{
-            const response= await  
+            const response= await fetch(url);
+            const data= await response.json();
+            return data; 
         }
     }
 }
