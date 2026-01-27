@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchPopularMovies } from "../api/popularMovieApi";
+import { fetchPopularMovies } from "../api/popularapi.jsx";
 
 function Popular() {
   const { data, isLoading, error } = useQuery({
