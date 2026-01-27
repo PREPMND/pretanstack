@@ -15,7 +15,7 @@ export default function Navbar(){
                     <button onClick={()=>navigate('/movie')} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-2 py-1 rounded-md ml-4 active:text-slate-50'>Movies</button>
                 </div>
                 <div>
-                    <button onClick={()=>navigate('/series')} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-2 py-1 rounded-md ml-4 active:text-slate-50'>Series</button>
+                    <button onClick={()=>navigate('/series')} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-2 py-1 rounded-md ml-4 active:text-slate-50'>Favourite</button>
                 </div>
                 <div>
                     <button onClick={()=>navigate('/about')} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-2 py-1 rounded-md ml-4 active:text-slate-50'>About</button>
