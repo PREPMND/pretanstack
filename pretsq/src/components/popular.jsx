@@ -14,7 +14,7 @@ function Popular() {
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-      {data?.slice(0).map((movie) => (
+      {data?.slice(0, 10).map((movie) => (
         <div key={movie.id}>
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
