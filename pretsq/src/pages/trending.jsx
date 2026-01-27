@@ -1,4 +1,4 @@
-export default function ovie(){
+export default function TrendingMovie(){
     return(
         
         <>
