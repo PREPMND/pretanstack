@@ -1,7 +1,7 @@
 import { BrowserRouter , Routes , Route } from 'react-router-dom'
 
 import Movie from '../pages/Movie.jsx'
-import Series from '../pages/Series.jsx'
+import Series from '../pages/Favourites.jsx'
 import About from '../pages/About.jsx'
 export default function NavRoutes(){
     return(
