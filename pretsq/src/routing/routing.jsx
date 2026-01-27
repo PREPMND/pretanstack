@@ -1,4 +1,4 @@
-import { BrowserRouter , Routes , Route } from 'react-router-dom'
+import { Routes , Route } from 'react-router-dom'
 
 import Movie from '../pages/Movie.jsx'
 import Favourites from '../pages/Favourites.jsx'
