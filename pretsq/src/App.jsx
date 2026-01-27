@@ -2,6 +2,7 @@ import Navbar from "./components/navbar"
 import NavRoutes from "./routing/routing"
 import { BrowserRouter } from "react-router-dom"
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query"    
+import Popular from "./components/popular"
 export default function App(){
     return(
         <>
@@ -9,7 +10,7 @@ export default function App(){
         <BrowserRouter>
            <Navbar/>
            <NavRoutes/>
-           <Pop
+           <Popular/>
         </BrowserRouter>
         </QueryClientProvider>
         </>
