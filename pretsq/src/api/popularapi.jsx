@@ -5,7 +5,7 @@ export function getPopularMovies(){
     async function getPopularMovies(){
         try{
             const response= await fetch(url);
-            response.status===200
+            response.status===200?
             const data= await response.json();
             return data; 
         }
