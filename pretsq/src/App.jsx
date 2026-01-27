@@ -9,7 +9,7 @@ export default function App(){
         <BrowserRouter>
            <Navbar/>
            <NavRoutes/>
-           <P
+           <Pop
         </BrowserRouter>
         </QueryClientProvider>
         </>
