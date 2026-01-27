@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { KEY } from '../.env';
+import { KEY } from '.././.env';
 export default function Navbar(){
     let navigate=useNavigate();
     console.log({KEY});
