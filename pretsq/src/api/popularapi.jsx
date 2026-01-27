@@ -1,4 +1,4 @@
-import { KEY } from '.././env';
+import { KEY } from '.././.env';
 export function getPopularMovies(){
 
 }
