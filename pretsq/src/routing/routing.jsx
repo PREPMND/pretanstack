@@ -9,7 +9,7 @@ export default function NavRoutes(){
         
             <Routes>
                 <Route path="/movie" element={<Movie />} />
-                <Route path="/Favourites" element={<Favourites />} />
+                <Route path="/favourites" element={<Favourites />} />
                 <Route path="/about" element={<About />} />
             </Routes>
     
