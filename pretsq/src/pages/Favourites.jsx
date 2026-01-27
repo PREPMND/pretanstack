@@ -1,9 +1,9 @@
-export default function Series(){
+export default function Favourites(){
     return(
         
         <>
         <div>
-            <div>Series</div>
+            <div>Favourites</div>
         </div>
         </>
     )
