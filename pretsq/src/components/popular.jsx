@@ -8,7 +8,8 @@ function Popular() {
   });
 
   if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Something went wrong</p>;
+  if (error) {
+    return <p>Something went wrong</p>;}
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
