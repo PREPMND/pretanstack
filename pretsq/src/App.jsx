@@ -5,8 +5,9 @@ export default function App(){
     return(
         <>
         <BrowserRouter>
-        <Navbar/>
-        <NavRoutes/>
+           <Navbar/>
+           <NavRoutes/>
+        </BrowserRouter>
         </>
     )
 }
