@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { KEY } from 'C:/Users/DELL/pretanstack\pretsq\.env';
+import { KEY } from 'C:/Users/DELL/pretanstack/pretsq/.env';
 export default function Navbar(){
     let navigate=useNavigate();
     console.log({KEY});
