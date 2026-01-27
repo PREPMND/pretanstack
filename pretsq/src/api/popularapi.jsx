@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = import.meta.env.VITE_TMDB_KEY;
+const API_KEY = import.meta.env.VITE_TMBD_KEY;
 
 export const fetchPopularMovies = async (page = 1) => {
   const res = await axios.get(
