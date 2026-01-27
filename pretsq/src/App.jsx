@@ -8,6 +8,7 @@ export default function App(){
         <QueryClientProvider client={new QueryClient()}>
         <BrowserRouter>
            <Navbar/>
+           <
            <NavRoutes/>
         </BrowserRouter>
         </QueryClientProvider>
