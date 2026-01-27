@@ -8,7 +8,8 @@ function Popular() {
   });
 
   if (isLoading) return <p>Loading...</p>;
-  if (error) {<div className="log"></div>
+  if (error) {console.log(error);
+  
     return <p>Something went wrong</p>;}
 
   return (
