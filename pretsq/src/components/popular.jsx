@@ -3,7 +3,7 @@ import { fetchPopularMovies } from "../api/popularapi.jsx";
 import { useState } from "react";
 
 function Popular() {
-  let [num,setnum]=useState();
+  let [num,setnum]=useState(1);
   const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
     queryFn: () => fetchPopularMovies(),
