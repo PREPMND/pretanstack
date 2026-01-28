@@ -20,7 +20,7 @@ function Popular() {
 
   return (
     <>    
-    <div className="bg-neutral-900">
+    <div className="bg-neutral-900 text-slate-50">
     <button className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">Popular Movies</button>
     <button onClick={()=>setnum(prev=>prev+1)}
     className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">More Popular Movies</button>
