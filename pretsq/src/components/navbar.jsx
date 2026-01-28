@@ -5,7 +5,7 @@ export default function Navbar(){
     const APIKEY=import.meta.env.VITE_TMBD_KEY;
     return(
         <>
-        <div className='flex *:flex bg-amber-400 p-4 justify-between *:justify-between *:gap-4
+        <div className='flex *:flex bg-amber-400 p-4 justify-between *:justify-between md:*:gap-4 
         items-center *:items-center text-white font-semibold'>
             <div>
                 <svg onClick={()=>navigate("/")}
