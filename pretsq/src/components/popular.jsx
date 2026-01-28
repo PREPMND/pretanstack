@@ -23,7 +23,7 @@ function Popular() {
     <button className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">Popular Movies</button>
     <button onClick={()=>setnum(prev=>prev+1)}
     className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">More Popular Movies</button>
-    <div className="flex  overflow-y-hidden mb-5 w-full   mt-2">
+    <div className="flex overflow-y-hidden mb-5 w-full   mt-2">
       {data?.slice(0, 10*num).map((movie) => (
         <div className="flex-nowrap aspect-[2/3] flex-shrink-0 px-3"
           key={movie.id}>
