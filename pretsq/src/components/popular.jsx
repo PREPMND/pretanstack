@@ -18,6 +18,7 @@ function Popular() {
 
   return (
     <>    
+    <div></div>
     <div className="flex  overflow-x-scroll overflow-y-hidden mb-5  gap-4">
       {data?.slice(0, 10).map((movie) => (
         <div className="flex-nowrap  flex-shrink-0"
