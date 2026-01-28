@@ -1,8 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchPopularMovies } from "../api/popularapi.jsx";
+import { useState } from "react";
 
 function Popular() {
-  let [num=1];
+  let [num,setnum]=useState();
   const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
     queryFn: () => fetchPopularMovies(),
