@@ -25,7 +25,7 @@ function Popular() {
     className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">More Popular Movies</button>
     <div className="flex overflow-y-hidden mb-5 w-full  mt-2">
       {data?.slice(0, 10*num).map((movie) => (
-        <div className="flex-nowrap flex-shrink-0 min-w-[110px] px-3"
+        <div className="flex-nowrap flex-shrink-0 min-w-[110px] smin-w-[110px] px-3"
           key={movie.id}>
         <div className="flex-nowrap aspect-[2/3]"> 
           <img className='h-[90%] hover:scale-105 transition-transform duration-200 ease-in-out object-cover relative rounded scale '
