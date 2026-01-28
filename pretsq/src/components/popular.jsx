@@ -23,7 +23,7 @@ function Popular() {
       {data?.slice(0, 10).map((movie) => (
         <div className="flex-nowrap flex-shrink-0"
           key={movie.id}>
-          <img className='md:h-full md:w-[200px] object-cover roune scale'
+          <img className='md:h-full md:w-[200px] object-cover rounded scale'
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
           />
