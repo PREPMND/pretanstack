@@ -33,7 +33,7 @@ function Popular() {
             alt={movie.title}
           />
         </div> 
-          <h3 className="truncate mt-[6px] pb-24 md:pb-1 font-mono font-semibold text-">{movie.title}</h3>
+          <h3 className="truncate mt-[6px] pb-24 md:pb-1 font-mono font-semibold text-slate-50">{movie.title}</h3>
         </div>
 
       ))}
