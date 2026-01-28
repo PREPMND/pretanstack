@@ -27,6 +27,8 @@ function Popular() {
         </div>
       ))}
     </div>
+    </>
+
   );
 }
 
