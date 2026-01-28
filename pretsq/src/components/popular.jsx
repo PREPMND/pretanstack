@@ -24,7 +24,7 @@ function Popular() {
       {data?.slice(0, 14).map((movie) => (
         <div className="flex-nowrap md:w-[220px] flex-shrink-0 px-3"
           key={movie.id}>
-          <img className='md:h-[90%] hover:scale-105 transition-transform duration-200 ease-in-out object-cover relative rounded scale '
+          <img className='md:h-[90%] h hover:scale-105 transition-transform duration-200 ease-in-out object-cover relative rounded scale '
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
           />
