@@ -1,9 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchPopularMovies } from "../api/popularapi.jsx";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Popular() {
-  
+  const navigate= useNavigate();
   const [num,setnum]=useState(1);
   const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
