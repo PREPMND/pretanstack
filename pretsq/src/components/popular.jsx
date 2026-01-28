@@ -15,7 +15,7 @@ function Popular() {
     return <p>Something went wrong</p>;}
 
   return (
-    <div className="grid grid-row  md:grid-col-4 overflow-x-scroll gap-4">
+    <div className="grid grid-col  md:grid-col-4 overflow-x-scroll gap-4">
       {data?.slice(0, 10).map((movie) => (
         <div key={movie.id}>
           <img
