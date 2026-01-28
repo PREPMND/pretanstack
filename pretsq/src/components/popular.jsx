@@ -27,7 +27,7 @@ function Popular() {
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
           />
-          <h3 className="flex">{movie.title}</h3>
+          <h3 className="flex-wrap">{movie.title}</h3>
         </div>
       ))}
     </div>
