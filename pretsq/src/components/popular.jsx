@@ -27,7 +27,7 @@ function Popular() {
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
           />
-          <h3 className="truncate line-clamp-2 mt-2">{movie.title}</h3>
+          <h3 className="truncate line-clamp-2 mt-[6px] ">{movie.title}</h3>
         </div>
       ))}
     </div>
