@@ -24,6 +24,7 @@ function Popular() {
     <>    
     <div className="bg-neutral-900  font-Inter text-slate-50">
     <button onClick={()=>navigate("/movie")} 
+    className="ml-3 mt-2 bg-amber-400 md:text-[15px] text-[12px] hover:bg-amber-300  text-neutral-900  px-2 py-1 rounded active:scale-95">Popular Movies</button>
     className="ml-3 mt-2 bg-amber-400 md:text-[15px] text-[12px] hover:bg-amber-300  text-neutral-900 px-2 py-1 rounded active:scale-95">Popular Movies</button>
     <button onClick={()=>setnum(prev=>prev+1)}
     className="ml-3 mt-2 md:text-[15px] font-[600] text-[12px] hover:bg-amber-300 hover:border-amber-500 text-neutral-900 bg-amber-400 px-2 py-1 rounded active:scale-95">More Popular Movies</button>
