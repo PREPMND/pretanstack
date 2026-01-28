@@ -21,7 +21,7 @@ function Popular() {
     <button>Popular Movies</button>
     <div className="flex  overflow-x-scroll overflow-y-hidden mb-5  gap-2">
       {data?.slice(0, 10).map((movie) => (
-        <div className="flex-nowrap  flex-shrink-0"
+        <div className="flex-nowrap flex-shrink-0"
           key={movie.id}>
           <img className='md:h-full md:w-[260px] object-cover scale-75'
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
