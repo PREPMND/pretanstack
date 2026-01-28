@@ -15,7 +15,7 @@ function Popular() {
     return <p>Something went wrong</p>;}
 
   return (
-    <div className="flex flex-nowrap flex-1 overflow-x-scroll  gap-4">
+    <div className="flex flex-nowrap flex-auto overflow-x-scroll  gap-4">
       {data?.slice(0, 10).map((movie) => (
         <div className=""
         key={movie.id}>
