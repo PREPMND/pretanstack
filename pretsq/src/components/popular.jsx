@@ -23,7 +23,7 @@ function Popular() {
     <button className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">Popular Movies</button>
     <button onClick={()=>setnum(prev=>prev+1)}
     className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">More Popular Movies</button>
-    <div className="grid grid-cols-3 md:grid-cols-4  overflow-y-hidden mb-5 w-full  mt-2">
+    <div className="grid grid-cols-3 md:grid-cols-4 auto-cols-[120px] overflow-y-hidden mb-5 w-full  mt-2">
       {data?.slice(0, 10*num).map((movie) => (
         <div className="flex-nowrap flex-shrink-0 min-w-[110px] sm:min-w-[130px] md:min-w-[150px] px-3"
           key={movie.id}>
