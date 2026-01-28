@@ -20,7 +20,7 @@ function Popular() {
     <>    
     <button className="ml-3 mt-2">Popular Movies</button>
     <div className="flex overflow-x-scroll overflow-y-hidden mb-5   mt-2">
-      {data?.slice(0, 7).map((movie) => (
+      {data?.slice(0, 14).map((movie) => (
         <div className="flex-nowrap md:w-[220px] flex-shrink-0 px-3"
           key={movie.id}>
           <img className='md:h-[90%] hover:scale-105 transition-transform duration-200 ease-in-out object-cover relative rounded scale '
