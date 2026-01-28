@@ -9,7 +9,7 @@ function Popular() {
 
   if (isLoading) return( <>
   
-  <p className="">Loading...</p></>;)
+  <p className='h-screen'>Loading...</p></>;)
   if (error) {console.log(error);
   
     return <p>Something went wrong</p>;}
