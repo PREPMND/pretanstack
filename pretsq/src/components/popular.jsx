@@ -7,7 +7,8 @@ function Popular() {
     queryFn: () => fetchPopularMovies(),
   });
 
-  if (isLoading) return( <></><p>Loading...</p>;)
+  if (isLoading) return( <>
+  <p>Loading...</p></>;)
   if (error) {console.log(error);
   
     return <p>Something went wrong</p>;}
