@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchPopularMovies } from "../api/popularapi.jsx";
 
 function Popular() {
+  let num=1;
   const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
     queryFn: () => fetchPopularMovies(),
