@@ -20,7 +20,7 @@ function Popular() {
     <>    
     <button className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">Popular Movies</button>
     <button className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">More Popular Movies</button>
-    <div className="flex overflow-x-hidden overflow-y-hidden mb-5   mt-2">
+    <div className="flex overflow-x- overflow-y-hidden mb-5   mt-2">
       {data?.slice(0, 14).map((movie) => (
         <div className="flex-nowrap md:w-[220px] w-[100px] flex-shrink-0 px-3"
           key={movie.id}>
@@ -28,7 +28,7 @@ function Popular() {
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
           />
-          <h3 className="truncate mt-[6px] font-mono font-semibold text-zinc-900">{movie.title}</h3>
+          <h3 className="truncate mt-[6px] mb-5 font-mono font-semibold text-zinc-900">{movie.title}</h3>
         </div>
 
       ))}
