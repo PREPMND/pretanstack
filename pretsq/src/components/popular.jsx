@@ -17,8 +17,7 @@ function Popular() {
   return (
     <div className="flex  overflow-x-scroll gap-4">
       {data?.slice(0, 10).map((movie) => (
-        <div key={movie.id}>
-          <img
+        <div key={ class
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
           />
