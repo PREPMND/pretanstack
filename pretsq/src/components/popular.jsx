@@ -19,6 +19,7 @@ function Popular() {
   return (
     <>    
     <button className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">Popular Movies</button>
+    <
     <div className="flex overflow-x-scroll overflow-y-hidden mb-5   mt-2">
       {data?.slice(0, 14).map((movie) => (
         <div className="flex-nowrap md:w-[220px] flex-shrink-0 px-3"
@@ -29,7 +30,7 @@ function Popular() {
           />
           <h3 className="truncate line-clamp-2 mt-[6px] font-mono font-semibold text-zinc-900">{movie.title}</h3>
         </div>
-        
+
       ))}
     </div>
     </>
