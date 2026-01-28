@@ -8,6 +8,7 @@ function Popular() {
   });
 
   if (isLoading) return( <>
+  
   <p>Loading...</p></>;)
   if (error) {console.log(error);
   
