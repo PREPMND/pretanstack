@@ -39,6 +39,7 @@ function Popular() {
 
       ))}
     </div>
+    </div>
     </>
 
   );
