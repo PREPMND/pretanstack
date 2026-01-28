@@ -21,7 +21,7 @@ function Popular() {
   return (
     <>    
     <button className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">Popular Movies</button>
-    <button onClick={(prev)=>setnum(prev+1)}
+    <button onClick={()=>setnum(prev+1)}
     className="ml-3 mt-2 font-mono hover:bg-amber-200 hover:border-amber-500 px-2 py-1 rounded active:scale-95">More Popular Movies</button>
     <div className="flex overflow-x- overflow-y-hidden mb-5   mt-2">
       {data?.slice(0, 10*num).map((movie) => (
