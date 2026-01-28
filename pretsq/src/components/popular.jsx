@@ -7,18 +7,21 @@ function Popular() {
     queryFn: () => fetchPopularMovies(),
   });
 
-  if (isLoading) return( <>
-  
-  <p className='h-screen flex justify-center items-center '>Loading...</p></>)
-  if (error) {console.log(error);
-  
-    return <p>Something went wrong</p>;}
+  if (isLoading) return (<>
+
+    <p className='h-screen flex justify-center items-center '>Loading...</p></>)
+  if (error) {
+    console.log(error);
+
+    return <p>Something went wrong</p>;
+  }
 
   return (
-    <>    <div className="flex  overflow-x-scroll overflow-y-hidden mb-5  gap-4">
+    <>    
+    <div className="flex  overflow-x-scroll overflow-y-hidden mb-5  gap-4">
       {data?.slice(0, 10).map((movie) => (
         <div className="flex-nowrap  flex-shrink-0"
-        key={movie.id}>
+          key={movie.id}>
           <img className='md:h-full md:w-[260px] object-cover scale-75'
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
