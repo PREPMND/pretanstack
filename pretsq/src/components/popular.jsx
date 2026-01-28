@@ -9,7 +9,7 @@ function Popular() {
 
   if (isLoading) return( <>
   
-  <p className='h-max flex justify-center items-center'>Loading...</p></>)
+  <p className='h- flex justify-center items-center'>Loading...</p></>)
   if (error) {console.log(error);
   
     return <p>Something went wrong</p>;}
