@@ -28,7 +28,7 @@ function Popular() {
         <div className="flex-nowrap flex-shrink-0 min-w-[110px] sm:min-w-[130px] md:min-w-[150px] px-3"
           key={movie.id}>
         <div className="flex-nowrap aspect-[2/3]"> 
-          <img className='h-[90%] hover:scale-105 transition-transform duration-200 ease-in-out object-cover relative rounded scale '
+          <img className='hover:scale-105 transition-transform duration-200 ease-in-out object-cover relative rounded scale '
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
           />
