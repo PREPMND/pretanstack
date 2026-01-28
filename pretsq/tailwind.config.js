@@ -7,6 +7,6 @@ export default {
     extend: {},
   },
   plugins: [
-    require()
+    require('tailwind')
   ],
 }
