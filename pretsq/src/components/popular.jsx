@@ -18,7 +18,7 @@ function Popular() {
 
   return (
     <>    
-    <button className="">Popular Movies</button>
+    <button className="ml-3">Popular Movies</button>
     <div className="flex overflow-x-scroll overflow-y-hidden mb-5   mt-3">
       {data?.slice(0, 7).map((movie) => (
         <div className="flex-nowrap md:w-[220px] flex-shrink-0 px-3"
