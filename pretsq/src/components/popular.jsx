@@ -19,7 +19,7 @@ function Popular() {
   return (
     <>    
     <button>Popular Movies</button>
-    <div className="flex overflow-x-scroll overflow-y-hidden mb-5  gap-2 p">
+    <div className="flex overflow-x-scroll overflow-y-hidden mb-5  gap-2 py-2">
       {data?.slice(0, 10).map((movie) => (
         <div className="flex-nowrap flex-shrink-0"
           key={movie.id}>
