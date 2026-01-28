@@ -29,6 +29,7 @@ function Popular() {
           />
           <h3 className="truncate line-clamp-2 mt-[6px] font-mono font-semibold text-zinc-900">{movie.title}</h3>
         </div>
+        
       ))}
     </div>
     </>
