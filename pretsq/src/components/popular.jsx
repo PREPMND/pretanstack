@@ -14,7 +14,7 @@ function Popular() {
     queryKey: ["top-rated"],
     queryFn: () => fetchTopRated(),
   });
-  log
+  co.log(data1)
 
   if (isLoading) return (<>
 
