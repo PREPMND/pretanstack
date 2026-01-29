@@ -5,6 +5,7 @@ import Favourites from '../pages/Favourites.jsx'
 import About from '../pages/About.jsx'
 import TrendingMovie from '../pages/trending.jsx'
 import Popular from '../components/popular.jsx'
+import TopRated from '../components/trending.jsx'
 export default function NavRoutes(){
     return(
         <>
@@ -15,7 +16,7 @@ export default function NavRoutes(){
                 <Route path="/about" element={<About />} />
                 <Route path="/trending/movies" element={<TrendingMovie />}></Route>
                 <Route path="/" element={<>
-                <
+                <TopRated
                 <Popular/></>}/>
             </Routes>
     
