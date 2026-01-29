@@ -10,7 +10,7 @@ export default function TopRated() {
         queryKey: ["top-rated"],
         queryFn: () => fetchTopRated(),
     });
-    console.log(data.toprated);
+    console.log(data.vote_average);
     if(data.top_rated)
     if (isLoading) return (<>
 
