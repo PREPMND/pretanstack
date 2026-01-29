@@ -37,5 +37,6 @@ export default function TopRated() {
 
             ))}
         </div>
+        </di
         )
 }
