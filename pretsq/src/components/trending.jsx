@@ -8,7 +8,7 @@ function Popular() {
   const [num,setnum]=useState(1);
   const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
-    queryFn: () => fetchPopularMovies(),
+    queryFn: () => fetchTopRated(),
   });
 
   if (isLoading) return (<>
