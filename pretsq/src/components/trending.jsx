@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchTopRated } from "../api/popularapi.jsx";
+import { fetchTopRated } from "../api/trendingapi.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
