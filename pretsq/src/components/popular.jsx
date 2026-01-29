@@ -24,9 +24,9 @@ function Popular() {
   return (
     <>    
     <div className="bg-neutral-900  font-Inter text-slate-50">
-    <div className="flex justify-between px-3">
+    <div className="flex justify-between px-3 items-center">
     <button onClick={()=>navigate("/movie")} 
-    className="px-3 font-Inter tracking-wide text-[12px] md:text-[14px]">Popular Movies</button>
+    className="font-Inter tracking-wide text-[12px] md:text-[14px]">Popular Movies</button>
     <button onClick={()=>setnum(prev=>prev+1)}
     className="ml-3 mt-2 m-auto md:text-[15px] font-[600] text-[12px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-2 py-1 rounded active:scale-95">More Popular Movies</button>
     </div>
