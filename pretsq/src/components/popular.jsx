@@ -27,7 +27,7 @@ function Popular() {
     <button onClick={()=>navigate("/movie")} 
     className="px-3 font-Inter tracking-wide text-[12px] md:text-[14px]">Popular Movies</button>
     <button onClick={()=>setnum(prev=>prev+1)}
-    className="ml-3 mt-2 text md:text-[15px] font-[600] text-[12px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-2 py-1 rounded active:scale-95">More Popular Movies</button>
+    className="ml-3 mt-2 flex justify-center md:text-[15px] font-[600] text-[12px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-2 py-1 rounded active:scale-95">More Popular Movies</button>
     <div className="grid grid-flow-col select-none auto-cols-[140px] md:auto-cols-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 ">
       {data?.slice(0, 10*num).map((movie) => (
         <div className=""
