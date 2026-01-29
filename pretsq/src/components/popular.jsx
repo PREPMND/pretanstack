@@ -10,7 +10,10 @@ function Popular() {
     queryKey: ["popular-movies"],
     queryFn: () => fetchPopularMovies(),
   });
-  
+  const { data, isLoading1, error } = useQuery({
+    queryKey: ["top-rated"],
+    queryFn: () => fetchTopRated(),
+  });
 
   if (isLoading) return (<>
 
