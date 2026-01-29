@@ -10,6 +10,7 @@ export default function TopRated() {
     queryKey: ["top-rated"],
     queryFn: () => fetchTopRated(),
   });
+  console.log();
   
   if (isLoading) return (<>
 
