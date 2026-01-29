@@ -10,6 +10,7 @@ function Popular() {
     queryKey: ["popular-movies"],
     queryFn: () => fetchPopularMovies(),
   });
+  
 
   if (isLoading) return (<>
 
