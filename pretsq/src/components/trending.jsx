@@ -36,7 +36,7 @@ export default function TopRated() {
                             />
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
-                        <h3 className={`runcate mt-[6px] md:pb-1 font-Inter font-semibold 
+                        <h3 className={`truncate mt-[6px] md:pb-1 font-Inter font-semibold 
                         text-white`}>{movie.vote_average}</h3>
                     </div>
 
