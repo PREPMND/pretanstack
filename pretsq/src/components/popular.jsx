@@ -24,6 +24,7 @@ function Popular() {
   return (
     <>    
     <div className="bg-neutral-900  font-Inter text-slate-50">
+    <div></div>
     <button onClick={()=>navigate("/movie")} 
     className="px-3 font-Inter tracking-wide text-[12px] md:text-[14px]">Popular Movies</button>
     <button onClick={()=>setnum(prev=>prev+1)}
