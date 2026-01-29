@@ -19,4 +19,5 @@ function Popular() {
 
     return <p>Something went wrong</p>;
   }
+  
 }
