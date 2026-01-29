@@ -23,7 +23,7 @@ export default function TopRated() {
     return (
         <div  className='bg-neutral-900'>
         <button onClick={()=>setnum(prev=>prev+1)}
-    className="ml-3 mt-2 m-auto md:text-[15px] font-[600] text-[12px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-2 py-1 rounded active:scale-95"></button>    
+    className="ml-3 mt-2 m-auto md:text-[15px] font-[600] text-[12px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-2 py-1 rounded active:scale-95">Top Rated</button>    
         <div className="grid grid-flow-col select-none auto-cols-[140px] md:auto-cols-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 ">
             {data?.slice(0, 10 * num).map((movie) => (
                 <div className=""
