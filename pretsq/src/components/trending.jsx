@@ -10,7 +10,7 @@ export default function TopRated() {
         queryKey: ["top-rated"],
         queryFn: () => fetchTopRated(),
     });
-    console.log(data.vote_average);
+    console.log(data);
     if (isLoading) return (<>
 
         <p className='h-screen flex justify-center items-center '>Loading...</p></>)
