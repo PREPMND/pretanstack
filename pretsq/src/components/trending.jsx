@@ -19,7 +19,7 @@ function Popular() {
 
     return <p>Something went wrong</p>;
   }
-  retur
+  return(
   <div className="grid grid-flow-col select-none auto-cols-[140px] md:auto-cols-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 ">
       {data?.slice(0, 10*num).map((movie) => (
         <div className=""
@@ -34,5 +34,5 @@ function Popular() {
         </div>
 
       ))}
-    </div>
+    </div>_
 }
