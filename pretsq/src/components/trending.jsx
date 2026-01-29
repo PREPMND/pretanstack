@@ -3,7 +3,7 @@ import { fetchTopRated } from "../api/trendingapi.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function To() {
+function TopRated() {
   const navigate= useNavigate();
   const [num,setnum]=useState(1);
   const { data, isLoading, error } = useQuery({
