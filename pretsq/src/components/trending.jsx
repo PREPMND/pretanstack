@@ -7,7 +7,7 @@ function Popular() {
   const navigate= useNavigate();
   const [num,setnum]=useState(1);
   const { data, isLoading, error } = useQuery({
-    queryKey: ["popular-movies"],
+    queryKey: ["top-rated"],
     queryFn: () => fetchTopRated(),
   });
 
