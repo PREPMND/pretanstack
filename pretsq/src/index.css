@@ -7,6 +7,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 .thebody{
-  background-color:--tw-bg-opacity: 1;
+  --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1)) ;
 }
