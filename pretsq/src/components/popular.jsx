@@ -14,7 +14,7 @@ function Popular() {
     queryKey: ["top-rated"],
     queryFn: () => fetchTopRated(),
   });
-  console.log(data1.id)
+  console.log(data)
 
   if (isLoading) return (<>
 
