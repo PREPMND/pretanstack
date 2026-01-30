@@ -7,7 +7,8 @@ export default function Trending(){
     })
     if (isPending) return (
     <>
-        <p className='h-screen flex justify-center items-center '>Loading...</p></>)
+        <p className='h-screen flex justify-center items-center '>Loading...</p>
+    </>)
     if (error) {
         console.log(error);
         return <p>Something went wrong</p>;
