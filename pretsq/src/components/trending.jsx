@@ -41,6 +41,24 @@ export default function Trending(){
 
                 ))}
             </div>
+            {selectedMovie && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center">
+          <div className="relative">
+            <img
+              src={`https://image.tmdb.org/t/p/original${selectedMovie.backdrop_path}`}
+              className="rounded-lg"
+            />
+            <button
+              className="absolute inset-0 flex items-center justify-center text-white text-3xl"
+              onClick={() =>
+                window.open(`https://www.themoviedb.org/movie/${selectedMovie.id}`, "_blank")
+              }
+            >
+              ▶
+            </button>
+          </div>
+        </div>
+      )}
         </div>
 
     )
