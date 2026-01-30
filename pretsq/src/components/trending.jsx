@@ -41,7 +41,7 @@ export default function Trending() {
 
                 ))}
             </div>
-            {selectedMovie && (
+            {selected && (
                 <div className="fixed inset-0 bg-black/80 flex items-center justify-center">
                     <div className="relative">
                         <img
