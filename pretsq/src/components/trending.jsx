@@ -6,6 +6,8 @@ export default function Trending(){
         queryFn:()=>{fetchTrending}
     })
     return(
-
+       <div>
+        
+       </div>
     )
 }
