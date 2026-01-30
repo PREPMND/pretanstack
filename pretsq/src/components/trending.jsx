@@ -28,7 +28,8 @@ export default function Trending() {
                     <div className=""
                         key={movie.id}>
                         <div className="w-full bg-neutral-900 aspect-[2/3] place-items-center">
-                            <img className='hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full '
+                            <img 
+                            className='hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full '
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                 alt={movie.title}
                             />
