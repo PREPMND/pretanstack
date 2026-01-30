@@ -3,7 +3,7 @@ import { Routes , Route } from 'react-router-dom'
 import Movie from '../pages/Movie.jsx'
 import Favourites from '../pages/Favourites.jsx'
 import About from '../pages/About.jsx'
-import TrendingMovie from '../pages/trending.jsx'
+
 import Popular from '../components/popular.jsx'
 import TopRated from '../components/toprated.jsx'
 import Trending from '../components/trending.jsx'
