@@ -17,7 +17,9 @@ export default function Trending(){
     return(
        <div>
         <div>
-            data?.map()
+           { data?.map(){
+            
+           }}
         </div>
   
        </div>
