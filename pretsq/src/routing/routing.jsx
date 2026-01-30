@@ -6,6 +6,7 @@ import About from '../pages/About.jsx'
 import TrendingMovie from '../pages/trending.jsx'
 import Popular from '../components/popular.jsx'
 import TopRated from '../components/toprated.jsx'
+import Trending from '../components/trending.jsx'
 export default function NavRoutes(){
     return(
         <>
@@ -20,6 +21,7 @@ export default function NavRoutes(){
                 <div className='thebody'>
                     <Popular/>
                     <TopRated/>
+                    <Trending/>
                 </div>
                 
                 
