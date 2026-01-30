@@ -21,7 +21,7 @@ export default function NavRoutes(){
                 <div className='thebody'>
                     <Popular/>
                     <TopRated/>
-                    <Trending/>
+                    
                 </div>
                 
                 
