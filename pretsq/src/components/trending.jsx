@@ -1,1 +1,2 @@
-import { fetchTrending } from "../api/trendingapi"
+import { fetchTrending } from "../api/trendingapi";
+import { }
