@@ -5,7 +5,7 @@ import Favourites from '../pages/Favourites.jsx'
 import About from '../pages/About.jsx'
 import TrendingMovie from '../pages/trending.jsx'
 import Popular from '../components/popular.jsx'
-import TopRated from '../components/topra.jsx'
+import TopRated from '../components/toprated.jsx'
 export default function NavRoutes(){
     return(
         <>
