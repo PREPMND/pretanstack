@@ -2,7 +2,7 @@ import { fetchTrending } from "../api/trendingapi";
 import { useQuery } from "@tanstack/react-query";
 export default function Trending(){
     const { data , isPending , error }=useQuery({
-        queryKey:"trending",
+        queryKey:["trending"],
         queryFn:()=>{fetchTrending}
     })
     console.log(data)
