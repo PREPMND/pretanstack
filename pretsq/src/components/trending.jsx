@@ -19,7 +19,9 @@ export default function Trending(){
         <div>
            { data?.map(()=>(
             <div>
-                <div></div>
+                <div>
+                    <img src=""
+                </div>
             </div>
            ))}
         </div>
