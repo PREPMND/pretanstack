@@ -1,4 +1,4 @@
-import { fetchTrending } from "../api/trendingapi";
+import { fetchTrending } from "../api/trendingapi.jsx";
 import { useQuery } from "@tanstack/react-query";
 export default function Trending(){
     const { data , isPending , error }=useQuery({
