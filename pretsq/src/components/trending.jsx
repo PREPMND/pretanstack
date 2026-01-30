@@ -1,26 +1,26 @@
 import { fetchTrending } from "../api/trendingapi.jsx";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-export default function Trending(){
-    const [selected , setselected ]=useState(null);
-    const { data , isPending , error }=useQuery({
-        
-        queryKey:["trending"],
-        queryFn:()=>fetchTrending()
+export default function Trending() {
+    const [selected, setselected] = useState(null);
+    const { data, isPending, error } = useQuery({
+
+        queryKey: ["trending"],
+        queryFn: () => fetchTrending()
     })
     console.log(data)
     if (isPending) return (
-    <>
-        <p className='h-screen flex justify-center items-center '>Loading...</p>
-    </>)
+        <>
+            <p className='h-screen flex justify-center items-center '>Loading...</p>
+        </>)
     if (error) {
         console.log(error);
         return <p>Something went wrong</p>;
     }
-    return(
-       <div className='bg-neutral-900 mt-3 '>
+    return (
+        <div className='bg-neutral-900 mt-3 '>
             <div className='bg-neutral-900 flex justify-center flex-col w-full '>
-                <button onClick={()=>navigate("/trending/movies")}
+                <button onClick={() => navigate("/trending/movies")}
                     className="ml-3 mt-2 block mx-auto md:text-[18px] font-[600] text-[14px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-3 py-2 rounded active:scale-95">Top Rated</button>
             </div>
             <div className="grid grid-flow-col select-none auto-cols-[140px] md:auto-cols-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 pt-2">
@@ -42,23 +42,23 @@ export default function Trending(){
                 ))}
             </div>
             {selectedMovie && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center">
-          <div className="relative">
-            <img
-              src={`https://image.tmdb.org/t/p/original${selectedMovie.backdrop_path}`}
-              className="rounded-lg"
-            />
-            <button
-              className="absolute inset-0 flex items-center justify-center text-white text-3xl"
-              onClick={() =>
-                window.open(`https://www.themoviedb.org/movie/${selectedMovie.id}`, "_blank")
-              }
-            >
-              ▶
-            </button>
-          </div>
-        </div>
-      )}
+                <div className="fixed inset-0 bg-black/80 flex items-center justify-center">
+                    <div className="relative">
+                        <img
+                            src={`https://image.tmdb.org/t/p/original${selectedMovie.backdrop_path}`}
+                            className="rounded-lg"
+                        />
+                        <button
+                            className="absolute inset-0 flex items-center justify-center text-white text-3xl"
+                            onClick={() =>
+                                window.open(`https://www.themoviedb.org/movie/${selectedMovie.id}`, "_blank")
+                            }
+                        >
+                            ▶
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
 
     )
