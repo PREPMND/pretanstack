@@ -1,2 +1,2 @@
 import { fetchTrending } from "../api/trendingapi";
-import { }
+import { useQuery } from "@tanstack/react-query";
