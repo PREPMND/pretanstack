@@ -1,1 +1,1 @@
-import { fetch}
+import { fetchTrending } from ""
