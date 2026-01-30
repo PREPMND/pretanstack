@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 export default function Trending(){
     useQuery({
         queryKey:"trending",
-        queryFn:()=>{}
+        queryFn:()=>{fetchTrending}
     })
     return(
 
