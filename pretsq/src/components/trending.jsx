@@ -16,6 +16,9 @@ export default function Trending(){
     }
     return(
        <div>
+        <div>
+            data?
+        </div>
   
        </div>
     )
