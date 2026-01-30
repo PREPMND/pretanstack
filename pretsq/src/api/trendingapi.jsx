@@ -4,7 +4,7 @@ const API_KEY = import.meta.env.VITE_TMBD_KEY;
 
 export const fetchTrending = async (page = 1) => {
   const res = await axios.get(
-    `https://api.themoviedb.org/3/movie/top_rated`,
+    `https://api.themoviedb.org/3/trending/movie/top_rated`,
     {
       params: {
         api_key: API_KEY,
