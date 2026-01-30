@@ -5,6 +5,7 @@ export default function Trending(){
         queryKey:"trending",
         queryFn:()=>{fetchTrending}
     })
+    console.log(data)
     if (isPending) return (
     <>
         <p className='h-screen flex justify-center items-center '>Loading...</p>
