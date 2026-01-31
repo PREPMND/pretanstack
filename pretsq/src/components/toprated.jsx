@@ -68,7 +68,7 @@ export default function TopRated(props) {
                     setselectedglobal(null)
                     setselected(null)
                 }}
-                    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+                    className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center z-50">
                     <div onClick={(e) => e.stopPropagation()}
                         className="relative w-[90%] ">
                         <img
