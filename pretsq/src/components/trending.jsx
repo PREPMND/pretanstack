@@ -46,7 +46,7 @@ export default function Trending() {
                 <div onClick={()=>setselected(null)}
                 className="fixed inset-0 bg-black/80 flex items-center justify-center">
                     <div onClick={(e)=>e.stopPropagation()}
-                    className="relative">
+                    className="relative w-[]90%">
                         <img
                             src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
                             className="rounded-lg"
