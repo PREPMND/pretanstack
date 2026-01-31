@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { fetchTopRated } from "../api/topratedapi.jsx";
 function Popular() {
   const navigate= useNavigate();
-  const [selected,setselected]
+  const [selected,setselected]=useState(null)
   const [num,setnum]=useState(1);
   const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
