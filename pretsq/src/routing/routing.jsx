@@ -11,7 +11,7 @@ import TOPrated from '../pages/toprated.jsx'
 import TrendingMovie from '../pages/trendingmovie.jsx'
 import { useState } from 'react'
 export default function NavRoutes(props){
-    const [selectedglobal , setselectedglobal]useState
+    const [selectedglobal , setselectedglobal]=useState(null)
     return(
         <>
         
