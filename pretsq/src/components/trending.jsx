@@ -34,7 +34,9 @@ export default function Trending(props) {
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                 alt={movie.title}
                             />
-                            <div className="relative z-20 flex items-center justify-center text-white hidden">Play</div>
+                            <div 
+                            
+                            className="relative z-20 flex items-center justify-center text-white hidden">Play</div>
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
                         <h3 className={`truncate mt-[6px] md:pb-1 font-Inter text-[11px]
