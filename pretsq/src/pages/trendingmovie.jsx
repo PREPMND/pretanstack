@@ -1,9 +1,9 @@
-export default function TOPrated(){
+export default function TrendingMovie(){
     return(
         
         <>
         <div>
-            <div>TOPrated</div>
+            <div>TrendingMovie</div>
         </div>
         </>
     )
