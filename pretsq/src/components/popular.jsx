@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchPopularMovies } from "../api/popularapi.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { fetchTopRated } from "../api/topratedapi.jsx";
+import { C}
 function Popular(props) {
   const navigate = useNavigate();
   const [movieHovered , setmovieHovered]=useState(null);
