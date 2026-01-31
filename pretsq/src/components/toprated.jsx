@@ -48,7 +48,9 @@ export default function TopRated(props) {
                                 className={`absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movieHovered === movie.id ? "opacity-100" : "opacity-0"}`}
                             >
                                 <button
-                                    onClick={() => setselected(movie)}
+                                    onClick={() => {
+                                        
+                                    }}
                                     className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2 ${selected?"pointer-events-none":""}`}
                                 >
                                     <span className="text-red-500">▶</span> Play
