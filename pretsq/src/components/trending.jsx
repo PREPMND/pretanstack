@@ -37,7 +37,7 @@ export default function Trending(props) {
                             <div 
                             onMouseEnter={()=>setmovieHovered(true)}
                             onMouseLeave={()=>setmovieHovered(false)}
-                            className={`relative z-20 ${} items-center justify-center text-white hidden`}>Play</div>
+                            className={`relative z-20 ${setmovieHovered?"flex"} items-center justify-center text-white hidden`}>Play</div>
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
                         <h3 className={`truncate mt-[6px] md:pb-1 font-Inter text-[11px]
