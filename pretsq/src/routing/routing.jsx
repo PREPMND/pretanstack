@@ -8,6 +8,7 @@ import Popular from '../components/popular.jsx'
 import TopRated from '../components/toprated.jsx'
 import Trending from '../components/trending.jsx'
 import TOPrated from '../pages/toprated.jsx'
+import TrendingMovie from '../pages/trendingmovie.jsx'
 export default function NavRoutes(props){
     const { movieHovered , setmovieHovered }=props;
     return(
