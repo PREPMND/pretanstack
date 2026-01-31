@@ -3,7 +3,7 @@ import { fetchPopularMovies } from "../api/popularapi.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { fetchTopRated } from "../api/topratedapi.jsx";
-function Popular() {
+function Popular(props) {
   const navigate = useNavigate();
   const { movieHovered, setmovieHovered } = props;
   const [selected, setselected] = useState(null)
