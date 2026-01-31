@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Trending(props) {
     const [movieHovered , setmovieHovered]=useState(null);
     const [selected, setselected] = useState(null);
+    const { selectedglobal , setselectedglobal}=props;
     const navigate=useNavigate();
     const { data, isPending, error } = useQuery({
 
