@@ -2,7 +2,7 @@ import { fetchTrending } from "../api/trendingapi.jsx";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Movie}
+import { ChangeTitle } from "../App.jsx";
 export default function Trending(props) {
     const [movieHovered , setmovieHovered]=useState(null);
     const [selected, setselected] = useState(null);
