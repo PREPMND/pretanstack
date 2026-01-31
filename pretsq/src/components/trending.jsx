@@ -32,9 +32,7 @@ export default function Trending(props) {
                         onMouseEnter={()=>setmovieHovered(movie.id)}    
                         onMouseLeave={()=>setmovieHovered(null)}
                         className="w-full relative bg-neutral-900 aspect-[2/3] overflow-hidden">
-                            <img 
-                            
-                            
+                            <img                
                             className='hover:scale-105 z-10 transition-transform duration-200 ease-in-out object-cover rounded h-full '
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                 alt={movie.title}
