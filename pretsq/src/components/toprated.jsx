@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchTopRated } from "../api/topratedapi.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { ChangeTitle } from "../App.jsx";
 export default function TopRated(props) {
     const [selected, setselected]=useState(null);
     const { selectedglobal , setselectedglobal}=props;
