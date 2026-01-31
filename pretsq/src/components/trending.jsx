@@ -64,7 +64,8 @@ export default function Trending(props) {
             {selected && (
                 <div onClick={() => {
                     setselectedglobal(null)
-                    setselected(null)}}
+                    setselected(null)
+                }}
                     className="fixed inset-0 bg-black/80 flex items-center justify-center">
                     <div onClick={(e) => e.stopPropagation()}
                         className="relative w-[90%] ">
