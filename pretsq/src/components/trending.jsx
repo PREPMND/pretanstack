@@ -61,7 +61,7 @@ export default function Trending(props) {
                         text-white`}>{movie.vote_average}</h3>
                     </div>
 
-                ))
+                ))}
             </div>
             {selected && (
                 <div onClick={() => setselected(null)}
