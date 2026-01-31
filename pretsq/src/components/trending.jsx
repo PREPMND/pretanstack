@@ -36,7 +36,7 @@ export default function Trending(props) {
                             />
                             <div 
                             onMouseEnter={()=>setmovieHovered(true)}
-                            onMouseLeave={()}
+                            onMouseLeave={()=>setmovieHovered(t)}
                             className="relative z-20 flex items-center justify-center text-white hidden">Play</div>
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
