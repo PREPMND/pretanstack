@@ -3,9 +3,9 @@ import { fetchTopRated } from "../api/topratedapi.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function TopRated() {
+export default function TopRated(props) {
     const [selected, setselected]=useState;
-    const { movieHovered , setmovieHovered}
+    const { movieHovered , setmovieHovered}=props
     const navigate = useNavigate();
     const [num, setnum] = useState(1);
     const { data, isLoading, error } = useQuery({
