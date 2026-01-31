@@ -2,7 +2,7 @@ import { fetchTrending } from "../api/trendingapi.jsx";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 export default function Trending(props) {
-    const { moi}
+    const { movieHovered , set}
     const [selected, setselected] = useState(null);
     const { data, isPending, error } = useQuery({
 
