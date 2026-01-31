@@ -42,8 +42,7 @@ export default function Trending(props) {
 
                             {/* Overlay (NOT clickable itself) */}
                             <div
-                                className={`absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movieHovered === movie.id ? "opacity-100" : "opacity-0"
-                                    }`}
+                                className={`absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movieHovered === movie.id ? "opacity-100" : "opacity-0"}`}
                             >
                                 {/* Only this button is clickable */}
                                 <button
@@ -53,15 +52,11 @@ export default function Trending(props) {
                                     <span className="text-red-500">▶</span> Play
                                 </button>
                             </div>
-
-
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
-                        <h3 className={`truncate mt-[6px] md:pb-1 font-Inter text-[11px]
-                        md:text-[13px] 
-                        text-white`}>{movie.vote_average}</h3>
+                        <h3 className={`truncate mt-[6px] md:pb-1 font-Inter text-[11px] md:text-[13px] text-white`}>{movie.vote_average}</h3>
                     </div>
-                ))}
+                )}
             </div>
             {selected && (
                 <div onClick={() => setselected(null)}
