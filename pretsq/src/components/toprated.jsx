@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function TopRated(props) {
-    const [selected, setselected]=useState;
+    const [selected, setselected]=useState(null);
     const { movieHovered , setmovieHovered}=props
     const navigate = useNavigate();
     const [num, setnum] = useState(1);
