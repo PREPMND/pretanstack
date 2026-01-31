@@ -27,7 +27,7 @@ export default function Trending() {
                 {data?.slice(0, 19).map((movie) => (
                     <div className=""
                         key={movie.id}>
-                        <div className="w-full bg-neutral-900 aspect-[2/3] place-items-center">
+                        <div className="w-full z-30 bg-neutral-900 aspect-[2/3] place-items-center">
                             <img onClick={() => setselected(movie)}
                             className='hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full '
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
