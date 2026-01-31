@@ -38,7 +38,6 @@ export default function Trending(props) {
                                 alt={movie.title}
                             />
                             <div 
-                            
                             className={`relative z-20 ${movieHovered==movie.id?"flex":"hidden"} items-center justify-center text-white`}>Play</div>
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{`${setmovieHovered?"yes":"no"}`}</h3>
