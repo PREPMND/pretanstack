@@ -53,7 +53,7 @@ export default function Trending(props) {
       <span className="text-red-500">▶</span> Play
     </button>
   </div>
-</div>
+
 
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
