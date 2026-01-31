@@ -7,6 +7,7 @@ import About from '../pages/About.jsx'
 import Popular from '../components/popular.jsx'
 import TopRated from '../components/toprated.jsx'
 import Trending from '../components/trending.jsx'
+import TOPrated from '../pages/toprated.jsx'
 export default function NavRoutes(props){
     const { movieHovered , setmovieHovered }=props;
     return(
@@ -16,7 +17,7 @@ export default function NavRoutes(props){
                 <Route path="/movie" element={<Movie />} />
                 <Route path="/favourites" element={<Favourites />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/toprated" element={<T}
+                <Route path="/toprated" element={<TOPrated/>}
                 <Route path="/" element={
                 <>
                 <div className='thebody'>
