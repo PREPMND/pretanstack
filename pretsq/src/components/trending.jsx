@@ -52,7 +52,7 @@ export default function Trending() {
                         <button
                             className="absolute inset-0 flex items-center justify-center text-white text-3xl"
                             onClick={() =>
-                                window.open(`https://www.themoviedb.org/movie/${selected.id}`, "_blank")
+                                window.open(`https://www.themoviedb.org/movie/${selected.id}`, "")
                             }
                         >
                             ▶
