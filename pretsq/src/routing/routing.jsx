@@ -16,7 +16,7 @@ export default function NavRoutes(props){
                 <Route path="/movie" element={<Movie />} />
                 <Route path="/favourites" element={<Favourites />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/toprated" element=<
+                <Route path="/toprated" element={<T}
                 <Route path="/" element={
                 <>
                 <div className='thebody'>
