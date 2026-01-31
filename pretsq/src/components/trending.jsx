@@ -43,7 +43,7 @@ export default function Trending(props) {
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{`${setmovieHovered?"yes":"no"}`}</h3>
                         <h3 className={`truncate mt-[6px] md:pb-1 font-Inter text-[11px]
-                        md:text-[13px] font- 
+                        md:text-[13px] 
                         text-white`}>{movie.vote_average}</h3>
                     </div>
 
