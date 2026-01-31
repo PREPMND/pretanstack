@@ -31,7 +31,7 @@ export default function Trending(props) {
                         <div className="w-full z-30 bg-neutral-900 aspect-[2/3] place-items-center">
                             <img 
                             onMouseEnter={()=>setmovieHovered(movie.id)}
-                            onMouseLeave={()=>setmovieHovered(false)}
+                            onMouseLeave={()=>setmovieHovered(null)}
                             onClick={() => setselected(movie)}
                             className='hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full '
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
