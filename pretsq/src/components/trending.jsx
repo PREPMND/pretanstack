@@ -28,7 +28,7 @@ export default function Trending(props) {
                 {data?.slice(0, 19).map((movie) => (
                     <div className=""
                         key={movie.id}>
-                        <div className="w-full relative bg-neutral-900 aspect-[2/3] place-items-center overflow-hidden">
+                        <div className="w-full relative bg-neutral-900 aspect-[2/3] overflow-hidden">
                             <img 
                             onMouseEnter={()=>setmovieHovered(movie.id)}
                             onMouseLeave={()=>setmovieHovered(null)}
