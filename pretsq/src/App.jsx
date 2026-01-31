@@ -20,7 +20,7 @@ export default function App(){
 export function ChangeTitle(moviename){
     return moviename
     .toLowercase()
-    .replace(/[^a-z0-9]/)
+    .replace(/[^a-z0-9\s-]/)
 
 
 }
