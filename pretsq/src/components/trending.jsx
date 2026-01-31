@@ -35,7 +35,7 @@ export default function Trending(props) {
                             onClick={() => setselected(movie)}
                             className='hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full '
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                                alt={${setmovieHovered?"yes":"no"}}
+                                alt=${setmovieHovered?"yes":"no"}
                             />
                             <div 
                             
