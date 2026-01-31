@@ -25,8 +25,8 @@ export default function NavRoutes(props){
                 <>
                 <div className='thebody'>
                     <Popular selectedglobal={selectedglobal} setselectedglobal={selectedglobal} />
-                    <TopRated />
-                    <Trending />
+                    <TopRated selectedglobal={selectedglobal} setselectedglobal={selectedglobal}/>
+                    <Trending selectedglobal={selectedglobal} setselectedglobal={selectedglobal}/>
                 </div>
                 
                 
