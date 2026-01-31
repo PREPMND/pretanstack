@@ -47,7 +47,7 @@ export default function Trending(props) {
                                 {/* Only this button is clickable */}
                                 <button
                                     onClick={() => setselected(movie)}
-                                    className={}`bg-black/70 hover:bg-black px-4 py-2 rounded text-white text-sm flex items-center gap-2"
+                                    className={`bg-black/70 hover:bg-black px-4 py-2 rounded text-white text-sm flex items-center gap-2`}
                                 >
                                     <span className="text-red-500">▶</span> Play
                                 </button>
