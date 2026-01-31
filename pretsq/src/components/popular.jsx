@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { fetchTopRated } from "../api/topratedapi.jsx";
 function Popular(props) {
   const navigate = useNavigate();
-  const { movieHovered, setmovieHovered } = props;
+  const [movieHovered , setmovieHovered]=useState(null);
   const [selected, setselected] = useState(null)
   const [num, setnum] = useState(1);
   const { data, isLoading, error } = useQuery({
