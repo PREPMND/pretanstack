@@ -28,10 +28,10 @@ export default function Trending(props) {
                 {data?.slice(0, 19).map((movie) => (
                     <div className=""
                         key={movie.id}>
-                        <div className="w-full relative bg-neutral-900 aspect-[2/3] overflow-hidden">
+                        <div 
+                        className="w-full relative bg-neutral-900 aspect-[2/3] overflow-hidden">
                             <img 
-                            onMouseEnter={()=>setmovieHovered(movie.id)}
-                            onMouseLeave={()=>setmovieHovered(null)}
+                            
                             
                             className='hover:scale-105 z-10 transition-transform duration-200 ease-in-out object-cover rounded h-full '
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
