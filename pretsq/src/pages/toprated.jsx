@@ -3,7 +3,7 @@ export default function TOPrated(){
         
         <>
         <div>
-            <div>Favourites</div>
+            <div>TOPrated</div>
         </div>
         </>
     )
