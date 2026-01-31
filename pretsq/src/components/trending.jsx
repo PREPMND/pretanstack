@@ -50,7 +50,7 @@ export default function Trending(props) {
                                     onClick={() => {
                                         setselectedglobal(movie)
                                         setselected(movie)
-                                        
+                                        console.log("clickedtrend")
                                     }}
                                     className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2`}
                                 >
