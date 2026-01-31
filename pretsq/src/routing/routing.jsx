@@ -9,8 +9,9 @@ import TopRated from '../components/toprated.jsx'
 import Trending from '../components/trending.jsx'
 import TOPrated from '../pages/toprated.jsx'
 import TrendingMovie from '../pages/trendingmovie.jsx'
+import { useState } from 'react'
 export default function NavRoutes(props){
-    const [selectedglobal , setselectedglobal]
+    const [selectedglobal , setselectedglobal]useState
     return(
         <>
         
