@@ -41,7 +41,7 @@ export default function Trending(props) {
 
                             {/* Overlay (NOT clickable itself) */}
                             <div
-                                className={`absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movieHovered === movie.id ? "opacity-100" : "opacity-0"
+                                className={`absolute inset-0 z-30 flex items-center justify-center bg-black/50 ${selected==movie.id ?"":"hover:bg-black"} transition-opacity duration-200 ${movieHovered === movie.id ? "opacity-100" : "opacity-0"
                                     }`}
                             >
                                 {/* Only this button is clickable */}
