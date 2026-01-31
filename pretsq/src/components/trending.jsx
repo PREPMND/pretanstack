@@ -38,7 +38,7 @@ export default function Trending(props) {
                                 alt={movie.title}
                             />
                             <button onClick={() => setselected(movie)}
-                            className={`absolute inset-0 z-15 ${movieHovered== movie.id?"flex":"hidden"} items-center justify-center text-white pointer-events-none text-[17px]`}><span className="text-red-500 pr-[3px]">▶  </span> Play</button>
+                            className={`absolute inset-0 z-15 ${movieHovered== movie.id?"flex":"hidden"} items-center justify-center text-white text-[17px]`}><span className="text-red-500 pr-[3px]">▶  </span> Play</button>
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
                         <h3 className={`truncate mt-[6px] md:pb-1 font-Inter text-[11px]
