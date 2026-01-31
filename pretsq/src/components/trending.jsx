@@ -25,7 +25,7 @@ export default function Trending(props) {
                     className="ml-3 mt-2 block mx-auto md:text-[18px] font-[600] text-[14px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-3 py-2 rounded active:scale-95">Top Rated</button>
             </div>
             <div className="grid grid-flow-col select-none auto-cols-[140px] md:auto-cols-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 pt-2">
-                {data?.slice(0, 19).map((movie) => (
+                {data?.slice(0, 19).map((movie) => 
                     <div className=""
                         key={movie.id}>
                         <div 
