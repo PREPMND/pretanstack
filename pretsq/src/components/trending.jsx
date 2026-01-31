@@ -8,7 +8,7 @@ export default function Trending(props) {
     const [selected, setselected] = useState(null);
     const { selectedglobal , setselectedglobal }=props;
     const navigate=useNavigate();
-    console.log();
+    console.log(ChangeTitle());
     
     const { data, isPending, error } = useQuery({
 
