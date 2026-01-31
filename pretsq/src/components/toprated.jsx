@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function TopRated() {
+    const [selected]
     const navigate = useNavigate();
     const [num, setnum] = useState(1);
     const { data, isLoading, error } = useQuery({
