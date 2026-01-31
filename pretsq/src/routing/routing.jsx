@@ -18,7 +18,7 @@ export default function NavRoutes(props){
                 <Route path="/favourites" element={<Favourites />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/toprated" element={<TOPrated/>}/>
-                <Route path="/toprated" element={<TOPrated/>}/>
+                <Route path="/trending" element={<TOPrated/>}/>
                 <Route path="/" element={
                 <>
                 <div className='thebody'>
