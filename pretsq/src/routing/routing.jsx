@@ -7,7 +7,8 @@ import About from '../pages/About.jsx'
 import Popular from '../components/popular.jsx'
 import TopRated from '../components/toprated.jsx'
 import Trending from '../components/trending.jsx'
-export default function NavRoutes(){
+export default function NavRoutes(props){
+    
     return(
         <>
         
