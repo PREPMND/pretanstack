@@ -34,7 +34,7 @@ export default function Trending(props) {
                             className={`w-full relative bg-neutral-900 aspect-[2/3] overflow-hidden group `}
                         >
                             <img
-                                className="hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full w-full"
+                                className="group-hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full w-full"
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                 alt={movie.title}
                             />
