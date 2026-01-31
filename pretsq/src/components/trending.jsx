@@ -28,7 +28,33 @@ export default function Trending(props) {
                 {data?.slice(0, 19).map((movie) => (
                     <div className=""
                         key={movie.id}>
-                        
+                        <div
+  onMouseEnter={() => setmovieHovered(movie.id)}
+  onMouseLeave={() => setmovieHovered(null)}
+  className="w-full relative bg-neutral-900 aspect-[2/3] overflow-hidden"
+>
+  <img
+    className="hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full w-full"
+    src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+    alt={movie.title}
+  />
+
+  {/* Overlay (NOT clickable itself) */}
+  <div
+    className={`absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${
+      movieHovered === movie.id ? "opacity-100" : "opacity-0"
+    }`}
+  >
+    {/* Only this button is clickable */}
+    <button
+      onClick={() => setselected(movie)}
+      className="bg-black/70 hover:bg-black px-4 py-2 rounded text-white text-sm flex items-center gap-2"
+    >
+      <span className="text-red-500">▶</span> Play
+    </button>
+  </div>
+</div>
+
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
                         <h3 className={`truncate mt-[6px] md:pb-1 font-Inter text-[11px]
