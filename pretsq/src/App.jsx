@@ -17,7 +17,8 @@ export default function App(){
         </>
     )
 }
-export function ChangeTitle(movie){
+export function ChangeTitle(moviename){
     
+
 
 }
