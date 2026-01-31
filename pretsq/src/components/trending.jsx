@@ -30,7 +30,7 @@ export default function Trending(props) {
                         key={movie.id}>
                         <div className="w-full z-30 bg-neutral-900 aspect-[2/3] place-items-center">
                             <img 
-                            onMouseEnter={()=>setmovieHovered(true)}
+                            onMouseEnter={()=>setmovieHovered(movie.id)}
                             onMouseLeave={()=>setmovieHovered(false)}
                             onClick={() => setselected(movie)}
                             className='hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full '
