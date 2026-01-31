@@ -1,4 +1,4 @@
-export default function TOP(){
+export default function TOPrated(){
     return(
         
         <>
