@@ -21,7 +21,7 @@ export default function NavRoutes(props){
                 <>
                 <div className='thebody'>
                     <Popular/>
-                    <TopRated/>
+                    <TopRated movieHovered={movieHovered} setmovieHovered={setmovieHovered}/>
                     <Trending movieHovered={movieHovered} setmovieHovered={setmovieHovered}/>
                 </div>
                 
