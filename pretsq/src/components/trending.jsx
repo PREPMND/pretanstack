@@ -28,17 +28,7 @@ export default function Trending(props) {
                 {data?.slice(0, 19).map((movie) => (
                     <div className=""
                         key={movie.id}>
-                        <div 
-                        onMouseEnter={()=>setmovieHovered(movie.id)}    
-                        onMouseLeave={()=>setmovieHovered(null)}
-                        className="w-full relative bg-neutral-900  aspect-[2/3] overflow-hidden">
-                            <img                
-                            className='hover:scale-105 z-10 transition-transform duration-200 ease-in-out object-cover rounded h-full '
-                                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                                alt={movie.title}
-                            />
-                            <button onClick={() => setselected(movie)}
-                            className={`absolute inset-0 w-fit  z-15 ${movieHovered== movie.id?"flex":"hidden"} items-center justify-center text-white text-[17px]`}><span className="text-red-500 pr-[3px]">▶  </span> Play</button>
+                        
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
                         <h3 className={`truncate mt-[6px] md:pb-1 font-Inter text-[11px]
