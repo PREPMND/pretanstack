@@ -10,7 +10,7 @@ export default function App(){
         <QueryClientProvider client={new QueryClient()}>
         <BrowserRouter>
            <Navbar/>
-           <NavRoutes/>
+           <NavRoutes movieHovered/>
            
         </BrowserRouter>
         </QueryClientProvider>
