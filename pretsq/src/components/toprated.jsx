@@ -43,6 +43,26 @@ export default function TopRated() {
 
                 ))}
             </div>
+            {selected && (
+                <div onClick={() => setselected(null)}
+                    className="fixed inset-0 bg-black/80 flex items-center justify-center">
+                    <div onClick={(e) => e.stopPropagation()}
+                        className="relative w-[90%] ">
+                        <img
+                            src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
+                            className="rounded-lg"
+                        />
+                        <button
+                            className="absolute inset-0 flex items-center justify-center text-white text-3xl"
+                            onClick={() =>
+                                window.open(`https://www.themoviedb.org/movie/${selected.id}`, "")
+                            }
+                        >
+                            ▶
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
