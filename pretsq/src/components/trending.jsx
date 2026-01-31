@@ -41,7 +41,7 @@ export default function Trending(props) {
                             
                             className={`relative z-20 ${setmovieHovered?"flex":"hidden"} items-center justify-center text-white`}>Play</div>
                         </div>
-                        <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
+                        <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{`${setmovieHovered?"yes":"no"}`}</h3>
                         <h3 className={`truncate mt-[6px] md:pb-1 font-Inter text-[11px]
                         md:text-[13px] font- 
                         text-white`}>{movie.vote_average}</h3>
