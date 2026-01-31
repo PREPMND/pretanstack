@@ -33,7 +33,7 @@ export default function Trending() {
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                 alt={movie.title}
                             />
-                            <div className="relative z-40 hover:flex hidden">Play</div>
+                            <div className="relative z-40 hover:flex items-center justify-center hidden">Play</div>
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
                         <h3 className={`truncate mt-[6px] md:pb-1 font-Inter text-[11px]
