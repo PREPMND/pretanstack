@@ -29,6 +29,9 @@ export default function Trending(props) {
                     <div className=""
                         key={movie.id}>
                         <div 
+                        onMouseEnter={()=>setmovieHovered(movie.id)}
+                            
+                        onMouseLeave={()=>setmovieHovered(null)}
                         className="w-full relative bg-neutral-900 aspect-[2/3] overflow-hidden">
                             <img 
                             
