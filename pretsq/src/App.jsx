@@ -19,6 +19,7 @@ export default function App(){
 }
 export function ChangeTitle(moviename){
     return moviename
+    
 
 
 }
