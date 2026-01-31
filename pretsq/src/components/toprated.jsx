@@ -66,7 +66,8 @@ export default function TopRated(props) {
             {selected && (
                 <div onClick={() => {
                     setselectedglobal(null)
-                    setselected(null)}}
+                    setselected(null)
+                }}
                     className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
                     <div onClick={(e) => e.stopPropagation()}
                         className="relative w-[90%] ">
