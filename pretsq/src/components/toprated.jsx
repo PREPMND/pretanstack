@@ -49,7 +49,8 @@ export default function TopRated(props) {
                             >
                                 <button
                                     onClick={() => {
-                                        
+                                        setselected(movie)
+                                         
                                     }}
                                     className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2 ${selected?"pointer-events-none":""}`}
                                 >
