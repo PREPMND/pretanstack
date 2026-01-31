@@ -29,14 +29,16 @@ export default function Trending(props) {
                     <div className=""
                         key={movie.id}>
                         <div className="w-full z-30 bg-neutral-900 aspect-[2/3] place-items-center">
-                            <img onClick={() => setselected(movie)}
+                            <img 
+                            
+                            
+                            onClick={() => setselected(movie)}
                             className='hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full '
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                 alt={movie.title}
                             />
                             <div 
-                            onMouseEnter={()=>setmovieHovered(true)}
-                            onMouseLeave={()=>setmovieHovered(false)}
+                            
                             className={`relative z-20 ${setmovieHovered?"flex":"hidden"} items-center justify-center text-white`}>Play</div>
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
