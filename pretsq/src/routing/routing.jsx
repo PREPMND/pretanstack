@@ -10,8 +10,7 @@ import Trending from '../components/trending.jsx'
 import TOPrated from '../pages/toprated.jsx'
 import TrendingMovie from '../pages/trendingmovie.jsx'
 export default function NavRoutes(props){
-    const {  , setmovieHovered }=props;
-    return(
+    const { n(
         <>
         
             <Routes>
@@ -24,8 +23,8 @@ export default function NavRoutes(props){
                 <>
                 <div className='thebody'>
                     <Popular />
-                    <TopRated ={} setmovieHovered={setmovieHovered}/>
-                    <Trending ={} setmovieHovered={setmovieHovered}/>
+                    <TopRated />
+                    <Trending />
                 </div>
                 
                 
