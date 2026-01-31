@@ -61,7 +61,6 @@ export default function Trending(props) {
                         md:text-[13px] 
                         text-white`}>{movie.vote_average}</h3>
                     </div>
-
                 ))}
             </div>
             {selected && (
