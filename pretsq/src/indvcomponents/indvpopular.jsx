@@ -11,7 +11,7 @@ export default function IndvPopular(props){
         staleTime:24*60*60*1000,
 
     })
-    console.log({selected.id});
+    console.log({selected.id}`);
     
     return(
         <>
