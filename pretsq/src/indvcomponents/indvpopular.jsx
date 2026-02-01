@@ -15,6 +15,7 @@ export default function IndvPopular(props){
         <>
         <div className="text-black">
             {data?.map(movie)=>
+            <div></div>
 
             }
         </div>
