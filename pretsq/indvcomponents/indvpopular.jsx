@@ -12,7 +12,7 @@ export default function IndvPopular(props){
     return(
         <>
         <div>
-            {selected.id}
+            {selected.data.id}
         </div>
        <div className="text-black">HEllo</div>
 
