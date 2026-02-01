@@ -13,6 +13,7 @@ function Popular(props) {
     queryKey: ["popular-movies"],
     queryFn: () => fetchPopularMovies(),
     refetchOnMount:true,
+    refe
   });
 
 
