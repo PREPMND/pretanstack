@@ -7,7 +7,7 @@ function Popular(props) {
   const navigate = useNavigate();
   const [movieHovered , setmovieHovered]=useState(null);
   const [selected, setselected] = useState(null)
-  const {selected , setselected }
+  const {selected , setselected }=props;
   const [num, setnum] = useState(1);
   const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
