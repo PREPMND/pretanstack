@@ -78,7 +78,7 @@ function Popular(props) {
             
             <button
               className="absolute inset-0 flex items-center justify-center text-white text-3xl"
-              onClick={()=>window.open(`/popular/${ChangeTitle(selected.title)}`)}
+              onClick={()=>}
             >
               ▶
             </button>
