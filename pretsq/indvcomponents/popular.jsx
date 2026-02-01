@@ -4,7 +4,7 @@ export default function (){
     const { data , isLoading , error}=useQuery({
         queryKey:["IndPopular"],
         queryFn:()=>fetchPopularMovies(),
-        refetchOnWindowFocus:T
+        refetchOnWindowFocus:true
 
     })
     return(
