@@ -14,8 +14,8 @@ export default function IndvPopular(props){
     return(
         <>
         <div className="text-black">
-            {data?.map(){
-                
+            {data?.map(movie)=>
+
             }}
         </div>
        <div >HEllo</div>
