@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { ChangeTitle } from "../App.jsx";
 export default function Trending(props) {
     const [movieHovered , setmovieHovered]=useState(null);
-    const [selectedtrending, setselected] = useState(null);
+    const [selectedtrending, setselectedtrending] = useState(null);
     const { selectedglobal , setselectedglobal }=props;
     const navigate=useNavigate();
     console.log(ChangeTitle("HEllo hello"));
@@ -52,7 +52,7 @@ export default function Trending(props) {
                                 <button
                                     onClick={() => {
                                         setselectedglobal(movie)
-                                        setselected(movie)
+                                        setselectedtrending(movie)
                                         console.log("clickedtrend")
                                     }}
                                     className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2`}
@@ -69,7 +69,7 @@ export default function Trending(props) {
             {selectedtrending && (
                 <div onClick={() => {
                     setselectedglobal(null)
-                    setselected(null)
+                    setselectedtrending(null)
                     console.log("clicked")
                 }}
                     className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center">
