@@ -4,13 +4,7 @@ import { useParams } from "react-router-dom";
 export default function IndvPopular(props){
     const { id }=useParams();
     const { selected , setselected}=props;
-    const { data, isLoading , error}=useQuery({
-        queryKey:["IndPopular" ],
-        queryFn:()=>fetchPopularMovies(),
-        refetchOnWindowFocus:true,
-        staleTime:24*60*60*1000,
 
-    }) 
     return(
         <>
         <div>{selected.title}</div>
