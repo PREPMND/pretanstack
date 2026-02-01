@@ -10,7 +10,7 @@ import Trending from '../components/trending.jsx'
 import TOPrated from '../pages/toprated.jsx'
 import TrendingMovie from '../pages/trendingmovie.jsx'
 import { useState } from 'react'
-import IndvPopular from '../../indvcomponents/popular.jsx'
+import IndvPopular from '../../indvcomponents/indvpopular.jsx'
 export default function NavRoutes(props){
     const [selectedglobal , setselectedglobal]=useState(null);
     return(
