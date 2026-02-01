@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { ChangeTitle } from "../App.jsx";
 export default function Trending(props) {
     const [movieHovered , setmovieHovered]=useState(null);
-    const [selected, setselected] = useState(null);
+    const [selectedtrending, setselected] = useState(null);
     const { selectedglobal , setselectedglobal }=props;
     const navigate=useNavigate();
     console.log(ChangeTitle("HEllo hello"));
@@ -32,7 +32,7 @@ export default function Trending(props) {
             </div>
             <div className={`grid grid-flow-col select-none auto-cols-[140px] md:auto-cols-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 pt-2 
             ${selectedglobal?"pointer-events-none":""}
-            ${selected?"pointer-events-none":""}`}>
+            ${selectedtrending?"pointer-events-none":""}`}>
                 {data?.slice(0, 19).map((movie) => 
                     <div className=""
                         key={movie.id}>
@@ -66,7 +66,7 @@ export default function Trending(props) {
                     </div>
                 )}
             </div>
-            {selected && (
+            {selectedtrending && (
                 <div onClick={() => {
                     setselectedglobal(null)
                     setselected(null)
@@ -76,13 +76,13 @@ export default function Trending(props) {
                     <div onClick={(e) => e.stopPropagation()}
                         className="relative w-[90%] ">
                         <img
-                            src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
+                            src={`https://image.tmdb.org/t/p/original${selectedtrending.backdrop_path}`}
                             className="rounded-lg"
                         />
                         <button
                             className="absolute inset-0 flex items-center justify-center text-white text-3xl"
                             onClick={() =>
-                                window.open(`https://dorawatch.one/${ChangeTitle(selected.title)}/`, "")
+                                window.open(`https://dorawatch.one/${ChangeTitle(selectedtrending.title)}/`, "")
                             }
                         >
                             ▶
