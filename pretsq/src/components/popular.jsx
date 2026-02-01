@@ -76,7 +76,7 @@ function Popular(props) {
               className="rounded-lg"
             />
             <Link
-            to={`/popular/:${ChangeTitle(selected.title)}`}
+            to={`/popular/${ChangeTitle(selected.title)}`}
             target="_blank"
             >
             <button
