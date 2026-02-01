@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
 import { fetchPopularMovies } from "../api/popularapi"
 export default function IndvPopular(props){
+    const { id }=use
     const { selected , setselected}=props;
     const { data , isLoading , error}=useQuery({
         queryKey:["IndPopular"],
