@@ -76,6 +76,7 @@ function Popular(props) {
               className="rounded-lg"
             />
             <Link
+            to=
             >
             <button
               className="absolute inset-0 flex items-center justify-center text-white text-3xl"
