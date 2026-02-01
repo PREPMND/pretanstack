@@ -1,5 +1,5 @@
 export default function (){
-    const { data , }
+    const { data , isLoading , error}
     return(
         <>
         <div>
