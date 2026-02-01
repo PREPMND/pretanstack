@@ -1,1 +1,3 @@
-export const Context=create
+import { createContext } from "react";
+
+export const Context=createContext
