@@ -1,4 +1,4 @@
-
+import { useQuery }
 export default function (){
     const { data , isLoading , error}=useQuery({
 
