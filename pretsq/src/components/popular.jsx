@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchPopularMovies } from "../api/popularapi.jsx";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { ChangeTitle } from "../App.jsx";
 function Popular(props) {
   const navigate = useNavigate();
@@ -73,9 +73,10 @@ function Popular(props) {
               src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
               className="rounded-lg"
             />
+            
             <button
               className="absolute inset-0 flex items-center justify-center text-white text-3xl"
-              onClick={() => {navigate(`/popular/:${ChangeTitle(selected.title)}`)}
+              onClick={() => {navigate(`/popular/${ChangeTitle(selected.title)}`)}
                 
               }
             >
