@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChangeTitle } from "../App.jsx";
 export default function TopRated(props) {
-    const [selectedtoprated, setselected]=useState(null);
+    const [selectedtoprated, setselectedtoprated]=useState(null);
     const { selectedglobal , setselectedglobal}=props;
     const [movieHovered , setmovieHovered]=useState(null);
     const navigate = useNavigate();
@@ -50,7 +50,7 @@ export default function TopRated(props) {
                             >
                                 <button
                                     onClick={() => {
-                                        setselected(movie)
+                                        setselectedtoprated(movie)
                                         setselectedglobal(movie)
                                     }}
                                     className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2 ${selectedtoprated?"pointer-events-none":""}`}
@@ -67,7 +67,7 @@ export default function TopRated(props) {
             {selectedtoprated && (
                 <div onClick={() => {
                     setselectedglobal(null)
-                    setselected(null)
+                    setselectedtoprated(null)
                 }}
                     className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center ">
                     <div onClick={(e) => e.stopPropagation()}
