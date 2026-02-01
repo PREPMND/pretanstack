@@ -9,6 +9,7 @@ export default function IndvPopular(props){
         staleTime:24*60*60*1000,
 
     })
+    log
     return(
         <>
         <div className="text-black">
