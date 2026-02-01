@@ -81,9 +81,9 @@ export default function Trending(props) {
                         />
                         <button
                             className="absolute inset-0 flex items-center justify-center text-white text-3xl"
-                            onClick={() =>
-                                window.open(`https://dorawatch.one/${ChangeTitle(selectedtrending.title)}/`, "")
-                            }
+                            onClick={(e)=>{
+                e.stopPropagation();
+                navigate(`/popular/${ChangeTitle(selected.title)}`)}}
                         >
                             ▶
                         </button>
