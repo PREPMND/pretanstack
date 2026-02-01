@@ -3,8 +3,8 @@ import { fetchPopularMovies } from "../src/api/popularapi"
 export default function (){
     const { data , isLoading , error}=useQuery({
         queryKey:["IndPopular"],
-        queryFn:()=>fetchPopularMovies()
-        
+        queryFn:()=>fetchPopularMovies(),
+        refetchOnWindowFocus:T
 
     })
     return(
