@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 export default function IndvPopular(props){
     const { id }=useParams();
     const { selected , setselected}=props;
-    const { data: movie , isLoading , error}=useQuery({
+    const { data, isLoading , error}=useQuery({
         queryKey:["IndPopular" , id],
         queryFn:()=>fetchPopularMovies(id),
         enabled: !!id,
