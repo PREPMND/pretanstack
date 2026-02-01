@@ -80,7 +80,7 @@ export default function TopRated(props) {
                             className="absolute inset-0 flex items-center justify-center text-white text-3xl"
                             onClick={(e) => {
                                 e.stopPropagation();
-                                navigate(`/popular/${ChangeTitle(selected.title)}`)
+                                navigate(`/toprated/${ChangeTitle(selected.title)}`)
                             }}
                         >
                             ▶
