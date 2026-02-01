@@ -18,7 +18,7 @@ export default function NavRoutes(props){
     const { id }=useParams();
     return(
         <>
-        <Context.Provider value={{}}
+        <Context.Provider value={{selected , setselected}};
             <Routes>
                 <Route path="/movie" element={<Movie />} />
                 <Route path="/favourites" element={<Favourites />} />
