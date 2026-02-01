@@ -17,7 +17,7 @@ export default function NavRoutes(props){
     const { id }=useParams();
     return(
         <>
-        <Movu
+        <Cont
             <Routes>
                 <Route path="/movie" element={<Movie />} />
                 <Route path="/favourites" element={<Favourites />} />
