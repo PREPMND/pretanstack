@@ -13,7 +13,8 @@ export default function Trending(props) {
     const { data, isPending, error } = useQuery({
 
         queryKey: ["trending"],
-        queryFn: () => fetchTrending()
+        queryFn: () => fetchTrending(),
+        refetchOnMount:true,
     })
     if (isPending) return (
         <>
