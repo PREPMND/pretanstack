@@ -67,7 +67,7 @@ function Popular(props) {
         </div>
       </div>
       {selected && (
-        <div
+        <div  onClick={() => setselected(null)}
           className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center">
           <div onClick={(e) => e.stopPropagation()}
             className="relative w-[90%] ">
