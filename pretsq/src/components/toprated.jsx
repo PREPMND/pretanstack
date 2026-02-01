@@ -12,6 +12,7 @@ export default function TopRated(props) {
     const { data, isLoading, error } = useQuery({
         queryKey: ["top-rated"],
         queryFn: () => fetchTopRated(),
+        refetchOnMount:true,
     });
     
     if (isLoading) return (<>
