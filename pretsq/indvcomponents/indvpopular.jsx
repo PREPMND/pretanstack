@@ -12,7 +12,7 @@ export default function IndvPopular(props){
     return(
         <>
         <div>
-            
+            for()
         </div>
        <div className="text-black">HEllo</div>
 
