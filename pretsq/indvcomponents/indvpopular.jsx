@@ -11,10 +11,10 @@ export default function IndvPopular(props){
     })
     return(
         <>
-        <div>
+        <div className="text-black">
             {selected}
         </div>
-       <div className="text-black">HEllo</div>
+       <div >HEllo</div>
 
         </>
     )
