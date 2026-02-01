@@ -5,7 +5,7 @@ export default function IndvPopular(props){
     const { id }=useParams();
     const { selected , setselected}=props;
     const { data : movie , isLoading , error}=useQuery({
-        queryKey:["IndPopular"],
+        queryKey:["IndPopular" , id],
         queryFn:()=>fetchPopularMovies(),
         refetchOnWindowFocus:true,
         staleTime:24*60*60*1000,
