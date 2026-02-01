@@ -73,7 +73,7 @@ function Popular(props) {
               src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
               className="rounded-lg"
             />
-            <NavLink to={(`/popular/${ChangeTitle(selected.title)}`)}
+            
             <button
               className="absolute inset-0 flex items-center justify-center text-white text-3xl"
               onClick={() => {navigate(`/popular/${ChangeTitle(selected.title)}`)}
