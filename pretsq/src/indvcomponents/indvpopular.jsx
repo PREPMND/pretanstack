@@ -15,7 +15,7 @@ export default function IndvPopular(props){
     
     return(
         <>
-        <div>{selected.title}</div>
+        <div>{selected?.title}</div>
         <div className="text-black">
             {data?.map((movie)=>
             <div>{movie.title}</div>
