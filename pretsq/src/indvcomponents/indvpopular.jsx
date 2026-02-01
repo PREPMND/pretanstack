@@ -10,9 +10,7 @@ export default function IndvPopular(props){
         refetchOnWindowFocus:true,
         staleTime:24*60*60*1000,
 
-    })
-    console.log(selected.title);
-    
+    }) 
     return(
         <>
         <div>{selected.title}</div>
