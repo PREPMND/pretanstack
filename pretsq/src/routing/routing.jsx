@@ -11,11 +11,10 @@ import TOPrated from '../pages/toprated.jsx'
 import TrendingMovie from '../pages/trendingmovie.jsx'
 import { useState } from 'react'
 import IndvPopular from '../indvcomponents/indvpopular.jsx'
-import { Context } from './context.jsx'
 export default function NavRoutes(props){
     const [selected, setselected] = useState(null)
     const [selectedglobal , setselectedglobal]=useState(null);
-    const { id }=useParams();
+
     return(
         <>
         
