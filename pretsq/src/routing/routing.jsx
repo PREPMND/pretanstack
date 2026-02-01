@@ -37,7 +37,7 @@ export default function NavRoutes(props){
                 
                 </>}/>
             </Routes>
-    
+        </Context.Provider>
         </>
     )
 }
