@@ -14,6 +14,7 @@ import IndvPopular from '../../indvcomponents/indvpopular.jsx'
 export default function NavRoutes(props){
     const [selected, setselected] = useState(null)
     const [selectedglobal , setselectedglobal]=useState(null);
+    const 
     return(
         <>
         
