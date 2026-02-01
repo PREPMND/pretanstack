@@ -5,7 +5,7 @@ export default function (){
         queryKey:["IndPopular"],
         queryFn:()=>fetchPopularMovies(),
         refetchOnWindowFocus:true,
-        
+        staleTime:24
 
     })
     return(
