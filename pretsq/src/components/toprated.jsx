@@ -4,17 +4,17 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChangeTitle } from "../App.jsx";
 export default function TopRated(props) {
-    const [selectedtoprated, setselectedtoprated]=useState(null);
-    const { selectedglobal , setselectedglobal}=props;
-    const [movieHovered , setmovieHovered]=useState(null);
+    const [selectedtoprated, setselectedtoprated] = useState(null);
+    const { selectedglobal, setselectedglobal } = props;
+    const [movieHovered, setmovieHovered] = useState(null);
     const navigate = useNavigate();
     const [num, setnum] = useState(1);
     const { data, isLoading, error } = useQuery({
         queryKey: ["top-rated"],
         queryFn: () => fetchTopRated(),
-        refetchOnMount:true,
+        refetchOnMount: true,
     });
-    
+
     if (isLoading) return (<>
 
         <p className='h-screen flex justify-center items-center '>Loading...</p></>)
@@ -26,16 +26,16 @@ export default function TopRated(props) {
     return (
         <div className='bg-neutral-900 mt-3 '>
             <div className='bg-neutral-900 flex justify-center flex-col w-full '>
-                <button onClick={()=>navigate("/toprated")}
+                <button onClick={() => navigate("/toprated")}
                     className="ml-3 mt-2 block mx-auto md:text-[18px] font-[600] text-[14px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-[10px] py-[6px] rounded active:scale-95">Top Rated</button>
             </div>
             <div className={`grid grid-flow-col select-none auto-cols-[140px] md:auto-cols-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 pt-2 
-            ${selectedglobal?"pointer-events-none":""}
-            ${selectedtoprated?"pointer-events-none":""}`}>
-                {data?.slice(0, 19).map((movie) => 
+            ${selectedglobal ? "pointer-events-none" : ""}
+            ${selectedtoprated ? "pointer-events-none" : ""}`}>
+                {data?.slice(0, 19).map((movie) =>
                     <div className=""
                         key={movie.id}>
-                        <div 
+                        <div
                             onMouseEnter={() => setmovieHovered(movie.id)}
                             onMouseLeave={() => setmovieHovered(null)}
                             className={`w-full relative bg-neutral-900 aspect-[2/3] overflow-hidden group `}
@@ -53,7 +53,7 @@ export default function TopRated(props) {
                                         setselectedtoprated(movie)
                                         setselectedglobal(movie)
                                     }}
-                                    className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2 ${selectedtoprated?"pointer-events-none":""}`}
+                                    className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2 ${selectedtoprated ? "pointer-events-none" : ""}`}
                                 >
                                     <span className="text-red-500">▶</span> Play
                                 </button>
@@ -78,9 +78,10 @@ export default function TopRated(props) {
                         />
                         <button
                             className="absolute inset-0 flex items-center justify-center text-white text-3xl"
-                            onClick={() =>
-                                window.open(`https://dorawatch.one/${ChangeTitle(selectedtoprated.title)}`, "")
-                            }
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                navigate(`/popular/${ChangeTitle(selected.title)}`)
+                            }}
                         >
                             ▶
                         </button>
