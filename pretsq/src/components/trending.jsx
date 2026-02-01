@@ -4,17 +4,17 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChangeTitle } from "../App.jsx";
 export default function Trending(props) {
-    const [movieHovered , setmovieHovered]=useState(null);
+    const [movieHovered, setmovieHovered] = useState(null);
     const [selectedtrending, setselectedtrending] = useState(null);
-    const { selectedglobal , setselectedglobal }=props;
-    const navigate=useNavigate();
+    const { selectedglobal, setselectedglobal } = props;
+    const navigate = useNavigate();
     console.log(ChangeTitle("HEllo hello"));
-    
+
     const { data, isPending, error } = useQuery({
 
         queryKey: ["trending"],
         queryFn: () => fetchTrending(),
-        refetchOnMount:true,
+        refetchOnMount: true,
     })
     if (isPending) return (
         <>
@@ -31,12 +31,12 @@ export default function Trending(props) {
                     className="ml-3 mt-2 block mx-auto md:text-[18px] font-[600] text-[14px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-[10px] py-[6px] rounded active:scale-95">Trending</button>
             </div>
             <div className={`grid grid-flow-col select-none auto-cols-[140px] md:auto-cols-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 pt-2 
-            ${selectedglobal?"pointer-events-none":""}
-            ${selectedtrending?"pointer-events-none":""}`}>
-                {data?.slice(0, 19).map((movie) => 
+            ${selectedglobal ? "pointer-events-none" : ""}
+            ${selectedtrending ? "pointer-events-none" : ""}`}>
+                {data?.slice(0, 19).map((movie) =>
                     <div className=""
                         key={movie.id}>
-                        <div 
+                        <div
                             onMouseEnter={() => setmovieHovered(movie.id)}
                             onMouseLeave={() => setmovieHovered(null)}
                             className={`w-full relative bg-neutral-900 aspect-[2/3] overflow-hidden group `}
@@ -81,9 +81,10 @@ export default function Trending(props) {
                         />
                         <button
                             className="absolute inset-0 flex items-center justify-center text-white text-3xl"
-                            onClick={(e)=>{
-                e.stopPropagation();
-                navigate(`/trending/${ChangeTitle(selected.title)}`)}}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                navigate(`/trending/${ChangeTitle(selected.title)}`)
+                            }}
                         >
                             ▶
                         </button>
