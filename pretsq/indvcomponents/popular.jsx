@@ -1,5 +1,5 @@
 export default function (){
-    const { data , isLoading , error}=useQuer
+    const { data , isLoading , error}=useQuery
     return(
         <>
         <div>
