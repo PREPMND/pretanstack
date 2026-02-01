@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query"
 import { fetchPopularMovies } from "../src/api/popularapi"
 export default function IndvPopular(props){
     const { selected , setselected}=props;
-    const { data: movie  , isLoading , error}=useQuery({
+    const { data , isLoading , error}=useQuery({
         queryKey:["IndPopular"],
         queryFn:()=>fetchPopularMovies(),
         refetchOnWindowFocus:true,
@@ -12,7 +12,7 @@ export default function IndvPopular(props){
     return(
         <>
         <div>
-            ${data.title}
+            {selected}
         </div>
        <div className="text-black">HEllo</div>
 
