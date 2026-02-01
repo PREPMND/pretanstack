@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChangeTitle } from "../App.jsx";
 export default function TopRated(props) {
-    const [selected, setselected]=useState(null);
+    const [selectedtoprated, setselected]=useState(null);
     const { selectedglobal , setselectedglobal}=props;
     const [movieHovered , setmovieHovered]=useState(null);
     const navigate = useNavigate();
@@ -31,7 +31,7 @@ export default function TopRated(props) {
             </div>
             <div className={`grid grid-flow-col select-none auto-cols-[140px] md:auto-cols-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 pt-2 
             ${selectedglobal?"pointer-events-none":""}
-            ${selected?"pointer-events-none":""}`}>
+            ${selectedtoprated?"pointer-events-none":""}`}>
                 {data?.slice(0, 19).map((movie) => 
                     <div className=""
                         key={movie.id}>
@@ -53,7 +53,7 @@ export default function TopRated(props) {
                                         setselected(movie)
                                         setselectedglobal(movie)
                                     }}
-                                    className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2 ${selected?"pointer-events-none":""}`}
+                                    className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2 ${selectedtoprated?"pointer-events-none":""}`}
                                 >
                                     <span className="text-red-500">▶</span> Play
                                 </button>
@@ -64,7 +64,7 @@ export default function TopRated(props) {
                     </div>
                 )}
             </div>
-            {selected && (
+            {selectedtoprated && (
                 <div onClick={() => {
                     setselectedglobal(null)
                     setselected(null)
@@ -73,13 +73,13 @@ export default function TopRated(props) {
                     <div onClick={(e) => e.stopPropagation()}
                         className="relative w-[90%] ">
                         <img
-                            src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
+                            src={`https://image.tmdb.org/t/p/original${selectedtoprated.backdrop_path}`}
                             className="rounded-lg"
                         />
                         <button
                             className="absolute inset-0 flex items-center justify-center text-white text-3xl"
                             onClick={() =>
-                                window.open(`https://dorawatch.one/${ChangeTitle(selected.title)}`, "")
+                                window.open(`https://dorawatch.one/${ChangeTitle(selectedtoprated.title)}`, "")
                             }
                         >
                             ▶
