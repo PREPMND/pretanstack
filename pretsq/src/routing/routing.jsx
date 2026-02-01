@@ -10,6 +10,7 @@ import Trending from '../components/trending.jsx'
 import TOPrated from '../pages/toprated.jsx'
 import TrendingMovie from '../pages/trendingmovie.jsx'
 import { useState } from 'react'
+import IndvPopular from '../../indvcomponents/popular.jsx'
 export default function NavRoutes(props){
     const [selectedglobal , setselectedglobal]=useState(null);
     return(
@@ -21,7 +22,7 @@ export default function NavRoutes(props){
                 <Route path="/about" element={<About />} />
                 <Route path="/toprated" element={<TOPrated/>}/>
                 <Route path="/trending" element={<TrendingMovie/>}/>
-                <Route path="/popular/:id" element={<>}
+                <Route path="/popular/:id" element={<IndvPopular}
                 <Route path="/" element={
                 <>
                 <div className='thebody'>
