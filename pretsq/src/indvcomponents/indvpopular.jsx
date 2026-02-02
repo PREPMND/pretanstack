@@ -21,7 +21,8 @@ export default function IndvPopular(props){
               
             </div>
             <div>
-                <div></div>
+                <div
+                ></div>
             </div>
         </div>
        <div >HEllo</div>
