@@ -22,7 +22,7 @@ export default function IndvPopular(props){
               
             </div>
             <div>
-                <div className="text-center font-Inter text-elas"
+                <div className="text-center font-Inter elastic"
                 onClick={()=>{
                     window.open(`https://dorawatch.one/${ChangeTitle(selected.title)}`)
                 }}
