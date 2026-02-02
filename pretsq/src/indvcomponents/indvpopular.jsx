@@ -16,7 +16,7 @@ export default function IndvPopular(props){
             <div>
                 <img className="rounded-lg"
                 src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
-                alt={selected.title}
+                alt={selected.title}/>
               
             </div>
         </div>
