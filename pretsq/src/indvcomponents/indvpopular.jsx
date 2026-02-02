@@ -14,7 +14,7 @@ export default function IndvPopular(props){
                 
             </div>
             <div>
-                  className="group-hover:scale-105 transition-transform duration-200 ease-in-out object-cover rounded h-full w-full"
+                  
                 <img className="rounded-lg "
                 src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
                 alt={selected.title}/>
