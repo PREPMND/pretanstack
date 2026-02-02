@@ -9,7 +9,7 @@ export default function IndvPopular(props){
     return(
         <>
         
-        <div className="bg-neutral-900 flex flex-col pl-3">
+        <div className="bg-neutral-900 text-white flex flex-col pl-3">
             <div className="font-Inter text-2xl text-center font-light">
                 <div>{selected.title}</div>
                 
