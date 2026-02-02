@@ -25,7 +25,7 @@ export default function IndvPopular(props){
                 <div onClick={()=>{
                     window.open(`https://dorawatch.one/${ChangeTitle(selected.title)}`)
                 }}
-                >For </div>
+                >Movie Player - Dora</div>
             </div>
         </div>
        <div >HEllo</div>
