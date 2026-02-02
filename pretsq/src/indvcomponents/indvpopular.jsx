@@ -21,7 +21,7 @@ export default function IndvPopular(props){
               
             </div>
             <div>
-                <div onClick={()}
+                <div onClick={()=>{naivgate}}
                 ></div>
             </div>
         </div>
