@@ -13,7 +13,7 @@ export default function IndvPopular(props){
                 <div>{selected.title}</div>
                 
             </div>
-            <div className="aspect">
+            <div className="aspect-[2/3]">
                   
                 <img className="rounded-lg group-hover:scale-105 transition-transform duration-200 ease-in-out object-cover h-full w-full"
                 src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
