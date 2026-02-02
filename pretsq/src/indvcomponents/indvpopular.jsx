@@ -22,7 +22,7 @@ export default function IndvPopular(props){
             </div>
             <div>
                 <div onClick={()=>{
-                    wiindow
+                    window.open
                 }}
                 ></div>
             </div>
