@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
 import { fetchPopularMovies } from "../api/popularapi"
 import { useParams } from "react-router-dom";
+import { ChangeTitle } from "../App";
 export default function IndvPopular(props){
     const { id }=useParams();
     const { selected , setselected}=props;
@@ -22,7 +23,7 @@ export default function IndvPopular(props){
             </div>
             <div>
                 <div onClick={()=>{
-                    window.open(`https://dorawatch.one/${sele}`)
+                    window.open(`https://dorawatch.one/${ChangeTitle()}`)
                 }}
                 ></div>
             </div>
