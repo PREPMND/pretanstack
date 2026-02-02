@@ -8,7 +8,7 @@ export default function IndvPopular(props){
     return(
         <>
         
-        <div className="text-black">
+        <div className="">
             <div>
                 <div>{selected.title}</div>
                 
