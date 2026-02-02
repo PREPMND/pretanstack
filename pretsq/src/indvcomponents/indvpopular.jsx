@@ -13,7 +13,9 @@ export default function IndvPopular(props){
                 <div>{selected.title}</div>
                 
             </div>
-            <
+            <div>
+                <img 
+            </div>
         </div>
        <div >HEllo</div>
 
