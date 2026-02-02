@@ -15,6 +15,7 @@ export default function IndvPopular(props){
             </div>
             <div>
                 <img 
+                src=``
             </div>
         </div>
        <div >HEllo</div>
