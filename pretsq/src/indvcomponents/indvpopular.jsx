@@ -11,8 +11,9 @@ export default function IndvPopular(props){
         <div className="text-black">
             <div>
                 <div>{selected.title}</div>
-                <
+                
             </div>
+            <
         </div>
        <div >HEllo</div>
 
