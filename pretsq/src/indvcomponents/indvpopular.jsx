@@ -9,7 +9,7 @@ export default function IndvPopular(props){
         <>
         
         <div className="">
-            <div>
+            <div className="">
                 <div>{selected.title}</div>
                 
             </div>
