@@ -14,9 +14,9 @@ export default function IndvPopular(props){
                 <div>{selected.title}</div>
                 
             </div>
-            <div className="aspect-[3/2] h-fit mt-1 flex justify-center overflow-hidden relative">
+            <div className=" h-fit mt-1 flex justify-center overflow-hidden relative">
                   
-                <img className="rounded-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out object-cover h-[50%] w-[50%] "
+                <img className="aspect-[3/2] rounded-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out object-cover h-[50%] w-[50%] "
                 src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
                 alt={selected.title}/>
               
