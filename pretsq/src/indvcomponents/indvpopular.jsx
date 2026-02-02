@@ -29,7 +29,7 @@ export default function IndvPopular(props){
                 >Movie Player - DoraWatch</div>
             </div>
         </div>
-       <div >HEllo</div>
+
 
         </>
     )
