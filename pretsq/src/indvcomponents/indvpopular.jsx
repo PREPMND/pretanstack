@@ -21,7 +21,9 @@ export default function IndvPopular(props){
               
             </div>
             <div>
-                <div onClick={()=>{navigate()}}
+                <div onClick={()=>{
+                    wiindow
+                }}
                 ></div>
             </div>
         </div>
