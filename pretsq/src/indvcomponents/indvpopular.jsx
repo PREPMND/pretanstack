@@ -9,7 +9,7 @@ export default function IndvPopular(props){
         <>
         
         <div className="">
-            <div className="">
+            <div className="font-Inter text-">
                 <div>{selected.title}</div>
                 
             </div>
