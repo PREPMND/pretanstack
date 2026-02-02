@@ -15,7 +15,7 @@ export default function IndvPopular(props){
             </div>
             <div>
                 <img 
-                src={`selected.backdrop_path`}
+                src=${`selected.backdrop_path`}
             </div>
         </div>
        <div >HEllo</div>
