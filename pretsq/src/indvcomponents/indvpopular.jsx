@@ -21,7 +21,7 @@ export default function IndvPopular(props){
               
             </div>
             <div>
-                <div
+                <div onClick={()}
                 ></div>
             </div>
         </div>
