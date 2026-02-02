@@ -20,7 +20,9 @@ export default function IndvPopular(props){
                 alt={selected.title}/>
               
             </div>
-            <div></div>
+            <div>
+                <div></div>
+            </div>
         </div>
        <div >HEllo</div>
 
