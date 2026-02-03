@@ -37,7 +37,7 @@ export default function IndvPopular(props){
             </div>
             <div 
             onClick={()=>{
-                window.open(https://cineby.gd/{selected.title})
+                window.open({https://cineby.gd/{selected.title})
             }}
             className="mt-3 flex justify-center items-center gap-3">
                 <Popcorn className="" strokeWidth={0.5} />
