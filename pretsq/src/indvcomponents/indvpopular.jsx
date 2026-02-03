@@ -54,4 +54,5 @@ export default function IndvPopular(props){
 
 
         </>
-    )
+    )
+}
