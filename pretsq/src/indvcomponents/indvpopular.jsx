@@ -46,6 +46,7 @@ export default function IndvPopular(props){
                 
                 >Movie Player - Cineby</div>
             </div>
+            </div>
         </div>
 
 
