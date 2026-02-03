@@ -43,7 +43,7 @@ export default function IndvPopular(props){
                 <Popcorn className="" strokeWidth={0.5} />
                 <div className="text-center font-Inter elastic"
                 
-                > Movie Player - DoraWatch</div>
+                > Movie Player - Cineby</div>
             </div>
         </div>
 
