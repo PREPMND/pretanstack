@@ -3,9 +3,9 @@ import { fetchPopularMovies } from "../api/popularapi"
 import { useParams } from "react-router-dom";
 import { ChangeTitle } from "../App";
 import { Popcorn } from "lucide-react"
-export default function IndvPopular(props){
+export default function IndvTrending(props){
     const { id }=useParams();
-    const { selected , setselected}=props;
+    const { selectedtrending , setselected}=props;
     console.log(selected)
     return(
         <>
