@@ -36,7 +36,7 @@ export default function IndvPopular(props){
                 
                 > Movie Player - DoraWatch</div>
             </div>
-            <div 
+            <div >
             onClick={()=>{
                 window.open(`https://cineby.gd/movie/${selected.title}`)
             }}
