@@ -21,7 +21,7 @@ export default function IndvPopular(props){
                 alt={selected.title}/>
               
             </div>
-            <div className="flex justify-"
+            <div className="flex justify-center "
             >{selected.overview}</div>
             <div className="mt-3">
                 <div className="text-center font-Inter elastic"
