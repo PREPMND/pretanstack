@@ -19,7 +19,7 @@ function Popular(props) {
   console.log({selected})
   if (isLoading) return (<>
 
-    <p className='h-screen flex justify-center items-center '>Loading...</p></>)
+    <p className='h-full  flex justify-center items-center  '>Loading...</p></>)
   if (error) {
     console.log(error);
 
