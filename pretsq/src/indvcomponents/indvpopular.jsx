@@ -5,7 +5,7 @@ import { ChangeTitle } from "../App";
 export default function IndvPopular(props){
     const { id }=useParams();
     const { selected , setselected}=props;
-
+    cons
     return(
         <>
         
