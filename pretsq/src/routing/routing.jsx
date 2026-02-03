@@ -32,7 +32,7 @@ export default function NavRoutes(props){
                 <>
                 <div className='thebody'>
                     <Popular selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selected={selected } setselected={setselected} />
-                    <TopRated selectedglobal={selectedglobal} setselectedglobal={setselectedglobal}/>
+                    <TopRated selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} sele />
                     <Trending selectedglobal={selectedglobal} setselectedglobal={setselectedglobal}/>
                 </div>
                 
