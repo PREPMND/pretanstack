@@ -26,7 +26,7 @@ export default function IndvPopular(props){
             >{selected.overview}</div>
             <div className="text-center text-3xl text-red-100 font-[700] mt-5 " >Players</div>
             <div
-            <div 
+            <div >
             onClick={()=>{
                 window.open(`https://dorawatch.one/${ChangeTitle(selected.title)}`)
             }}
