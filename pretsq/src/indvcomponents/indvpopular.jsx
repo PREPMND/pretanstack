@@ -24,11 +24,10 @@ export default function IndvPopular(props){
             </div>
             <div className="flex mt-5 m-auto justify-center max-w-[70%]"
             >{selected.overview}</div>
-            <div className="mt-3">
+            <div 
+            className="mt-3">
                 <div className="text-center font-Inter elastic"
-                onClick={()=>{
-                    window.open(`https://dorawatch.one/${ChangeTitle(selected.title)}`)
-                }}
+                
                 ><Popcorn /> Movie Player - DoraWatch</div>
             </div>
         </div>
