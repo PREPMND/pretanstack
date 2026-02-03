@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { ChangeTitle } from "../App.jsx";
 export default function Trending(props) {
     const [movieHovered, setmovieHovered] = useState(null);
-    const {selectedtrending, setselectedtrending} = useState(null);
+    const {selectedtrending, setselectedtrending} = props;
     const { selectedglobal, setselectedglobal } = props;
     const navigate = useNavigate();
     console.log(ChangeTitle("HEllo hello"));
