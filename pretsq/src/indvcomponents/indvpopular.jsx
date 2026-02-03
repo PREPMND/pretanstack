@@ -35,6 +35,16 @@ export default function IndvPopular(props){
                 
                 > Movie Player - DoraWatch</div>
             </div>
+            <div 
+            onClick={()=>{
+                window.open(`https://dorawatch.one/${ChangeTitle(selected.title)}`)
+            }}
+            className="mt-3 flex justify-center items-center gap-3">
+                <Popcorn className="" strokeWidth={0.5} />
+                <div className="text-center font-Inter elastic"
+                
+                > Movie Player - DoraWatch</div>
+            </div>
         </div>
 
 
