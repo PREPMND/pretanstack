@@ -24,7 +24,7 @@ export default function IndvPopular(props){
             </div>
             <div className="flex mt-5 m-auto justify-center max-w-[70%]"
             >{selected.overview}</div>
-            <div className="text-center text-3xl text-red-100 font-[700]" >Players</div>
+            <div className="text-center text-3xl text-red-100 font-[700] mt-5 " >Players</div>
             <div 
             onClick={()=>{
                 window.open(`https://dorawatch.one/${ChangeTitle(selected.title)}`)
