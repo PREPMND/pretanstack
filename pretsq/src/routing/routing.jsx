@@ -13,6 +13,7 @@ import { useState } from 'react'
 import IndvPopular from '../indvcomponents/indvpopular.jsx'
 export default function NavRoutes(props){
     const [selected, setselected] = useState(null)
+    const [selectedtoprated, setselected] = useState(null)
     const [selectedglobal , setselectedglobal]=useState(null);
 
     return(
