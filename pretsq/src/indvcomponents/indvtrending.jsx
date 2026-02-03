@@ -13,7 +13,7 @@ export default function IndvTrending(props){
             </div>
             <div className=" h-fit mt-3 flex justify-center overflow-hidden relative">
                   
-                <img className="aspect-[3/2] rounded-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out object-cover h-[50%] w-[50%] "
+                <img className="aspect-[3/2] rounded-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out object-cover md:h-[50%] md:w-[50%]  w-[70%] h-[70%] "
                 src={`https://image.tmdb.org/t/p/original${selectedtrending.backdrop_path}`}
                 alt={selectedtrending.title}/>
               
