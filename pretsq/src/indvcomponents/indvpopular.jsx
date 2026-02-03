@@ -21,7 +21,7 @@ export default function IndvPopular(props){
                 alt={selected.title}/>
               
             </div>
-            <div className="width"
+            <div className="width-[70%] md:width"
             >{selected.overview}</div>
             <div className="mt-3">
                 <div className="text-center font-Inter elastic"
