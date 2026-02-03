@@ -25,7 +25,8 @@ function Popular(props) {
 
     return <p>Something went wrong</p>;
   }
-
+  console.log();
+  
   return (
     <>
       <div className="bg-neutral-900  font-Inter text-slate-50">
