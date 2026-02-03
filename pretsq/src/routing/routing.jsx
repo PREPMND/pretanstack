@@ -28,7 +28,7 @@ export default function NavRoutes(props){
                 <Route path="/toprated" element={<TOPrated/>}/>
                 <Route path="/trending" element={<TrendingMovie/>}/>
                 <Route path="/popular/:id" element={<IndvPopular selected={selected } setselected={setselected}/>}/>
-                <Route path="/toprated/:id" element={<IndvToprated />}
+                <Route path="/toprated/:id" element={<IndvToprated selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated}/>}
                 <Route path="/" element={
                 <>
                 <div className='thebody'>
