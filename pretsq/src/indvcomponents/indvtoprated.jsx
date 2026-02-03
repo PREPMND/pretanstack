@@ -5,7 +5,7 @@ import { ChangeTitle } from "../App";
 import { Popcorn } from "lucide-react"
 export default function IndvToprated(props){
     const { id }=useParams();
-    const { selected , setselected}=props;
+    const { selectedtoprated , setselectedtoprated}=props;
     console.log(selected)
     return(
         <>
