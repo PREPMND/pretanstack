@@ -5,8 +5,7 @@ import { ChangeTitle } from "../App";
 import { Popcorn } from "lucide-react"
 export default function IndvToprated(props){
     const { id }=useParams();
-    const { selectedtoprated , setselectedtoprated}=props;
-    console.log(selected)
+
     return(
         <>
         <div className="bg-neutral-900 h-screen md:h-full">
