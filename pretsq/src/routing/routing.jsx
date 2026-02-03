@@ -11,6 +11,7 @@ import TOPrated from '../pages/toprated.jsx'
 import TrendingMovie from '../pages/trendingmovie.jsx'
 import { useState } from 'react'
 import IndvPopular from '../indvcomponents/indvpopular.jsx'
+import IndvToprated from '../indvcomponents/indvtoprated.jsx'
 export default function NavRoutes(props){
     const [selected, setselected] = useState(null)
     const [selectedtoprated, setselectedtoprated] = useState(null)
@@ -27,7 +28,7 @@ export default function NavRoutes(props){
                 <Route path="/toprated" element={<TOPrated/>}/>
                 <Route path="/trending" element={<TrendingMovie/>}/>
                 <Route path="/popular/:id" element={<IndvPopular selected={selected } setselected={setselected}/>}/>
-                <Route path="/toprated/:id" element={<Indv}
+                <Route path="/toprated/:id" element={<IndvToprated />}
                 <Route path="/" element={
                 <>
                 <div className='thebody'>
