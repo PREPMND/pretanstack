@@ -12,24 +12,24 @@ export default function IndvTrending(props){
         <div className="bg-neutral-900 h-screen md:h-full">
         <div className=" font-Inter w-full text-white flex flex-col pl-3">
             <div className="mt-2 text-2xl text-center font-light">
-                <div>{selected.title}</div>
+                <div>{selectedtrending.title}</div>
                 
             </div>
             <div className=" h-fit mt-3 flex justify-center overflow-hidden relative">
                   
                 <img className="aspect-[3/2] rounded-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out object-cover h-[50%] w-[50%] "
-                src={`https://image.tmdb.org/t/p/original${selected.backdrop_path}`}
-                alt={selected.title}/>
+                src={`https://image.tmdb.org/t/p/original${selectedtrending.backdrop_path}`}
+                alt={selectedtrending.title}/>
               
             </div >
             <div className="flex mt-5 m-auto justify-center max-w-[70%]"
-            >{selected.overview}</div>
+            >{selectedtrending.overview}</div>
             <div className="text-center text-3xl text-red-100 font-[700] mt-5 " >Players</div>
             <div className="flex justify-center">
             <div className="flex items-start flex-col justify-center">
             <div 
             onClick={()=>{
-                window.open(`https://dorawatch.one/${ChangeTitle(selected.title)}`)
+                window.open(`https://dorawatch.one/${ChangeTitle(selectedtrending.title)}`)
             }}
             className="mt-3 flex justify-center items-center gap-3">
                 <Popcorn className="" strokeWidth={0.5} />
@@ -39,7 +39,7 @@ export default function IndvTrending(props){
             </div>
             <div 
             onClick={()=>{
-                window.open(`https://cineby.gd/movie/${selected.id}`)
+                window.open(`https://cineby.gd/movie/${selectedtrending.id}`)
             }}
             className="mt-3 flex justify-center  items-center gap-3">
                 <Popcorn className="" strokeWidth={0.5} />
