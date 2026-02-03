@@ -17,7 +17,7 @@ export default function IndvToprated(props){
             </div>
             <div className=" h-fit mt-3 flex justify-center overflow-hidden relative">
                   
-                <img className="aspect-[3/2] rounded-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out object-cover md:h-[50%] md:w-[50%] "
+                <img className="aspect-[3/2] rounded-lg hover:scale-[1.02] transition-transform duration-200 ease-in-out object-cover md:h-[50%] md:w-[50%]  w-[70"
                 src={`https://image.tmdb.org/t/p/original${selectedtoprated.backdrop_path}`}
                 alt={selectedtoprated.title}/>
               
