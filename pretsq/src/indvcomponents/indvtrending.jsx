@@ -1,6 +1,4 @@
-import { useQuery } from "@tanstack/react-query"
-import { fetchPopularMovies } from "../api/popularapi"
-import { useParams } from "react-router-dom";
+
 import { ChangeTitle } from "../App";
 import { Popcorn } from "lucide-react"
 export default function IndvTrending(props){
