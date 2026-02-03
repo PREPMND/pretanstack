@@ -1,8 +1,6 @@
-
 import { ChangeTitle } from "../App";
 import { Popcorn } from "lucide-react"
-export default function IndvTrending(props){
-    const { id }=useParams();
+export default function IndvTrending(props){ 
     const { selectedtrending , setselectedtrending}=props;
 
     return(
