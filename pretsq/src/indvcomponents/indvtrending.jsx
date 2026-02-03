@@ -5,8 +5,8 @@ import { ChangeTitle } from "../App";
 import { Popcorn } from "lucide-react"
 export default function IndvTrending(props){
     const { id }=useParams();
-    const { selectedtrending , setselected}=props;
-    console.log(selected)
+    const { selectedtrending , setselectedtrending}=props;
+
     return(
         <>
         <div className="bg-neutral-900 h-screen md:h-full">
