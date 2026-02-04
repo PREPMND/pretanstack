@@ -6,7 +6,7 @@ import { useState } from "react"
 export default function App(){
     const [selectedtoprated,setselectedtoprated]=useState(null)
     const [selectedtrending, setselectedtrending] = useState(null)
-    
+    const [selected, setselected] = useState(null)
     return(
         <>
         <QueryClientProvider client={new QueryClient()}>
