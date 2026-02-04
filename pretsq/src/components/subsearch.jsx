@@ -1,1 +1,6 @@
-export default function SubSearch()
+export default function SubSearch(){
+    return(
+        
+        <></>
+    )
+}
