@@ -12,7 +12,7 @@ export default function App(){
         <QueryClientProvider client={new QueryClient()}>
         <BrowserRouter>
            <Navbar selectedtrending={selectedtrending} setselectedtrending={setselectedtrending}  selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated}/>
-           <NavRoutes selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated}/>
+           <NavRoutes selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated}/>
            
         </BrowserRouter>
         </QueryClientProvider>
