@@ -27,7 +27,7 @@ export default function Navbar(props){
 
             </div>
         </div>
-        <div className=[``]=>
+        <div className=>
         <div className='bg-neutral-900 pt-2 pb-2 md:hidden flex'>
             <input type="text" id="search" placeholder=' Search...' className='p-1 ml-12 mx-5 rounded-md text-black
                  '/>
