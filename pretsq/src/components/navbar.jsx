@@ -31,7 +31,7 @@ export default function Navbar(props){
         </div>
         <div className={`${selectedtoprated?"hidden":"flex"} ${selectedtrending?"hidden":"flex"} ${selected?"hidden":"flex"} min-w-full`} >
         <div className='bg-neutral-900 pt-2 pb-1 md:hidden flex'>
-            <input type="text" id="search" placeholder=' Search...' className='p-1 ml-12 mx-5 rounded-md text-black
+            <input type="text" id="search" placeholder=' Search...' className='p-1 py-2 ml-12 mx-5 rounded-md text-black
                  '/>
         </div></div>
 
