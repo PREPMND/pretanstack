@@ -29,7 +29,7 @@ export default function Navbar(props){
 
             </div>
         </div>
-        <div className={`${selectedglobal?} min-w-full`} >
+        <div className={`${selectedglobal?""} min-w-full`} >
         <div className='bg-neutral-900 pt-2 md:hidden flex w-full'>
             <input type="text" id="search" placeholder=' Search...' className='p-1 py-[4px] ml-12 mx-5 rounded-md text-black
                  '/>
