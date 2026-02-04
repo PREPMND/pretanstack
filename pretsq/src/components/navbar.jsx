@@ -27,7 +27,7 @@ export default function Navbar(){
             </div>
         </div>
         <div className='bg-neutral-900'>
-            <input type="text" id="search" placeholder=' Search...' className=' mt-2 p-1 ml-[30%] mx-5 md:block hidden rounded-md text-black
+            <input type="text" id="search" placeholder=' Search...' className=' p-1 ml-[30%] mx-5 md:block hidden rounded-md text-black
                  '/>
         </div>
 
