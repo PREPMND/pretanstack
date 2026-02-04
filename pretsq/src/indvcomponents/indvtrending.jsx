@@ -20,7 +20,7 @@ export default function IndvTrending(props){
             </div >
             <div className="flex mt-5 m-auto justify-center max-w-[70%]"
             >{selectedtrending.overview}</div>
-            <div className="text-center text-3xl text-red-100 font-[700] mt-5 " >Players</div>
+            <div className="text-center text-3xl text-red-100 font-[700] mt-8" >Players</div>
             <div className="flex justify-center">
             <div className="flex items-start flex-col justify-center">
             <div 
