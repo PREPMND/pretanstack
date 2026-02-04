@@ -24,14 +24,14 @@ export default function IndvPopular(props){
             </div >
             <div className="flex mt-5 m-auto justify-center max-w-[70%]"
             >{selected.overview}</div>
-            <div className="text-center text-3xl text-red-100 font-[700] mt-5 " >Players</div>
+            <div className="text-center text-3xl text-red-100 font-[700] mt-10 " >Players</div>
             <div className="flex justify-center">
             <div className="flex items-start flex-col justify-center">
             <div 
             onClick={()=>{
                 window.open(`https://dorawatch.one/${ChangeTitle(selected.title)}`)
             }}
-            className="mt-3 flex justify-center items-center gap-3">
+            className="mt-6 flex justify-center items-center gap-3">
                 <Popcorn className="" strokeWidth={0.5} />
                 <div className="text-center font-Inter elastic"
                 
