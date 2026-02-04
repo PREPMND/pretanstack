@@ -3,6 +3,7 @@ import NavRoutes from "./routing/routing"
 import { BrowserRouter } from "react-router-dom"
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query"    
 import { useState } from "react"
+import SubSearch from "./components/subsearch"
 export default function App(){
     const [selectedtoprated,setselectedtoprated]=useState(null)
     const [selectedtrending, setselectedtrending] = useState(null)
@@ -13,7 +14,7 @@ export default function App(){
         <QueryClientProvider client={new QueryClient()}>
         <BrowserRouter>
            <Navbar selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending}  selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated } selected={selected } setselected={setselected}/>
-           <Sub
+           <SubSearch/>
            <NavRoutes selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selected={selected } setselected={setselected}/>
            
         </BrowserRouter>
