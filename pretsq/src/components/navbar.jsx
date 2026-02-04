@@ -29,7 +29,7 @@ export default function Navbar(props){
 
             </div>
         </div>
-        <div className={`${selectedtoprated?"hidden":"flex"} ${selectedtrending?"hidden":"flex"} const { selected , setselected}=props;
+        <div className={`${selectedtoprated?"hidden":"flex"} ${selected?"hidden":"flex"} const { selected , setselected}=props;
     const {selectedtoprated, setselectedtoprated} = props
     const { selectedtrending , setselectedtrending}=props; min-w-full`} >
         <div className='bg-neutral-900 pt-2 pb-2 md:hidden flex'>
