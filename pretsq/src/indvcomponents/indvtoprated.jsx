@@ -9,7 +9,7 @@ export default function IndvToprated(props){
 
     return(
         <>
-        <div className="bg-neutral-900 h-screen md:h-full">
+        <div className="bg-neutral-900 min-h-[calc(100vh-64px)] md:h-full">
         <div className=" font-Inter w-full text-white flex flex-col pl-3">
             <div className="mt-2 text-2xl text-center font-light">
                 <div>{selectedtoprated.title}</div>
