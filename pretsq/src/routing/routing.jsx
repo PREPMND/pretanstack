@@ -13,6 +13,7 @@ import { useState } from 'react'
 import IndvPopular from '../indvcomponents/indvpopular.jsx'
 import IndvToprated from '../indvcomponents/indvtoprated.jsx'
 import IndvTrending from '../indvcomponents/indvtrending.jsx'
+import SubSearch from '../components/subsearch.jsx'
 export default function NavRoutes(props){
     const { selected , setselected}=props;
     const {selectedtoprated, setselectedtoprated} = props
