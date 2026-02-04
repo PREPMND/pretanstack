@@ -5,6 +5,7 @@ export default function Navbar(props){
     const { selected , setselected}=props;
     const {selectedtoprated, setselectedtoprated} = props
     const { selectedtrending , setselectedtrending}=props;
+    const { selectedglobal}
     const APIKEY=import.meta.env.VITE_TMBD_KEY;
     return(
         <>
