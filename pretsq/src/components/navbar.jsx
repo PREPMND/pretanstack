@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 
-export default function Navbar(){
+export default function Navbar(props){
     let navigate=useNavigate();
+    const {selectedtoprated, setselectedtoprated} = props
     const APIKEY=import.meta.env.VITE_TMBD_KEY;
     return(
         <>
