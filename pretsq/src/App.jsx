@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom"
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query"    
 import { useState } from "react"
 export default function App(){
-    const [selectedtoprated,setselectedtoprated]=use
+    const [selectedtoprated,setselectedtoprated]=useState(null)
     return(
         <>
         <QueryClientProvider client={new QueryClient()}>
