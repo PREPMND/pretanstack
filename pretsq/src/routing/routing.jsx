@@ -15,7 +15,7 @@ import IndvToprated from '../indvcomponents/indvtoprated.jsx'
 import IndvTrending from '../indvcomponents/indvtrending.jsx'
 export default function NavRoutes(props){
     const [selected, setselected] = useState(null)
-    const [selectedtoprated, setselectedtoprated] = useState(null)
+    const [selectedtoprated, setselectedtoprated} = props
     const [selectedtrending, setselectedtrending] = useState(null)
     const [selectedglobal , setselectedglobal]=useState(null);
 
