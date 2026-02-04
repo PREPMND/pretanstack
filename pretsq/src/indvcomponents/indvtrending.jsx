@@ -37,7 +37,7 @@ export default function IndvTrending(props){
             onClick={()=>{
                 window.open(`https://cineby.gd/movie/${selectedtrending.id}`)
             }}
-            className="mt-5 flex justify-center  items-center gap-3">
+            className="mt-4 flex justify-center  items-center gap-3">
                 <Popcorn className="" strokeWidth={0.5} />
                 <div className="text-center font-Inter elastic"
                 
