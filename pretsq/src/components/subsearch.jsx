@@ -1,1 +1,1 @@
-export de
+export default fun
