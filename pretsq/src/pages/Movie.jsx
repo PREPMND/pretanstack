@@ -24,7 +24,12 @@ export default function Movie(){
                     )
                 }
 
-                        </div>
+                )}
+            </div>
+        </div>
+        </>
+    )
+}
                     )
                 })}
             </div>
