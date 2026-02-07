@@ -1,7 +1,9 @@
 import { fetchMovies } from "../api/movies"
 import { useQuery } from "@tanstack/react-query"
 export default function Movie(){
-    
+    const { data , isLoading, error} = useQuery({
+        queryKey: ["movies"],
+        queryFn: () => fetchMovies(),
     return(
         
         <>
