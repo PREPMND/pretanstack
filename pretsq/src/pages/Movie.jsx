@@ -33,7 +33,7 @@ export default function Movie() {
 
                     )}
                 </div>
-                {selectedtoprated && (
+                {movies && (
                                 <div onClick={() => {
                                     setselectedglobal(null)
                                     setselectedtoprated(null)
