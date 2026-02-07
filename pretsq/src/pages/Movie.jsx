@@ -4,7 +4,7 @@ export default function Movie(){
         <>
         <div>
             <div>
-                data.slice(0,10).map((movie)=>{
+                data?.slice(0,10).map((movie)=>{
                     return(
                         <div key={movie.id}>
                             {movie.title}
