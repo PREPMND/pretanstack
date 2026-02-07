@@ -48,6 +48,7 @@ export default function NavRoutes(props){
                 
                 
                 </>}/>
+                </Route>
                 
             </Routes>
 
