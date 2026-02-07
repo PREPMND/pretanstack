@@ -4,6 +4,7 @@ import { useState } from "react"
 export default function Movie(props) {
     const { setselectedglobal, selectedtoprated } = props
     const [movies, setMovies] = useState(null);
+    const navigate
     const { data, isLoading, error } = useQuery({
         queryKey: ["movies"],
         queryFn: () => fetchMovies(),
