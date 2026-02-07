@@ -16,7 +16,12 @@ export default function Movie(){
                     return(
                         <div key={movie.id}>
                             <div>
-                                
+                                <h2>{movie.title}</h2>
+                                <p>{movie.overview}</p>
+                            </div>
+                        </div>
+                    )
+                }
 
                         </div>
                     )
