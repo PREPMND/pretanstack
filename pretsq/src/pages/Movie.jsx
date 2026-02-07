@@ -28,7 +28,8 @@ export default function Movie(props) {
                                     
                                 >   <div onMouseEnter={() => 
                                     setMovies(movie.id)}
-                                    onMouseLeave={() => setMovies(null)}>
+                                    onMouseLeave={() => 
+                                    setMovies(null)}>
                                     <img 
                                     
                                     className="rounded object-cover z-50"
