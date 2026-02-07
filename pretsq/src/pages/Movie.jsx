@@ -4,7 +4,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ChangeTitle } from "../App.jsx"
 export default function Movie(props) {
-    const { setselectedglobal, selected } = props
+    const { setselectedglobal, selectedglobal } = props
     const [movies, setMovies] = useState(null);
     const navigate= useNavigate();
     const { data, isLoading, error } = useQuery({
