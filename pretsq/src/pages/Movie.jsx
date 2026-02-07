@@ -14,7 +14,8 @@ export default function Movie(){
             <div>
                 {data?.slice(0,50).map((movie)=>{
                     return(
-                        <div key={movie.id}>
+                        <div className=""
+                        key={movie.id}>
                             <div>
                                 <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />   
                                 <h2>{movie.title}</h2>
