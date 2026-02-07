@@ -15,6 +15,7 @@ import IndvToprated from '../indvcomponents/indvtoprated.jsx'
 import IndvTrending from '../indvcomponents/indvtrending.jsx'
 import SubSearch from '../components/subsearch.jsx'
 import Error from '../indvcomponents/error.jsx'
+import Layout from './layout.jsx'
 export default function NavRoutes(props){
     const { selected , setselected}=props;
     const {selectedtoprated, setselectedtoprated} = props
@@ -25,7 +26,7 @@ export default function NavRoutes(props){
         <>
         
             <Routes>
-                <Route element={<Layout}
+                <Route element={<Layout selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal}/>} >
                 <Route path="/movie" element={<Movie />} />
                 <Route path="/favourites" element={<Favourites />} />
                 <Route path="/about" element={<About />} />
