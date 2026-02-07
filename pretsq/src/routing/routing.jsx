@@ -1,4 +1,4 @@
-import { Routes , Route , useParams} from 'react-router-dom'
+import { Routes, Route, useParams } from 'react-router-dom'
 
 import Movie from '../pages/Movie.jsx'
 import Favourites from '../pages/Favourites.jsx'
@@ -16,40 +16,40 @@ import IndvTrending from '../indvcomponents/indvtrending.jsx'
 import SubSearch from '../components/subsearch.jsx'
 import Error from '../indvcomponents/error.jsx'
 import Layout from './layout.jsx'
-export default function NavRoutes(props){
-    const { selected , setselected}=props;
-    const {selectedtoprated, setselectedtoprated} = props
-    const { selectedtrending , setselectedtrending}=props;
-    const { selectedglobal, setselectedglobal } = props;  
+export default function NavRoutes(props) {
+    const { selected, setselected } = props;
+    const { selectedtoprated, setselectedtoprated } = props
+    const { selectedtrending, setselectedtrending } = props;
+    const { selectedglobal, setselectedglobal } = props;
 
-    return(
+    return (
         <>
-        
+
             <Routes>
-                <Route element={<Layout selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal}/>}>
-                <Route path="/movie" element={<Movie />} />
-                <Route path="/favourites" element={<Favourites />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/toprated" element={<TOPrated selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />}/>
-                <Route path="/trending" element={<TrendingMovie/>}/>
-                <Route path="/popular/:id" element={<IndvPopular selected={selected } setselected={setselected}/>}/>
-                <Route path="/toprated/:id" element={<IndvToprated selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated}/>}/>
-                <Route path="/trending/:id" element={<IndvTrending selectedtrending={selectedtrending} setselectedtrending={setselectedtrending}/>}/>
-                
-                <Route path="/" element={
-                <>
-                <div className='thebody'>
-                    <SubSearch/>
-                    <Popular selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selected={selected } setselected={setselected} />
-                    <Trending selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} />
-                    <TopRated selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} />
-                    
-                </div>
-                
-                
-                </>}/>
+                <Route element={<Layout selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />}>
+                    <Route path="/movie" element={<Movie />} />
+                    <Route path="/favourites" element={<Favourites />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/toprated" element={<TOPrated selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />} />
+                    <Route path="/trending" element={<TrendingMovie />} />
+                    <Route path="/popular/:id" element={<IndvPopular selected={selected} setselected={setselected} />} />
+                    <Route path="/toprated/:id" element={<IndvToprated selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} />} />
+                    <Route path="/trending/:id" element={<IndvTrending selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} />} />
+
+                    <Route path="/" element={
+                        <>
+                            <div className='thebody'>
+                                <SubSearch />
+                                <Popular selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selected={selected} setselected={setselected} />
+                                <Trending selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} />
+                                <TopRated selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} />
+
+                            </div>
+
+
+                        </>} />
                 </Route>
-                
+
             </Routes>
 
         </>
