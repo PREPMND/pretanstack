@@ -17,7 +17,7 @@ export default function Movie(){
                         <div className=" "
                         key={movie.id}>
                             <div>
-                                <img className=""
+                                <img className="rounded object-cover"
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />   
                                 <h2>{movie.title}</h2>
                                 
