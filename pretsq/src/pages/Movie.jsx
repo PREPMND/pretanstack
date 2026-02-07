@@ -12,6 +12,7 @@ export default function Movie(props) {
         queryKey: ["movies"],
         queryFn: () => fetchMovies(),
         refetchOnMount: true,
+        ref
     })
     console.log(movies);
     
