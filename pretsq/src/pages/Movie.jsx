@@ -4,6 +4,9 @@ export default function Movie(){
     const { data , isLoading, error} = useQuery({
         queryKey: ["movies"],
         queryFn: () => fetchMovies(),
+    })
+    if(isLoading) return <div>Loading...</div>
+    if(error) return <div>Error: {error.message}</div>
     return(
         
         <>
