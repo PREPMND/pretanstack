@@ -12,7 +12,7 @@ export default function Movie(props) {
         queryKey: ["movies"],
         queryFn: () => fetchMovies(),
         refetchOnMount: true,
-        refetchOnWindowFocus:tr
+        refetchOnWindowFocus:true,
     })
     console.log(movies);
     
