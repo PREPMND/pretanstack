@@ -30,10 +30,4 @@ export default function Movie(){
         </>
     )
 }
-                    )
-                })}
-            </div>
-        </div>
-        </>
-    )
-}
+       
