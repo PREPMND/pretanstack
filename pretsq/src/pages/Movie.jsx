@@ -29,7 +29,7 @@ export default function Movie(props) {
                                     onMouseEnter={() => 
                                     setmovieHovered(movie.id)}
                                     onMouseLeave={() => 
-                                    setmovieHovered (null)}
+                                    setmovieHovered(null)}
                                 >   <div >
                                     <img 
                                     
