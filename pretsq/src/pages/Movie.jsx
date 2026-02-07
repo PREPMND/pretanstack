@@ -1,4 +1,4 @@
-import M
+import { fetchMovies } from "../api/movies"
 export default function Movie(){
     return(
         
