@@ -11,7 +11,7 @@ export default function Movie(){
         
         <>
         <div className="bg-neutral-900 w-full h-full">
-            <div className="bg-neutral-950 grid grid-flow-col select-none auto-cols-[140px] md:auto-rows-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 pt-2 ">
+            <div className="bg-neutral-950 grid grid- select-none auto-row-[140px] md:auto-rows-[190px] gap-2 md:gap-4 overflow-y-hidden mt-3 scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 pt-2 ">
                 {data?.slice(0,50).map((movie)=>{
                     return(
                         <div className=" "
