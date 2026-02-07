@@ -34,7 +34,8 @@ export default function Movie() {
                 </div>
                 {movie && <div className="absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200">
                     <button className="bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2">
-                        <span className="text-red-500">▶</span> Play}
+                        <span className="text-red-500">▶</span> Play</button>
+                </div>}
             </div>
         </>
     )
