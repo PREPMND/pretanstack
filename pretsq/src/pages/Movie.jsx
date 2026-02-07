@@ -7,6 +7,10 @@ export default function Movie(){
                 data.slice(0,10).map((movie)=>{
                     return(
                         <div key={movie.id}>
+                            {movie.title}
+                        </div>
+                    )
+                })
             </div>
         </div>
         </>
