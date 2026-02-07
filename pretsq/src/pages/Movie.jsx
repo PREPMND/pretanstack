@@ -32,7 +32,7 @@ export default function Movie(props) {
                                 >   <div >
                                     <img 
                                     
-                                    className="rounded object-cover z-50"
+                                    className="rounded object-cover z-30"
                                         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
                                     <h2>{movie.title}</h2></div>
                                 <div
