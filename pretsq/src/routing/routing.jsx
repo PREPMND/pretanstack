@@ -25,6 +25,7 @@ export default function NavRoutes(props){
         <>
         
             <Routes>
+                <Ro
                 <Route path="/movie" element={<Movie />} />
                 <Route path="/favourites" element={<Favourites />} />
                 <Route path="/about" element={<About />} />
@@ -33,7 +34,7 @@ export default function NavRoutes(props){
                 <Route path="/popular/:id" element={<IndvPopular selected={selected } setselected={setselected}/>}/>
                 <Route path="/toprated/:id" element={<IndvToprated selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated}/>}/>
                 <Route path="/trending/:id" element={<IndvTrending selectedtrending={selectedtrending} setselectedtrending={setselectedtrending}/>}/>
-                <Route path="/*" element={<Error />}/>
+                
                 <Route path="/" element={
                 <>
                 <div className='thebody'>
