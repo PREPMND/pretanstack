@@ -11,7 +11,7 @@ export default function Movie(props) {
         queryKey: ["movies"],
         queryFn: () => fetchMovies(),
     })
-    console.log();
+    console.log(movies);
     
     if (isLoading) return <div>Loading...</div>
     if (error) return <div>Error: {error.message}</div>
