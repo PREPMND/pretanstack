@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API_KEY = import.meta.env.VITE_TMBD_KEY;
 
-export const fetchTopRated = async (page = 1) => {
+export const fetchTopRated = async (page = 1 & sort) => {
   const res = await axios.get(
     `https://api.themoviedb.org/3/discover/movie`,
     {
