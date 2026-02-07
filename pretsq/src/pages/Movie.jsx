@@ -32,7 +32,7 @@ export default function Movie(props) {
 
                                 </div>
                                 <div
-                                className={`absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movies === movie ? "opacity-100" : "opacity-0"}`}
+                                className={`absolute inset-0 z-80 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movies === movie ? "opacity-100" : "opacity-0"}`}
                             >
                                 <button
                                     onClick={() => {
