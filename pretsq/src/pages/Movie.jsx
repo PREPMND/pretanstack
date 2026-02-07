@@ -17,7 +17,8 @@ export default function Movie(){
                         <div className=" "
                         key={movie.id}>
                             <div>
-                                <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />   
+                                <img className=""
+                                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />   
                                 <h2>{movie.title}</h2>
                                 
                             </div>
