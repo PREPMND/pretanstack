@@ -6,6 +6,7 @@ import { ChangeTitle } from "../App.jsx"
 export default function Movie(props) {
     const { setselectedglobal, selectedglobal } = props
     const [movies, setMovies] = useState(null);
+    const [movieHovered, setmovieHovered] = useState(null);
     const navigate= useNavigate();
     const { data, isLoading, error } = useQuery({
         queryKey: ["movies"],
