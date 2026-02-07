@@ -14,7 +14,7 @@ import IndvPopular from '../indvcomponents/indvpopular.jsx'
 import IndvToprated from '../indvcomponents/indvtoprated.jsx'
 import IndvTrending from '../indvcomponents/indvtrending.jsx'
 import SubSearch from '../components/subsearch.jsx'
-import Error from '../pages/error.jsx'
+import Error from '../indvcomponents/error.jsx'
 export default function NavRoutes(props){
     const { selected , setselected}=props;
     const {selectedtoprated, setselectedtoprated} = props
