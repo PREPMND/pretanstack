@@ -49,7 +49,7 @@ export default function Movie() {
                                             className="absolute inset-0 flex items-center justify-center text-white text-3xl"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                navigate(`/toprated/${ChangeTitle(selectedtoprated.title)}`)
+                                                navigate(`/toprated/${ChangeTitle(movies.title)}`)
                                             }}
                                         >
                                             ▶
