@@ -36,7 +36,7 @@ export default function Movie() {
                 {movies && (
                                 <div onClick={() => {
                                     setselectedglobal(null)
-                                    setselectedtoprated(null)
+                                    setMovies(null)
                                 }}
                                     className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center ">
                                     <div onClick={(e) => e.stopPropagation()}
