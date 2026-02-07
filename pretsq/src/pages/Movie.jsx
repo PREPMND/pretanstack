@@ -27,6 +27,19 @@ export default function Movie() {
                                     <h2>{movie.title}</h2>
 
                                 </div>
+                                <div
+                                className={`absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movieHovered === movie.id ? "opacity-100" : "opacity-0"}`}
+                            >
+                                <button
+                                    onClick={() => {
+                                        setselectedtoprated(movie)
+                                        setselectedglobal(movie)
+                                    }}
+                                    className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2 ${selectedtoprated ? "pointer-events-none" : ""}`}
+                                >
+                                    <span className="text-red-500">▶</span> Play
+                                </button>
+                            </div>
                             </div>
                         )
                     }
