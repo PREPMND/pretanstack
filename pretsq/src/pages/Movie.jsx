@@ -29,9 +29,7 @@ export default function Movie(props) {
                                     <img className="rounded object-cover"
                                         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
                                     <h2>{movie.title}</h2>
-
-                                </div>
-                                <div
+                                    <div
                                 className={`absolute inset-0 z-80 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movies === movie ? "opacity-100" : "opacity-0"}`}
                             >
                                 <button
@@ -43,7 +41,10 @@ export default function Movie(props) {
                                 >
                                     <span className="text-red-500">▶</span> Play
                                 </button>
-                            </div>
+
+                                </div>
+                                
+                            
                             </div>
                         )
                     }
