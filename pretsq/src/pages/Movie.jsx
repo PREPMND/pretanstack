@@ -19,7 +19,7 @@ export default function Movie() {
                                 key={movie.id}>
                                 <div
                                     onMouseEnter={() => setmovies(movie.id)}
-                                    onMouseLeave={() => setmovie(null)}
+                                    onMouseLeave={() => setmovies(null)}
                                 >
                                     <img className="rounded object-cover"
                                         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
