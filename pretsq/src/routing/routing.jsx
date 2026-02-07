@@ -33,6 +33,7 @@ export default function NavRoutes(props){
                 <Route path="/popular/:id" element={<IndvPopular selected={selected } setselected={setselected}/>}/>
                 <Route path="/toprated/:id" element={<IndvToprated selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated}/>}/>
                 <Route path="/trending/:id" element={<IndvTrending selectedtrending={selectedtrending} setselectedtrending={setselectedtrending}/>}/>
+                <Route path="*" element={<Error />}/>
                 <Route path="/" element={
                 <>
                 <div className='thebody'>
@@ -45,7 +46,7 @@ export default function NavRoutes(props){
                 
                 
                 </>}/>
-                <Route path="*" element={<Error />}/>
+                
             </Routes>
 
         </>
