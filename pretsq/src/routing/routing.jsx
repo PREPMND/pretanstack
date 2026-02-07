@@ -25,7 +25,7 @@ export default function NavRoutes(props){
         <>
         
             <Routes>
-                <Route ele
+                <Route element={</N}
                 <Route path="/movie" element={<Movie />} />
                 <Route path="/favourites" element={<Favourites />} />
                 <Route path="/about" element={<About />} />
