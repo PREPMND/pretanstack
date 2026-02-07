@@ -51,7 +51,9 @@ export default function Movie(props) {
 
                     )}
                 </div>
-                {movies && (
+                
+            </div>
+            {movies && (
                                 <div onClick={() => {
                                     setselectedglobal(null)
                                     setMovies(null)
@@ -75,7 +77,6 @@ export default function Movie(props) {
                                     </div>
                                 </div>
                             )}
-            </div>
         </>
     )
 }
