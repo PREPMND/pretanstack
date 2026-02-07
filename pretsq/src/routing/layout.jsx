@@ -5,7 +5,7 @@ export default function Layout(props) {
     const { selected , setselected}=props;
     const {selectedtoprated, setselectedtoprated} = props
     const { selectedtrending , setselectedtrending}=props;
-    const { selectedglobal}=props
+    const { selectedglobal , setselectedglobal}=props
     return (
         <>
             <Navbar selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />
