@@ -18,7 +18,7 @@ export default function Movie() {
                             <div className=" aspect-[2/3] rounded overflow-hidden"
                                 key={movie.id}>
                                 <div
-                                    onMouseEnter={() => setmovie(movie.id)}
+                                    onMouseEnter={() => setmovies(movie.id)}
                                     onMouseLeave={() => setmovie(null)}
                                 >
                                     <img className="rounded object-cover"
