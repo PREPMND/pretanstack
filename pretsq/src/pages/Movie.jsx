@@ -1,5 +1,7 @@
 import { fetchMovies } from "../api/movies"
+import { useQuery } from "@tanstack/react-query"
 export default function Movie(){
+    
     return(
         
         <>
