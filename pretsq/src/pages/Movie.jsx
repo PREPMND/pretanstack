@@ -33,10 +33,30 @@ export default function Movie() {
 
                     )}
                 </div>
-                {movies && <div className="absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200">
-                    <button className="bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2">
-                        <span className="text-red-500">▶</span> Play</button>
-                </div>}
+                {selectedtoprated && (
+                                <div onClick={() => {
+                                    setselectedglobal(null)
+                                    setselectedtoprated(null)
+                                }}
+                                    className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center ">
+                                    <div onClick={(e) => e.stopPropagation()}
+                                        className="relative w-[90%] ">
+                                        <img
+                                            src={`https://image.tmdb.org/t/p/original${selectedtoprated.backdrop_path}`}
+                                            className="rounded-lg"
+                                        />
+                                        <button
+                                            className="absolute inset-0 flex items-center justify-center text-white text-3xl"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                navigate(`/toprated/${ChangeTitle(selectedtoprated.title)}`)
+                                            }}
+                                        >
+                                            ▶
+                                        </button>
+                                    </div>
+                                </div>
+                            )}
             </div>
         </>
     )
