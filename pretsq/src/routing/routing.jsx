@@ -44,7 +44,7 @@ export default function NavRoutes(props){
                 
                 
                 </>}/>
-                <Route path
+                <Route path="*" elem
             </Routes>
 
         </>
