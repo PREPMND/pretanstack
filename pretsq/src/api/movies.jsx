@@ -9,6 +9,7 @@ export const fetchTopRated = async (page = 1, sort = "popularity.desc") => {
       params: {
         api_key: API_KEY,
         page: page,
+        sort_by: sort,
       },
     }
   );
