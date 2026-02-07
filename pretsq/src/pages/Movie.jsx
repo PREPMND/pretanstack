@@ -1,7 +1,8 @@
 import { fetchMovies } from "../api/movies"
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
-export default function Movie() {
+export default function Movie(props) {
+    const { setselectedglobal, selectedtoprated } = props
     const [movies, setMovies] = useState(null);
     const { data, isLoading, error } = useQuery({
         queryKey: ["movies"],
