@@ -3,7 +3,9 @@ export default function Movie(){
         
         <>
         <div>
-            <div></div>
+            <div>
+                data.
+            </div>
         </div>
         </>
     )
