@@ -17,7 +17,9 @@ export default function Movie(){
                     return(
                         <div className=" aspect-[2/3] rounded overflow-hidden"
                         key={movie.id}>
-                            <div>
+                            <div
+                            
+                            >
                                 <img className="rounded object-cover"
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />   
                                 <h2>{movie.title}</h2>
