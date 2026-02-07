@@ -5,7 +5,7 @@ export default function Layout(props){
     return(
         <>
         <Navbar selected={props.selected} setselected={props.setselected} selectedtoprated={props.selectedtoprated} setselectedtoprated={props.setselectedtoprated} selectedtrending={props.selectedtrending} setselectedtrending={props.setselectedtrending} selectedglobal={props.selectedglobal} setselectedglobal={props.setselectedglobal}/>
-        <
+        <Outlet/>
         </>
     )
 }
