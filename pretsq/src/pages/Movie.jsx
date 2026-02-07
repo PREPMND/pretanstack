@@ -42,7 +42,7 @@ export default function Movie() {
                                     <div onClick={(e) => e.stopPropagation()}
                                         className="relative w-[90%] ">
                                         <img
-                                            src={`https://image.tmdb.org/t/p/original${selectedtoprated.backdrop_path}`}
+                                            src={`https://image.tmdb.org/t/p/original${movies.backdrop_path}`}
                                             className="rounded-lg"
                                         />
                                         <button
