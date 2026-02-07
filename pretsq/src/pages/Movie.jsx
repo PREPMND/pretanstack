@@ -11,6 +11,7 @@ export default function Movie(props) {
     const { data, isLoading, error } = useQuery({
         queryKey: ["movies"],
         queryFn: () => fetchMovies(),
+        refetchOnMount: true,
     })
     console.log(movies);
     
