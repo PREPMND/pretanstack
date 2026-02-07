@@ -24,10 +24,7 @@ export default function Movie(props) {
                         return (
                             <div className=" aspect-[2/3] rounded overflow-hidden relative"
                                 key={movie.id}>
-                                onMouseEnter={() => 
-                                    setMovies(movie.id)}
-                                    onMouseLeave={() => 
-                                    setMovies(null)}
+                                <div 
                                     
                                 >   <div >
                                     <img 
