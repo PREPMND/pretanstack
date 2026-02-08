@@ -22,7 +22,6 @@ export const fetchSearch = async (search) => {
     {
       params: {
         api_key: API_KEY,
-        page: page,
         type:"search",
         query:search,
       },
