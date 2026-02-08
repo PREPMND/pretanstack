@@ -34,4 +34,4 @@ export default function Navbar(props){
 
         </>
     )
-}ml-4 p-1 pl-2 md:block hidden rounded-md text-white bg-neutral-700
+}
