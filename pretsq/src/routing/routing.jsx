@@ -21,7 +21,7 @@ export default function NavRoutes(props) {
     const { selectedtoprated, setselectedtoprated } = props
     const { selectedtrending, setselectedtrending } = props;
     const { selectedglobal, setselectedglobal } = props;
-    const [search , setsearch]=use
+    const [search , setsearch]=useState("")
     return (
         <>
 
