@@ -8,7 +8,7 @@ export default function SubSearch(props){
         queryFn:()=>fetchSearch(search),
         enabled:search.length>0,
     })
-    const sortedData = data ? [...data].sort((a, b) => b.popularity - a.popularity) : [];
+    const sortedData = data ? [...data].sort((a, b) => a.popularity - b.popularity) : [];
     console.log(sortedData.slice(0,4));
     return(
 
