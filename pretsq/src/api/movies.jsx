@@ -18,7 +18,7 @@ export const fetchMovies = async (page = 1, sort = "popularity.desc") => {
 };
 export const fetchSearch = async (search) => {
   const res = await axios.get(
-    `https://api.themoviedb.org/3/discover/movie`,
+    `https://api.the`,
     {
       params: {
         api_key: API_KEY,
