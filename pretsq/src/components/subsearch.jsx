@@ -28,8 +28,8 @@ export default function SubSearch(props){
                 key={movie.id}>
                     <div className="aspect-[2/3] w-[50px] rounded overflow-hidden flex">
                         <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
-                    
-                    <h2>{movie.title}</h2></div>
+                        <h2>{movie.title}</h2>
+                    </div>
                 </div>)
 
             })}
