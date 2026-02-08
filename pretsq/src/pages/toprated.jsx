@@ -1,8 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchSearch } from "../api/movies";
 export default function TOPrated(props){
-return 
-            <div>TOPrated</div>
+return(       <div>TOPrated</div>)
        
   
 }
