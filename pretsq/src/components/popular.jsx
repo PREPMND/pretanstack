@@ -17,7 +17,6 @@ function Popular(props) {
     refetchOnWindowFocus:true,
   });
 
-  console.log({selected})
   if (isLoading) return (<>
 
     <p className='h-full text-white flex justify-center items-center  '>Loading...</p></>)
