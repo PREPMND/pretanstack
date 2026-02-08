@@ -7,6 +7,9 @@ export default function SubSearch(){
             <input type="text" id="search" placeholder=' Search...' className='p-1 py-[4px] bg-neutral-700  ml-12 mx-5 rounded-md text-white
                  '/>
         </div></div>
+        <div>
+            data?
+        </div>
 
         </>
     )
