@@ -9,7 +9,7 @@ export default function Layout(props) {
     const [search , setsearch]=useState("");
     return (
         <>
-            <Navbar selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />
+            <Navbar search={search} setsearch={setsearch} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />
             <Outlet />
         </>
     )
