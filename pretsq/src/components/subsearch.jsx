@@ -20,7 +20,7 @@ export default function SubSearch(props){
             onChange={(e)=>{setsearch(e.target.value)}}
             />
         </div></div>
-        <div className={`${search.length>0 ? "block" : "hidden"} bg-neutral-900 mt-3 h-full w-full`}>
+        <div className={`${search.length>0 ? "block" : "hidden"} bg-neutral-900 mt-3 h-full w-full z-999`}>
             {sortedData?.slice(0,4).map((movie)=>{
                 <div key={movie.id}>
                     <div>
