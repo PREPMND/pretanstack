@@ -20,7 +20,7 @@ export default function SubSearch(props){
             onChange={(e)=>{setsearch(e.target.value)}}
             />
         </div></div>
-        <div >
+        <div className=``>
             {sortedData?.slice(0,4).map((movie)=>{
                 <div key={movie.id}>
                     <div>
