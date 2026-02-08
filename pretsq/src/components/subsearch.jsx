@@ -2,7 +2,7 @@ import { fetchSearch } from "../api/movies"
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
 export default function SubSearch(){
-    const{ data}
+    const{ data , isL}
     return(
 
         <>
