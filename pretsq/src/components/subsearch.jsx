@@ -2,6 +2,7 @@ import { fetchSearch } from "../api/movies"
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
 export default function SubSearch(props){
+    const { search , setsearch}=props;
     const{ data , isLoading , error}=useQuery({
         queryKey:["search",search],
         queryFn:()=>fetchSearch(search),
