@@ -20,7 +20,7 @@ export default function SubSearch(props){
             value={search}
             onChange={(e)=>{setsearch(e.target.value)}}
             />
-            <span onClick={()=>{search}}>*</span>
+            <span onClick={()=>{setsearch("")}}>*</span>
         </div></div> 
         {data && (<div className={` w-[400px] z-50 justify-center absolute top-full text-stone-200 font-bold text-lg `}>
             {sortedData?.slice(0,4).map((movie)=>{
