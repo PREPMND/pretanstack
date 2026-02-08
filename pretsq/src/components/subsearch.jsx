@@ -1,4 +1,5 @@
-import { fe}
+import { fetchSearch } from "../api/movies"
+
 export default function SubSearch(){
     return(
 
