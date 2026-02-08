@@ -14,15 +14,17 @@ export default function TOPrated(props){
         <div>
             {data && (<div className={` w-[400px] z-999 flex justify-center absolute top-full text-blue-500 font-bold text-lg `}>
             {sortedData?.slice(0,4).map((movie)=>{
+                return (
                 <div key={movie.id}>
                     <div>
                         <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
                     </div>
                     <h2>{movie.title}</h2>
                 </div>
-
+                );
             })}
             <div>TOPrated</div>
+            </div>)}
         </div>
         </>
     )
