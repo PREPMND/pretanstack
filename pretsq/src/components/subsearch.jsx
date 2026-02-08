@@ -1,6 +1,6 @@
 import { fetchSearch } from "../api/movies"
 import { useQuery } from "@tanstack/react-query"
-import { use}
+import { useState } from "react"
 export default function SubSearch(){
     return(
 
