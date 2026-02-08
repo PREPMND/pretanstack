@@ -26,7 +26,7 @@ export default function SubSearch(props){
                 return (
                 <div className="bg-neutral-900 p-2 border-b-2 border-white/10 w-full hover:bg-neutral-800 cursor-pointer flex gap-3"
                 key={movie.id}>
-                    <div>
+                    <div className="flex">
                         <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
                     
                     <h2>{movie.title}</h2></div>
