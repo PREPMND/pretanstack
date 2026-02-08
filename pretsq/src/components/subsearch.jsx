@@ -8,7 +8,9 @@ export default function SubSearch(){
                  '/>
         </div></div>
         <div>
-            data?.slice(0,4)
+            data?.slice(0,4).map((movie)=>{
+                
+            })
         </div>
 
         </>
