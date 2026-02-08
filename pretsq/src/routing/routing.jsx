@@ -30,7 +30,7 @@ export default function NavRoutes(props) {
                     <Route path="/movie" element={<Movie setselectedglobal={setselectedglobal}/>} />
                     <Route path="/favourites" element={<Favourites />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/toprated" element={<TOPrated selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />} />
+                    <Route path="/toprated" element={<TOPrated search={search} setsearch={setsearch} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />} />
                     <Route path="/trending" element={<TrendingMovie />} />
                     <Route path="/popular/:id" element={<IndvPopular selected={selected} setselected={setselected} />} />
                     <Route path="/toprated/:id" element={<IndvToprated selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} />} />
