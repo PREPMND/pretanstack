@@ -8,7 +8,7 @@ export default function SubSearch(props){
         queryFn:()=>fetchSearch(search),
         enabled:search.length>0,
     })
-    console.log(data)
+    console.log(data.slice(0,4))
     return(
 
         <>
