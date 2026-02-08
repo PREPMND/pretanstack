@@ -18,7 +18,7 @@ export const fetchMovies = async (page = 1, sort = "popularity.desc") => {
 };
 export const fetchSearch = async (search) => {
   const res = await axios.get(
-    `./netlify`,
+    `./netlify/functions/tmdb`,
     {
       params: {
         api_key: API_KEY,
