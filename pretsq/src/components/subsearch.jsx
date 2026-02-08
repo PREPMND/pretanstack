@@ -24,7 +24,7 @@ export default function SubSearch(props){
         {data && (<div className={` w-[400px] z-50 justify-center absolute top-full text-blue-500 font-bold text-lg `}>
             {sortedData?.slice(0,4).map((movie)=>{
                 return (
-                <div className="bg-neutral-900 p-2 border-b-2 border-white/10 w-[70%] hover:bg-neutral-800 cursor-pointer gap-3"
+                <div className="bg-neutral-900 p-2 border-b-2 m-auto border-white/10 w-[70%] hover:bg-neutral-800 cursor-pointer gap-3"
                 key={movie.id}>
                     <div className="aspect-[2/3] w-[50px] rounded overflow-hidden inline-block">
                         <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
