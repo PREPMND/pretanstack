@@ -4,7 +4,8 @@ import { useState } from "react"
 export default function SubSearch(){
     const{ data , isLoading , error}=useQuery({
         queryKey:["search",search],
-        queryFn:()=>fetchSearch(search)
+        queryFn:()=>fetchSearch(search),
+        enabled
     })
     return(
 
