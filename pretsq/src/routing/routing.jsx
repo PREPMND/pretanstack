@@ -26,7 +26,7 @@ export default function NavRoutes(props) {
         <>
 
             <Routes>
-                <Route element={<Layout const { selected, setselected } = props;selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />}>
+                <Route element={<Layout selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />}>
                     <Route path="/movie" element={<Movie setselectedglobal={setselectedglobal}/>} />
                     <Route path="/favourites" element={<Favourites />} />
                     <Route path="/about" element={<About />} />
