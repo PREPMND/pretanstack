@@ -21,7 +21,8 @@ export default function SubSearch(props){
             />
         </div></div>
         <div>
-            {sortedDataata?.slice(0,4).map((movie)=>{
+            {sortedData?.slice(0,4).map((movie)=>{
+                
 
             })}
         </div>
