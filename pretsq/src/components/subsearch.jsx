@@ -8,7 +8,7 @@ export default function SubSearch(){
                  '/>
         </div></div>
         <div>
-            data?
+            data?.slice(0,4)
         </div>
 
         </>
