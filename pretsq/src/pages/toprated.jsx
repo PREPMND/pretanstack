@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchSearch } from "../api/movies";
-export default function TOPrated(){
+export default function TOPrated(props){
     const { search , setsearch}=props;
         const{ data , isLoading , error}=useQuery({
             queryKey:["search",search],
