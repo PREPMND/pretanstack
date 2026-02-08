@@ -21,7 +21,7 @@ export default function SubSearch(props){
             onChange={(e)=>{setsearch(e.target.value)}}
             />
         </div></div> 
-        {data && (<div className={` w-[400px] z-50 justify-center absolute top-full text-blue-500 font-bold text-lg `}>
+        {data && (<div className={` w-[400px] z-50 justify-center absolute top-full text-stone-200 font-bold text-lg `}>
             {sortedData?.slice(0,4).map((movie)=>{
                 return (
                 <div className="bg-neutral-900 p-2 border-b-2 m-auto border-white/10 w-[70%] hover:bg-neutral-800 cursor-pointer gap-3"
