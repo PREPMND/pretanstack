@@ -23,7 +23,9 @@ export default function SubSearch(props){
         <div>
             {sortedData?.slice(0,4).map((movie)=>{
                 <div key={movie.id}>
-                    <div><img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} /></div>
+                    <div>
+                        <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} /></div>
+                    
                     <h2>{movie.title}</h2>
                 </div>
 
