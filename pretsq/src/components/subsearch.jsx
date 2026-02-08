@@ -3,7 +3,8 @@ import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
 export default function SubSearch(){
     const{ data , isLoading , error}=useQuery({
-        queryKey:["search"]
+        queryKey:["search",search]
+        query
     })
     return(
 
