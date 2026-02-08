@@ -32,7 +32,7 @@ export default function SubSearch(props){
 
             })}
         </div>)
-}
+}</div>
         </>
     )
 }
