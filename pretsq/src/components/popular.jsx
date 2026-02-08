@@ -25,7 +25,7 @@ function Popular(props) {
 
     return <p>Something went wrong</p>;
   }
-  console.log(data);
+
   
   return (
     <>
