@@ -24,7 +24,7 @@ export const fetchSearch = async (search) => {
         api_key: API_KEY,
         page: page,
         type:"search",
-        search:
+        query:search,
       },
     }
   );
