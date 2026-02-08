@@ -39,7 +39,7 @@ export default function NavRoutes(props) {
                     <Route path="/" element={
                         <>
                             <div className='thebody'>
-                                <SubSearch />
+                                <SubSearch search={search} />
                                 <Popular selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selected={selected} setselected={setselected} />
                                 <Trending selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} />
                                 <TopRated selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} />
