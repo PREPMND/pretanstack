@@ -12,8 +12,9 @@ function Popular(props) {
   const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
     queryFn: () => fetchPopularMovies(),
+    
     refetchOnMount:true,
-    refetchOnWindowFocus:true
+    refetchOnWindowFocus:true,
   });
 
   console.log({selected})
