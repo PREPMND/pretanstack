@@ -27,7 +27,11 @@ export default function NavRoutes(props) {
 
             <Routes>
                 <Route element={<Layout selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />}>
-                    <Route path="/movie" element={<Movie setselectedglobal={setselectedglobal}/>} />
+                    <Route path="/movie" element={<>
+                    <div className='h-full bg-neutral-900'><SubSearch search={search} setsearch={setsearch}/>
+                    <Movie setselectedglobal={setselectedglobal}/></div>
+
+                    </>} />
                     <Route path="/favourites" element={<Favourites />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/toprated" element={<TOPrated search={search} setsearch={setsearch} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />} />

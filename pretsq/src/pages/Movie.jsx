@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ChangeTitle } from "../App.jsx"
+import SubSearch from "../components/subsearch.jsx"
 export default function Movie(props) {
     const { setselectedglobal} = props
     const [movies, setMovies] = useState(null);
@@ -22,6 +23,7 @@ export default function Movie(props) {
 
         <>
             <div className="bg-neutral-900 w-full h-full">
+                
                 <div className="bg-neutral-950 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 select-none  gap-2 md:gap-4 overflow-y-hidden scroll-smooth scrollbar-hide overflow-x-auto focus:ring-2 focus:ring-amber-400 px-3 pt-2 ">
                     {data?.slice(0, 50).map((movie) => {
                         return (
