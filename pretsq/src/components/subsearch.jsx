@@ -33,7 +33,7 @@ export default function SubSearch(props){
                     </div>
                     <div className="flex items-center justify-between md:w-[500px]">
                         <h2 onClick={()=>{
-                window.open(`https://cineby.gd/movie/${movie.id}`)
+                        window.open(`https://cineby.gd/movie/${movie.id}`)
             }}
                         className="truncate text-[14px] sm:text-[20px] hover:text-neutral-400">{movie.title}</h2>
                         <div className="hidden md:block text-[10px] text-rose-200 md:text-[14px]">{movie.release_date}</div>
