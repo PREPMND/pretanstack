@@ -9,6 +9,7 @@ export default function App(){
     const [selectedtrending, setselectedtrending] = useState(null)
     const [selected, setselected] = useState(null)
     const [selectedglobal , setselectedglobal]=useState(null);
+    const [searchnav , setsearchnav ]=useState(null);
     return(
         <>
         <QueryClientProvider client={new QueryClient()}>

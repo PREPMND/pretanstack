@@ -13,10 +13,10 @@ export default function SubSearch(props){
     return(
 
         <>
-        <div className="relative">
-        <div className={` min-w-full`} >
-        <div className='bg-neutral-900 pt-2 md:hidden flex items-center w-full'>
-            <input type="text" id="search" placeholder=' Search...' className='p-1 py-[4px] bg-neutral-700  ml-12 mx-5 rounded-md text-white'
+        <div className="w-max">
+        <div className={`w-[300px]`} >
+        <div className='bg-neutral-900 pt-2 flex items-center w-48'>
+            <input type="text" id="search" placeholder=' Search...' className='p-1 py-[4px] bg-neutral-700 w-max ml-12 mx-5 rounded-md text-white'
             value={search}
             onChange={(e)=>{setsearch(e.target.value)}}
             />
