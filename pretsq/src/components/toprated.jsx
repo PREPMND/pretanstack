@@ -71,7 +71,7 @@ export default function TopRated(props) {
                 }}
                     className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center ">
                     <div onClick={(e) => e.stopPropagation()}
-                        className="relative w-[90%] ">
+                        className="relative w-[80%] md:w-[70%] ">
                         <img
                             src={`https://image.tmdb.org/t/p/original${selectedtoprated.backdrop_path}`}
                             className="rounded-lg"
