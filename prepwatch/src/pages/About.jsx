@@ -21,17 +21,24 @@ export default function About() {
         <div onMouseEnter={()=>setselectabout(true)}
              onMouseLeave={()=>setselectabout(false)}>
                 
-          <span className="hover:text-rose-200">About Us</span>
-        <div className={`${selectabout==true?"opacity-100":"opacity-0"} items-center absolute right-0 w-[70%] min-h-fit md:w-[40%] bg-rose-50 m-3 text-black rounded-lg p-4 text-sm md:text-base transition-opacity duration-300 ease-in-out   `}><div className="flex items-center ">
-           <a href="https://github.com/PREPMND/pretanstack" target="_blank" className="text-[14px] sm:text-xl md:text-3xl  w-full">GitHub <span className="sm:flex hidden">Repository</span> <span className="text-[16px] lg:flex hidden text-stone-600 ">Click to open</span></a>
-           <CatIcon className="animate-pulse text-rose-500 ml-4 absolute right-4" fill="black" size={40} /></div>
-           <div>
-            <img src="https://preview.redd.it/progetto-meme-del-mascellone-che-mette-la-mano-sulla-spalla-v0-rceycnd8y99f1.png?width=4880&format=png&auto=webp&s=cc3ab8d0e02861fbd11ae773a3a6a110b63884f2" alt="meme" className="rounded-lg mt-4"/>
-           </div>
-          </div>
+          About Us
         </div>
+        <div className={`${selectabout==true?"opacity-100":"opacity-0"} items-center top-0 absolute right-0 w-[70%] min-h-fit md:w-[40%] bg-rose-50 m-3 text-black rounded-lg p-4 text-sm md:text-base transition-opacity duration-300 ease-in-out   `}>
+          <div className="flex items-center ">
+           <a href="https://github.com/PREPMND/pretanstack" target="_blank" className="text-[14px] sm:text-xl md:text-3xl  w-full">GitHub <span className="sm:flex hidden">Repository</span> <span className="text-[16px] lg:flex hidden text-stone-600 ">Click to open</span></a>
+           <CatIcon className="animate-pulse text-rose-500 ml-4 absolute right-4" fill="black" size={40} />
+          </div>
+          <div>
+            <img src="https://preview.redd.it/progetto-meme-del-mascellone-che-mette-la-mano-sulla-spalla-v0-rceycnd8y99f1.png?width=4880&format=png&auto=webp&s=cc3ab8d0e02861fbd11ae773a3a6a110b63884f2" alt="meme" className="rounded-lg mt-4"/>
+          </div>
+          
+        </div>
+        
           
         </section>
+      </div>
+      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">Hover Over Them , Info's There</div>
+      <div className="absolute bottom-0 w-full text-center p-4 text-sm text-stone-500">
         
       </div>
     </>
