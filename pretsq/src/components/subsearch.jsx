@@ -22,10 +22,10 @@ export default function SubSearch(props){
             />
             <span onClick={()=>{setsearch("")}} className={`${search.length>0 ? "block" : "hidden"} cursor-pointer text-red-50`}>✖</span>
         </div></div> 
-        {data && (<div className={` z-50 flex-col justify-center pt-1 m-auto absolute  place-items-center md:w-[70%]  left-1/2 -translate-x-1/2 top-full text-stone-200 min-h-60 font-bold text-lg `}>
+        {data && (<div className={` z-50 flex-col justify-center pt-1 m-auto absolute  place-items-center md:w-[70%]  md:left-1/2 md:-translate-x-1/2 top-full ml-17 md:ml-0 text-stone-200 min-h-60 font-bold text-lg `}>
             {sortedData?.slice(0,4).map((movie)=>{
                 return (
-                <div className="bg-neutral-900 p-2 border-b-2 ml-12 mx-5 m-auto border-white/10 w-[70%] hover:bg-neutral-800 cursor-pointer gap-2 md:gap-3 overflow-y-auto scrollbar-hide"
+                <div className="bg-neutral-900 p-2 border-b-2 ml-12 mx-5 m-auto border-white/10 w-[90%] md:w-[70%] hover:bg-neutral-800 cursor-pointer gap-2 md:gap-3 overflow-y-auto scrollbar-hide"
                 key={movie.id}>
                     <div className="flex items-center w-max truncate gap-7">
                     <div className="aspect-[2/3] md:w-[70px] w-[55px] rounded object-cover overflow-hidden overflow-x-hidden ">
