@@ -3,7 +3,15 @@ export default function About(){
         
         <>
         <div>
-            <div>About</div>
+            <section> 
+                <div>
+                    PrepWatch
+                </div>
+                <div>About Us</div> 
+                <div>
+                    <Git
+                </div>
+            </section>
         </div>
         </>
     )
