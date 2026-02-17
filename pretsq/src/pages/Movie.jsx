@@ -72,26 +72,22 @@ export default function Movie(props) {
                 setselectedglobal(null);
                 setMovies(null);
                 }}
-                                    className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center ">
-                                    <div onClick={(e) => e.stopPropagation()}
-                                        className="relative w-[80%] md:w-[70%]  ">
-                                        <img
-                                            src={`https://image.tmdb.org/t/p/original${movies.backdrop_path}`}
-                                            className="rounded-lg"
-                                        />
-                                        <button
-                                            className="absolute inset-0 flex items-center justify-center text-white text-3xl"
-                                            onClick={(e) => {
-                                                e.stopPropagation();
-                                                window.open(`https://cineby.gd/movie/${movies.id}`)
-                                            }}
-                                        >
-                                            ▶
-                                        </button>
+                className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center ">
+                <div onClick={(e) => e.stopPropagation()}
+                className="relative w-[80%] md:w-[70%]  ">
+                <img
+                    src={`https://image.tmdb.org/t/p/original${movies.backdrop_path}`}
+                    className="rounded-lg"
+                    />
+                <button
+                    className="absolute inset-0 flex items-center justify-center text-white text-3xl"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(`https://cineby.gd/movie/${movies.id}`)
+                    }}> ▶ </button>
                                         
-                                    </div>
-                                </div>
-                            )}
+                </div>
+            </div> )}
         </>
     )
 }
