@@ -5,7 +5,7 @@ export default function About() {
     const [selectabout, setselectabout] =useState(false);
   return (
     <>
-      <div className="h-screen overflow-hidden bg-neutral-900 w-full text-rose-50 text-xl font-[Segoe-UI-Emoji] md:text-3xl">
+      <div className="h-screen overflow-hidden select-none bg-neutral-900 w-full text-rose-50 text-xl font-[Segoe-UI-Emoji] md:text-3xl">
         <section className="flex *:hover:cursor-pointer justify-between pt-4 md:px-5 px-4 overflow-x-hidden max-h-full w-full">
         <div>
           <div onMouseEnter={()=>setselect(true)}
@@ -18,27 +18,25 @@ export default function About() {
            </p>
           </div>
         </div>
-        <div onMouseEnter={()=>setselectabout(true)}
-             onMouseLeave={()=>setselectabout(false)}>
-                
-          About Us
-        </div>
-        <div className={`${selectabout==true?"opacity-100":"opacity-0"} items-center top-0 absolute right-0 w-[70%] min-h-fit md:w-[40%] bg-rose-50 m-3 text-black rounded-lg p-4 text-sm md:text-base transition-opacity duration-300 ease-in-out   `}>
-          <div className="flex items-center ">
-           <a href="https://github.com/PREPMND/pretanstack" target="_blank" className="text-[14px] sm:text-xl md:text-3xl  w-full">GitHub <span className="sm:flex hidden">Repository</span> <span className="text-[16px] lg:flex hidden text-stone-600 ">Click to open</span></a>
-           <CatIcon className="animate-pulse text-rose-500 ml-4 absolute right-4" fill="black" size={40} />
-          </div>
-          <div>
+        <div >    
+          <span 
+          onMouseEnter={()=>setselectabout(true)}
+          onMouseLeave={()=>setselectabout(false)}
+          className="hover:text-rose-200">About Us</span>
+        <div className={`${selectabout==true?"opacity-100":"opacity-0"} items-center absolute right-0 w-[70%] min-h-fit md:w-[40%] bg-rose-50 m-3 z-50 text-black rounded-lg p-4 text-sm md:text-base transition-opacity duration-300 ease-in-out   `}><div className="flex items-center ">
+           <a href="https://github.com/PREPMND/pretanstack" target="_blank" className="text-[14px] sm:text-xl md:text-3xl  w-full"><div className="flex  gap-3">GitHub <span className="sm:flex hidden">Repository</span></div> <span className="text-[16px] lg:flex hidden text-stone-600 ">Click to open</span></a>
+           <CatIcon className="animate-pulse text-rose-500 ml-4 w-fit absolute right-4" fill="black" size={40} /></div>
+           <div>
             <img src="https://preview.redd.it/progetto-meme-del-mascellone-che-mette-la-mano-sulla-spalla-v0-rceycnd8y99f1.png?width=4880&format=png&auto=webp&s=cc3ab8d0e02861fbd11ae773a3a6a110b63884f2" alt="meme" className="rounded-lg mt-4"/>
+           </div>
           </div>
-          
         </div>
-        
           
         </section>
-      </div>
-      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">Hover Over Them , Info's There</div>
-      <div className="absolute bottom-0 w-full text-center p-4 text-sm text-stone-500">
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 transition-transform hover:-translate-x-1 duration-[1200ms] ease-in-out ">Hover Over Them , Info's There</div>
+        <div className="absolute bottom-0 w-full text-center p-4 text-sm text-stone-500">
+          
+        </div>
         
       </div>
     </>
