@@ -16,12 +16,14 @@ import IndvTrending from '../indvcomponents/indvtrending.jsx'
 import SubSearch from '../components/subsearch.jsx'
 import Error from '../indvcomponents/error.jsx'
 import Layout from './layout.jsx'
+import Mainpage from './mainpage.jsx'
 export default function NavRoutes(props) {
     const { selected, setselected } = props;
     const { selectedtoprated, setselectedtoprated } = props
     const { selectedtrending, setselectedtrending } = props;
     const { selectedglobal, setselectedglobal } = props;
     const {search , setsearch}=props;
+    const {page ,setpage}=props;
     return (
         <>
 
@@ -43,11 +45,8 @@ export default function NavRoutes(props) {
                     <Route path="/" element={
                         <>
                             <div className='thebody'>
+                                <Mainpage page={page} setpage={setpage} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />
                                 
-                                <Popular selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selected={selected} setselected={setselected} />
-                                <Trending selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} />
-                                <TopRated selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} />
-
                             </div>
 
 

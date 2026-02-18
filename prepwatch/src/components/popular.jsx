@@ -16,7 +16,7 @@ function Popular(props) {
     refetchOnMount:true,
     refetchOnWindowFocus:true,
   });
-
+  
   if (isLoading) return (<>
 
     <p className='h-full text-white flex justify-center items-center  '>Loading...</p></>)
@@ -25,7 +25,8 @@ function Popular(props) {
 
     return <p>Something went wrong</p>;
   }
-
+  console.log(selected);
+  
   
   return (
     <>

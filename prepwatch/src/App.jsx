@@ -10,13 +10,14 @@ export default function App(){
     const [selected, setselected] = useState(null)
     const [selectedglobal , setselectedglobal]=useState(null);
     const [searchnav , setsearchnav ]=useState(null);
+    const [page,setpage]=useState(null);
     return(
         <>
         <QueryClientProvider client={new QueryClient()}>
         <BrowserRouter>
            
            
-           <NavRoutes selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selected={selected } setselected={setselected}/>
+           <NavRoutes page={page} setpage={setpage} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selected={selected } setselected={setselected}/>
            
         </BrowserRouter>
         </QueryClientProvider>
