@@ -1,8 +1,10 @@
 import { CatIcon, GitGraph } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 export default function About() {
     const [select, setselect] =useState(false);
     const [selectabout, setselectabout] =useState(false);
+    const navigate = useNavigate();
   return (
     <>
       <div className="h-screen overflow-hidden select-none bg-neutral-900 w-full text-rose-50 text-xl font-[Segoe-UI-Emoji] md:text-3xl">
@@ -37,8 +39,14 @@ export default function About() {
         <div className="absolute bottom-0 w-full text-center p-4 text-sm text-stone-500">
           
         </div>
-        
+        <div className="text-center flex justify-center w-full">
+        <button onClick={()=>{navigate("/")}}
+        className="absolute mb-12 text-2xl bottom-0 px-3 py-2 rounded-2xl transition-all ease-in-out  hover:text-indigo-950 duration-500 hover:bg-indigo-300 bg-neutral-500">
+          Back To Home
+        </button>
       </div>
+      </div>
+      
     </>
   );
 }
