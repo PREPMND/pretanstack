@@ -38,21 +38,23 @@ export default function Movie(props) {
                                 >   <div >
                                     <img 
                                     
-                                    className="rounded object-cover z-30"
+                                    className="rounded object-cover "
                                         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} /></div>
                                     
-                            <div className={`absolute inset-0 z-60 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movieHovered === movie.id ? "opacity-100" : "opacity-0"}`}
+                            <div className={`absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movieHovered === movie.id ? "opacity-100" : "opacity-0"}`}
                             >
                                 <button
                                     onClick={() => {
                                         setMovies(movie);
                                         setselectedglobal(movie);
                                     }}
-                                    className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2 ${movies ? "pointer-events-none" : ""}`}
+                                    className={`bg-black/70 inset-0 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2 ${movies ? "pointer-events-none" : ""}`}
                                 >
-                                    <span className="text-red-500">▶</span>
+                                
+                                <span 
+                                className="text-red-500">▶   Play</span>
                                 <h2 className="text-white text-sm font-semibold absolute top-0 truncate m-auto mt-2 inset-0 w-full text-center" >{movie.title}</h2>
-                                     Play
+                                     
                                 </button>
                             </div>
 
@@ -75,6 +77,7 @@ export default function Movie(props) {
                 className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center ">
                 <div onClick={(e) => e.stopPropagation()}
                 className="relative w-[80%] md:w-[70%]  ">
+                <h2 className="text-white text-3xl font-semibold absolute top-0 truncate m-auto mt-2 inset-0 w-full text-center" >{movies.title}</h2>
                 <img
                     src={`https://image.tmdb.org/t/p/original${movies.backdrop_path}`}
                     className="rounded-lg"
