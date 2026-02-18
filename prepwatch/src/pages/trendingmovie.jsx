@@ -4,6 +4,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ChangeTitle } from "../App.jsx"
 import SubSearch from "../components/subsearch.jsx"
+import { Loader2Icon } from "lucide-react"
 export default function TrendingMovie(props) {
     const { setselectedglobal} = props
     const [movies, setMovies] = useState(null);
