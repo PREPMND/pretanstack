@@ -16,7 +16,7 @@ export default function Topratedpage(props) {
     })
     
     if (isLoading) return(<div className="bg-neutral-900 "> 
-    <Loader2Icon className="animate-spin m-auto mt-20 text-white" size={40} />
+    <Loader2Icon className="animate-spin m-auto mt-20 text-white" size={20} />
     <div className="h-full flex justify-center items-center">Loading...</div></div>)
     if (error) return <div>Error: {error.message}</div>
     return (
