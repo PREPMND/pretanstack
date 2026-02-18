@@ -6,7 +6,7 @@ import { ChangeTitle } from "../App.jsx";
 function Popular(props) {
   const navigate = useNavigate();
   const [movieHovered , setmovieHovered]=useState(null);
-  
+  const {page , setpage}=props
   const {selected , setselected }=props;
   const [num, setnum] = useState(1);
   const { data, isLoading, error } = useQuery({
@@ -16,10 +16,12 @@ function Popular(props) {
     refetchOnMount:true,
     refetchOnWindowFocus:true,
   });
-  
-  if (isLoading) return (<>
-
-    <p className='h-full text-white flex justify-center items-center  '>Loading...</p></>)
+  console.log(page)
+  if (isLoading) {
+    return (<>
+    
+    <p className='h-full text-white flex justify-center items-center  '>Loading...</p></>)}
+    else{setpage("ant")}
   if (error) {
     console.log(error);
 

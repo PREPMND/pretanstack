@@ -13,7 +13,7 @@ const Mainpage = (props) => {
   return (
     <div>
       <div>
-        <div className={`w-full h-full bg-neutral-900 z-40 flex items-center justify-center text-yellow-50 font-[Inter] font-[600] ${selected!==null?"hidden":"block"}`}>Loading...</div>
+        <div className={`w-full h-full bg-neutral-900 z-40 flex items-center justify-center text-yellow-50 font-[Inter] font-[600] ${page!==null?"hidden":"block"}`}>Loading...</div>
       </div>
       <div>
         <Popular page={page} setpage={setpage} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selected={selected} setselected={setselected} />
