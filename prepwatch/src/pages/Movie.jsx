@@ -4,6 +4,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ChangeTitle } from "../App.jsx"
 import SubSearch from "../components/subsearch.jsx"
+import { Loader2Icon } from "lucide-react"
 export default function Movie(props) {
     const { setselectedglobal} = props
     const [movies, setMovies] = useState(null);
@@ -16,7 +17,9 @@ export default function Movie(props) {
         refetchOnWindowFocus:true,
     })
     
-    if (isLoading) return <div>Loading...</div>
+    if (isLoading) return(<div className="bg-neutral-900 "> 
+    <Loader2Icon className="animate-spin m-auto mt-20 text-white" size={40} />
+    <div className="h-full flex justify-center items-center">Loading...</div></div>)
     if (error) return <div>Error: {error.message}</div>
     return (
 
