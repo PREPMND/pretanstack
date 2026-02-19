@@ -9,7 +9,7 @@ export default function SubSearch(props) {
     useEffect(() => {
         const goOnline = () => setStatus("Online");
         const goOffline = () => setStatus("Offline");
-
+        
         window.addEventListener("online", goOnline);
         window.addEventListener("offline", goOffline);
 
@@ -18,8 +18,17 @@ export default function SubSearch(props) {
             window.removeEventListener("offline", goOffline);
         };
     }, []);
-
-    console.log(status);
+    {/*useEffect(() => {
+        if (status === "Online") {
+            setRotate(true);
+            setTimeout(() => {
+                setRotate(false);
+            }, 1000);
+        }
+    }, [status]);*/}
+    
+    console.log(window.navigator.onLine);
+    
     const { data } = useQuery({
         queryKey: ["search", search],
         queryFn: () => fetchSearch(search),
@@ -44,11 +53,16 @@ export default function SubSearch(props) {
                             if(status==="Online"){
                             setTimeout(() => {
                                 window.location.reload();
-                            }, 300);}
-                         }}
-                         className={`text-amber-300 ml-5 ${rotate ? "animate-spin" : ""}`} size={18} 
-                         <div className={`${status==="Offline"?"block":"hidden"} text-rose-600 text-sm ml-5`}>Looks like you're offline</div>
+                                
+                            }, 300);
+                            }
+                            setTimeout(() => {
+                                setRotate(false);}, 3000);
+                            }}
+                         className={`text-amber-300 ml-5 ${rotate || !status ? "animate-spin" : "animate-none"}`} size={18} 
+                         
                          />
+                         <div className={`${status==="Offline"?"block":"hidden"} text-rose-600 text-sm right-24 absolute`}>Looks like you're offline</div>
                         <div className="absolute right-5">
                             {status === "Offline" && (<WifiOff className="m-auto animate-pulse text-white mb-1" size={25} />)}
                             {status === "Online" && (<WifiHigh className="m-auto text-green-500 mb-1" size={30} />)}
