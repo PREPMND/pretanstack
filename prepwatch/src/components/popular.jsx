@@ -20,7 +20,7 @@ function Popular(props) {
   if (isLoading) {
     return (<>
     
-    <p className='h-full text-white flex justify-center items-center  '>Loading...</p></>)}
+    <p className='h-full text-white flex justify-center items-center  '></p></>)}
     else{setpage("ant")}
   if (error) {
     console.log(error);
