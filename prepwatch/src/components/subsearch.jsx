@@ -1,18 +1,18 @@
 import { fetchSearch } from "../api/movies"
 import { useIsFetching, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Loader, RotateCcw, WifiHigh, WifiOff } from "lucide-react";
-import { useEffect,useState } from "react"
-import { fetchMovies  } from "../api/movies";
+import { useEffect, useState } from "react"
+import { fetchMovies } from "../api/movies";
 import { fetchTopRated } from "../api/topratedapi";
 import { fetchTrending } from "../api/trendingapi";
 export default function SubSearch(props) {
     const { search, setsearch } = props;
     const [status, setStatus] = useState(navigator.onLine ? "Online" : "Offline");
-    const [rotate, setRotate] = useState(false);    
+
     useEffect(() => {
         const goOnline = () => setStatus("Online");
         const goOffline = () => setStatus("Offline");
-        
+
         window.addEventListener("online", goOnline);
         window.addEventListener("offline", goOffline);
 
@@ -24,8 +24,12 @@ export default function SubSearch(props) {
     const queryClient = useQueryClient();
     useEffect(() => {
         if (status === "Online") {
-            queryClient.invalidateQueries();}
-    })
+            queryClient.invalidateQueries({ queryKey: ["popular-movies"] });
+            queryClient.invalidateQueries({ queryKey: ["trending"] });
+            queryClient.invalidateQueries({ queryKey: ["top-rated"] });
+
+        }
+    }, [status, queryClient]);
     const isFetching = useIsFetching();
 
 
@@ -37,13 +41,13 @@ export default function SubSearch(props) {
             }, 1000);
         }
     }, [status]);*/}
-    
+
     console.log(window.navigator.onLine);
-    
+
     const { data } = useQuery({
         queryKey: ["search", search],
         queryFn: () => fetchSearch(search),
-        enabled: search.length > 0,
+        enabled: search.length > 0 && status === "Online",
     })
     const sortedData = data ? [...data].sort((a, b) => b.popularity - a.popularity) : [];
     console.log(sortedData.slice(0, 4));
@@ -59,11 +63,20 @@ export default function SubSearch(props) {
                         />
                         <span onClick={() => { setsearch("") }} className={`${search.length > 0 ? "block" : "hidden"} cursor-pointer text-red-50`}>✖</span>
                         <RotateCcw
-                         
-                         className={`text-amber-300 ml-5 ${isFetching ? "animate-spin" : ""}`} size={18} 
-                         
-                         />
-                        <div className={`${status==="Offline"?"block":"hidden"} text-rose-600 text-[8px]  md:text-sm right-24 absolute `}><div className="md:flex hidden">Looks like you're Offline </div></div>
+                            onClick={() => {
+                                if (status === "Online") {
+                                    queryClient.refetchQueries({ type: "active" });
+                                    console.log(queryClient.getQueryCache().getAll());
+                                    console.log("refetched");
+
+                                }
+                            }}
+                            className={`text-amber-300 ml-5 ${isFetching ? "animate-spin" : ""}`}
+                            size={18}
+                        />
+
+
+                        <div className={`${status === "Offline" ? "block" : "hidden"} text-rose-600 text-[8px]  md:text-sm right-24 absolute `}><div className="md:flex hidden">Looks like you're Offline </div></div>
                         <div className="absolute left-2 md:right-5 md:left-auto">
                             {status === "Offline" && (<WifiOff className="m-auto animate-pulse text-white mb-1" size={25} />)}
                             {status === "Online" && (<WifiHigh className="m-auto text-green-500  md:mb-1" size={30} />)}
