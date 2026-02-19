@@ -20,7 +20,7 @@ export default function TrendingMovie(props) {
     if (isLoading) return(<div className="bg-neutral-900 h-[calc(100vh-120px)] pt-32 min-h-full "> 
     <Loader2Icon className="animate-spin m-auto text-white" size={40} />
     <div className=" flex justify-center items-center text-rose-100">Loading...</div>
-    <div className="text-center absolute bottom-0 font-sans text-stone-400">Results are on their way ! Check your network connection.</div></div>)
+    <div className="text-center absolute bottom-0 font-sans text-[8px] md:text-[14px] text-stone-400">Results are on their way ! Check your network connection.</div></div>)
     if (error) return <div>Error: {error.message}</div>
     return (
 

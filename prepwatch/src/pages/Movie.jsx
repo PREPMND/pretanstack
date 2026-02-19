@@ -22,7 +22,7 @@ export default function Movie(props) {
     <div className=" flex justify-center items-center text-rose-100">
         
         Loading...</div>
-    <div className=" text-center absolute bottom-0 font-sans text-stone-400">Results are on their way ! Check your network connection.</div>
+    <div className=" text-center absolute bottom-0 font-sans text-[8px] md:text-[14px] text-stone-400">Results are on their way ! Check your network connection.</div>
     </div>)
     if (error) return <div>Error: {error.message}</div>
     return (
