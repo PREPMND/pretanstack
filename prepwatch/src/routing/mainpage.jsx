@@ -7,7 +7,7 @@ const Mainpage = (props) => {
     const { selectedtoprated, setselectedtoprated } = props
     const { selectedtrending, setselectedtrending } = props;
     const { selectedglobal, setselectedglobal } = props;
-    
+    const {favourites, setfavourites} = props;
     const {page ,setpage}=props;
   return (
     <div>
@@ -20,9 +20,9 @@ const Mainpage = (props) => {
       </div>
       
       <div>
-        <Popular page={page} setpage={setpage} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selected={selected} setselected={setselected} />
-        <Trending selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal}/>
-        <TopRated selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal}/>
+        <Popular favourites={favourites} setfavourites={setfavourites} page={page} setpage={setpage} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selected={selected} setselected={setselected} />
+        <Trending favourites={favourites} setfavourites={setfavourites} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal}/>
+        <TopRated favourites={favourites} setfavourites={setfavourites} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal}/>
       </div>
     </div>
   )

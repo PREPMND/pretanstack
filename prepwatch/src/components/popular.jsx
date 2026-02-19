@@ -3,6 +3,7 @@ import { fetchPopularMovies } from "../api/popularapi.jsx";
 import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { ChangeTitle } from "../App.jsx";
+import { Heart } from "lucide-react";
 function Popular(props) {
   const navigate = useNavigate();
   const [movieHovered , setmovieHovered]=useState(null);
@@ -62,6 +63,10 @@ function Popular(props) {
                   >
                     <span className="text-red-500">▶</span> Play
                   </button>
+                  <Heart 
+                  onClick={()=>}
+                  className="opacity-80 absolute bottom-4
+                   right-2 text-white" size={20} />
                 </div>
               </div>
               <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
