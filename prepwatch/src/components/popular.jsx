@@ -10,6 +10,8 @@ function Popular(props) {
   const {page , setpage}=props
   const {selected , setselected }=props;
   const [num, setnum] = useState(1);
+  const [heart ,setheart] = useState([]);
+  const {favourites, setfavourites} = props;
   const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
     queryFn: () => fetchPopularMovies(),
@@ -17,7 +19,7 @@ function Popular(props) {
     refetchOnMount:true,
     refetchOnWindowFocus:true,
   });
-  console.log(page)
+  console.log(JSON.stringify(favourites));
   if (isLoading) {
     return (<>
     
@@ -64,9 +66,23 @@ function Popular(props) {
                     <span className="text-red-500">▶</span> Play
                   </button>
                   <Heart 
-                  onClick={()=>}
-                  className="opacity-80 absolute bottom-4
-                   right-2 text-white" size={20} />
+                  onClick={()=>{setheart(prev => {
+                      if(prev.some(heart => heart === movie.id)){
+                        return prev.filter(heart => heart !== movie.id);
+                      } else {
+                        return [...prev, movie.id];
+                      }});
+                    setfavourites(prev => {
+                      if(prev.some(fav => fav === movie.id)){
+                        return prev.filter(fav => fav !== movie.id);
+                      } else {
+                        return [...prev, movie.id];
+                      }});
+                      localStorage.setItem("heart", JSON.stringify(heart));
+                      localStorage.setItem("favourites", JSON.stringify(favourites));
+                  }}
+                  className={`opacity-80 absolute bottom-4
+                   right-2 text-white ${heart===movie.id ? "fill-red-500" : ""}`} size={20} />
                 </div>
               </div>
               <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
