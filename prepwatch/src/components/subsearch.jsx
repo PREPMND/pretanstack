@@ -1,7 +1,10 @@
 import { fetchSearch } from "../api/movies"
-import { useQuery } from "@tanstack/react-query"
+import { useIsFetching, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Loader, RotateCcw, WifiHigh, WifiOff } from "lucide-react";
 import { useEffect,useState } from "react"
+import { fetchMovies  } from "../api/movies";
+import { fetchTopRated } from "../api/topratedapi";
+import { fetchTrending } from "../api/trendingapi";
 export default function SubSearch(props) {
     const { search, setsearch } = props;
     const [status, setStatus] = useState(navigator.onLine ? "Online" : "Offline");
@@ -18,6 +21,14 @@ export default function SubSearch(props) {
             window.removeEventListener("offline", goOffline);
         };
     }, []);
+    const queryClient = useQueryClient();
+    useEffect(() => {
+        if (status === "Online") {
+            queryClient.invalidateQueries();}
+    })
+    const isFetching = useIsFetching();
+
+
     {/*useEffect(() => {
         if (status === "Online") {
             setRotate(true);
@@ -48,18 +59,8 @@ export default function SubSearch(props) {
                         />
                         <span onClick={() => { setsearch("") }} className={`${search.length > 0 ? "block" : "hidden"} cursor-pointer text-red-50`}>✖</span>
                         <RotateCcw
-                         onClick={() => {
-                            setRotate(true);
-                            if(status==="Online"){
-                            setTimeout(() => {
-                                window.location.reload();
-                                
-                            }, 300);
-                            }
-                            setTimeout(() => {
-                                setRotate(false);}, 3000);
-                            }}
-                         className={`text-amber-300 ml-5 ${rotate || !status ? "animate-spin" : "animate-none"}`} size={18} 
+                         
+                         className={`text-amber-300 ml-5 ${isFetching ? "animate-spin" : ""}`} size={18} 
                          
                          />
                         <div className={`${status==="Offline"?"block":"hidden"} text-rose-600 text-[8px]  md:text-sm right-24 absolute `}><div className="md:flex hidden">Looks like you're Offline </div></div>
