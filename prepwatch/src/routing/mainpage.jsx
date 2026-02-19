@@ -1,6 +1,7 @@
 import Popular from '../components/popular';
 import Trending from '../components/trending';
 import TopRated from '../components/toprated';
+import { LoaderPinwheel } from 'lucide-react';
 const Mainpage = (props) => {
     const { selected, setselected } = props;
     const { selectedtoprated, setselectedtoprated } = props
@@ -11,14 +12,18 @@ const Mainpage = (props) => {
   return (
     <div>
       <div>
-        <div className={`w-full h-[calc(100vh-120px)] bg-neutral-900 z-40 flex items-center justify-center text-yellow-50 font-[Inter] font-[600] ${false?"hidden":"block"}`}>Loading...</div>
+        <div className={`w-full h-[calc(100vh-120px)] bg-neutral-900 z-40 flex items-center justify-center text-yellow-50 font-[Inter] font-[600] ${page!==null?"hidden":"block"}`}>
+          <LoaderPinwheel className="animate-spin mr-3"/>
+          <div>Loading...</div>
+          <div className='absolute bottom-0 font-sans text-stone-400 md:text-[14px]text-[8px]'>Results are on their way ! Check your network connection.</div>
+          </div>
       </div>
-      {/*
+      
       <div>
         <Popular page={page} setpage={setpage} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selected={selected} setselected={setselected} />
         <Trending selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal}/>
         <TopRated selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal}/>
-      </div>*/}
+      </div>
     </div>
   )
 }
