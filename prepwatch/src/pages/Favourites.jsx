@@ -1,5 +1,6 @@
-import {}
+
 export default function Favourites(){
+    
     return(
         
         <>
