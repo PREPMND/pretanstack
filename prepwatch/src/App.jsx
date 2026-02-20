@@ -14,14 +14,14 @@ export default function App(){
     const [favourites, setfavourites] = useState([]);
     return(
         <>
-        <QueryClientProvider client={new QueryClient()}>
+        
         <BrowserRouter>
            
            
            <NavRoutes favourites={favourites} setfavourites={setfavourites} page={page} setpage={setpage} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selected={selected } setselected={setselected}/>
            
         </BrowserRouter>
-        </QueryClientProvider>
+        
         </>
     )
 }

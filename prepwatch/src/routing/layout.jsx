@@ -12,11 +12,11 @@ export default function Layout(props) {
     const [search , setsearch]=useState("");
     const {favourites, setfavourites} = props;
     return (
-        <>  <QueryClientProvider client={new QueryClient()}>
+        <>  
         
             <Navbar favourites={favourites} setfavourites={setfavourites} search={search} setsearch={setsearch} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} /> 
             <SubSearch search={search} setsearch={setsearch}  />
-            <Outlet /></QueryClientProvider>
+            <Outlet />
         </>
     )
 }

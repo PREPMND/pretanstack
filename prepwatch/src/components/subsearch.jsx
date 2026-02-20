@@ -30,19 +30,23 @@ export default function SubSearch(props) {
 
         }
     }, [status, queryClient]);
-    const isFetching = useIsFetching();
+    const isFetching = useIsFetching() > 0;
+    const fetchingCount = useIsFetching();
+    const [spinning, setSpinning] = useState(false);
 
-
-    {/*useEffect(() => {
-        if (status === "Online") {
-            setRotate(true);
-            setTimeout(() => {
-                setRotate(false);
-            }, 1000);
+    useEffect(() => {
+        if (fetchingCount > 0) {
+            setSpinning(true);
+        } else {
+            const timeout = setTimeout(() => {
+                setSpinning(false);
+            }, 300); // minimum visible spin
+            return () => clearTimeout(timeout);
         }
-    }, [status]);*/}
+    }, [fetchingCount]);
 
-    console.log(window.navigator.onLine);
+
+    console.log(isFetching)
 
     const { data } = useQuery({
         queryKey: ["search", search],
@@ -50,7 +54,7 @@ export default function SubSearch(props) {
         enabled: search.length > 0 && status === "Online",
     })
     const sortedData = data ? [...data].sort((a, b) => b.popularity - a.popularity) : [];
-    console.log(sortedData.slice(0, 4));
+
     return (
 
         <>
@@ -65,15 +69,17 @@ export default function SubSearch(props) {
                         <RotateCcw
                             onClick={() => {
                                 if (status === "Online") {
-                                    queryClient.refetchQueries({ type: "active" });
-                                    console.log(queryClient.getQueryCache().getAll());
-                                    console.log("refetched");
+                                    queryClient.refetchQueries({ queryKey: ["popular-movies"] });
+                                    queryClient.refetchQueries({ queryKey: ["trending"] });
+                                    queryClient.refetchQueries({ queryKey: ["top-rated"] });
+
 
                                 }
                             }}
-                            className={`text-amber-300 ml-5 ${isFetching ? "animate-spin" : ""}`}
+                            className={`text-amber-300 ml-5 ${spinning ? "animate-spin" : "animate-none"}`}
                             size={18}
                         />
+
 
 
                         <div className={`${status === "Offline" ? "block" : "hidden"} text-rose-600 text-[8px]  md:text-sm right-24 absolute `}><div className="md:flex hidden">Looks like you're Offline </div></div>
