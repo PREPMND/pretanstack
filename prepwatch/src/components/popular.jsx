@@ -9,7 +9,7 @@ function Popular(props) {
   const [movieHovered , setmovieHovered]=useState(null);
   const {page , setpage}=props
   const {selected , setselected }=props;
-  const [heart ,setheart] = useState([]);
+  const {heart, setheart} = props;
   const {favourites, setfavourites} = props;
   const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
@@ -66,11 +66,12 @@ function Popular(props) {
                   </button>
                   <Heart 
                     onClick={()=>{
-                      if(favourites.some(fav => fav.id === movie.id)){
-                        setfavourites([...favourites].filter(fav => fav.id !== movie.id));
+                      console.log(favourites);
+                      if(favourites.includes(movie.id)){
+                        setfavourites([...favourites].filter(id => id !== movie.id));
                         setheart([...heart].filter(id => id !== movie.id))
                         localStorage.setItem("heart", JSON.stringify([...heart].filter(id => id !== movie.id)))
-                        localStorage.setItem("favourites", JSON.stringify(favourites.filter(fav => fav.id !== movie.id)))
+                        localStorage.setItem("favourites", JSON.stringify(favourites.filter(id => id !== movie.id)))
                         ;
                       } else {
                         setfavourites(prev => [...prev, movie.id]);

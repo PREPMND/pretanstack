@@ -8,6 +8,7 @@ export default function Topratedpage(props) {
     const [movies, setMovies] = useState(null);
     const [movieHovered, setmovieHovered] = useState(null);
     const navigate= useNavigate();
+   
     const { data, isLoading, error } = useQuery({
         queryKey: ["top-rated"],
         queryFn: () => fetchTopRated(),

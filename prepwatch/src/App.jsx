@@ -12,13 +12,14 @@ export default function App(){
     const [searchnav , setsearchnav ]=useState(null);
     const [page,setpage]=useState(null);
     const [favourites, setfavourites] = useState([]);
+    const [heart, setheart] = useState([]);
     return(
         <>
         
         <BrowserRouter>
            
            
-           <NavRoutes favourites={favourites} setfavourites={setfavourites} page={page} setpage={setpage} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selected={selected } setselected={setselected}/>
+           <NavRoutes  favourites={favourites} setfavourites={setfavourites} heart={heart} setheart={setheart} page={page} setpage={setpage} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selected={selected } setselected={setselected}/>
            
         </BrowserRouter>
         

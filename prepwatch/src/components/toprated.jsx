@@ -2,13 +2,16 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchTopRated } from "../api/topratedapi.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Heart } from "lucide-react";
 import { ChangeTitle } from "../App.jsx";
 export default function TopRated(props) {
-    const {selectedtoprated, setselectedtoprated} = props
+    const { selectedtoprated, setselectedtoprated } = props
     const { selectedglobal, setselectedglobal } = props;
     const [movieHovered, setmovieHovered] = useState(null);
     const navigate = useNavigate();
-    const [num, setnum] = useState(1);
+
+     const {heart, setheart} = props;
+    const {favourites, setfavourites} = props;
     const { data, isLoading, error } = useQuery({
         queryKey: ["top-rated"],
         queryFn: () => fetchTopRated(),
@@ -57,6 +60,23 @@ export default function TopRated(props) {
                                 >
                                     <span className="text-red-500">▶</span> Play
                                 </button>
+                                <Heart
+                                    onClick={() => {
+                                        if (favourites.some(fav => fav.id === movie.id)) {
+                                            setfavourites([...favourites].filter(fav => fav.id !== movie.id));
+                                            setheart([...heart].filter(id => id !== movie.id))
+                                            localStorage.setItem("heart", JSON.stringify([...heart].filter(id => id !== movie.id)))
+                                            localStorage.setItem("favourites", JSON.stringify(favourites.filter(fav => fav.id !== movie.id)))
+                                                ;
+                                        } else {
+                                            setfavourites(prev => [...prev, movie.id]);
+                                            setheart([...heart, movie.id]);
+                                            localStorage.setItem("heart", JSON.stringify([...heart, movie.id]))
+                                            localStorage.setItem("favourites", JSON.stringify([...favourites, movie.id]));
+                                        }
+                                    }}
+                                    className={`opacity-80 absolute bottom-4
+                   right-2 text-white ${localStorage.getItem("heart") && JSON.parse(localStorage.getItem("heart")).includes(movie.id) ? "fill-red-500" : ""}`} size={20} />
                             </div>
                         </div>
                         <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
