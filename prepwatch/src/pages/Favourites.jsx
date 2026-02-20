@@ -17,6 +17,9 @@ export default function Favourites(props){
                                     <div>
                                         <h2 className="text-lg font-semibold">{movie.title}</h2>
                                         <p className="text-sm text-gray-400">{movie.release_date}</p>   
+                                    </div>
+                                </div>
+                                
                         )
                     })}</div>
                 </div>
