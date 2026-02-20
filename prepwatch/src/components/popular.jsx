@@ -67,8 +67,8 @@ function Popular(props) {
                   <Heart 
                     onClick={()=>{
                       console.log(favourites);
-                      if(favourites.includes(movie.id)){
-                        setfavourites([...favourites].filter(id => id !== movie.id));
+                      if(favourites.includes(movie)){
+                        setfavourites([...favourites].filter(id => id !== movie));
                         setheart([...heart].filter(id => id !== movie.id))
                         localStorage.setItem("heart", JSON.stringify([...heart].filter(id => id !== movie.id)))
                         localStorage.setItem("favourites", JSON.stringify(favourites.filter(id => id !== movie.id)))
