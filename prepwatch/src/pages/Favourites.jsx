@@ -1,6 +1,6 @@
 
-export default function Favourites(){
-    const {Favourites , setFavourites} = useContext(MovieContext)
+export default function Favourites(props){
+    const {Favourites , setFavourites} = props;
     return(
         
         <>
