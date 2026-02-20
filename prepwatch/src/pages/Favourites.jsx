@@ -14,7 +14,7 @@ export default function Favourites(props){
                         return(
                             <div key={movie.id} className="flex items-center justify-between w-[90%] mx-auto mt-5 p-3 bg-neutral-800 rounded-lg">
                                 <div onClick={()=>{
-                                    window.open("https")
+                                    window.open(`https://cineby.gd/movie/${movie.id}`)
                                 }} 
                                 className="flex w-full items-center">
                                     <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className="w-16 h-24 rounded-md mr-4" />
