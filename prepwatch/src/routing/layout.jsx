@@ -11,10 +11,11 @@ export default function Layout(props) {
     const { selectedglobal , setselectedglobal}=props
     const [search , setsearch]=useState("");
     const {favourites, setfavourites} = props;
+    const {heart, setheart} = props;
     return (
         <>  
         
-            <Navbar favourites={favourites} setfavourites={setfavourites} search={search} setsearch={setsearch} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} /> 
+            <Navbar heart={heart} setheart={setheart} favourites={favourites} setfavourites={setfavourites} search={search} setsearch={setsearch} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} /> 
             <SubSearch search={search} setsearch={setsearch}  />
             <Outlet />
         </>

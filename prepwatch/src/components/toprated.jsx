@@ -10,8 +10,8 @@ export default function TopRated(props) {
     const [movieHovered, setmovieHovered] = useState(null);
     const navigate = useNavigate();
 
-     const {heart, setheart} = props;
-    const {favourites, setfavourites} = props;
+    const { heart, setheart } = props;
+    const { favourites, setfavourites } = props;
     const { data, isLoading, error } = useQuery({
         queryKey: ["top-rated"],
         queryFn: () => fetchTopRated(),

@@ -10,7 +10,7 @@ export default function Trending(props) {
     const { selectedglobal, setselectedglobal } = props;
     const navigate = useNavigate();
 
-     const {heart, setheart} = props;
+    const {heart, setheart} = props;
     const {favourites, setfavourites} = props;
 
     const { data, isPending, error } = useQuery({

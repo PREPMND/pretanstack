@@ -45,7 +45,7 @@ export default function NavRoutes(props) {
                     <Route path="/" element={
                         <>
                             <div className='thebody'>
-                                <Mainpage favourites={props.favourites} setfavourites={props.setfavourites} page={page} setpage={setpage} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />
+                                <Mainpage heart={props.heart} setheart={props.setheart} favourites={props.favourites} setfavourites={props.setfavourites} page={page} setpage={setpage} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />
                                 
                             </div>
 

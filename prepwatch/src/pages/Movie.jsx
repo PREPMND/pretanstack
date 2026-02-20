@@ -10,6 +10,7 @@ export default function Movie(props) {
     const [movies, setMovies] = useState(null);
     const [movieHovered, setmovieHovered] = useState(null);
     const navigate= useNavigate();
+    const {page , setpage} = props;
     const { data, isLoading, error } = useQuery({
         queryKey: ["movies"],
         queryFn: () => fetchMovies(),
@@ -17,7 +18,7 @@ export default function Movie(props) {
         refetchOnWindowFocus:true,
     })
     
-    if (isLoading) return(<div className={`w-full min-h-[calc(100vh-120px)] h-full bg-neutral-900 z-40 flex items-center justify-center whitespace-nowrap text-yellow-50 font-[Inter] font-[600] `}>
+    if (isLoading) return(<div className={`w-full min-h-[calc(100vh-120px)] h-full bg-neutral-900 z-40 flex items-center justify-center whitespace-nowrap text-yellow-50 font-[Inter] font-[600] ${page!==null?"hidden":"block"}`}>
           <LoaderPinwheel className="animate-spin mr-3"/>
           <div>Loading...</div>
           <div className='absolute bottom-4 text-center font-sans text-stone-400 md:text-[14px]text-[8px]'>Results are on their way ! <span className="md:flex hidden ">Check your network connection.</span></div>
