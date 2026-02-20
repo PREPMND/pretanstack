@@ -71,7 +71,7 @@ function Popular(props) {
                         setfavourites([...favourites].filter(id => id !== movie));
                         setheart([...heart].filter(id => id !== movie.id))
                         localStorage.setItem("heart", JSON.stringify([...heart].filter(id => id !== movie.id)))
-                        localStorage.setItem("favourites", JSON.stringify(favourites.filter(id => id !== movie.id)))
+                        localStorage.setItem("favourites", JSON.stringify(favourites.filter(id => id !== movie)))
                         ;
                       } else {
                         setfavourites(prev => [...prev, movie.id]);
