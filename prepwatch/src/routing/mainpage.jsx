@@ -16,7 +16,7 @@ const Mainpage = (props) => {
           <LoaderPinwheel className="animate-spin mr-3"/>
           <div>Loading...</div>
           <div className='absolute bottom-0 font-sans text-stone-400 md:text-[14px]text-[8px]'>Results are on their way ! Check your network connection.</div>
-          </div>
+        </div>
       </div>
       
       <div>

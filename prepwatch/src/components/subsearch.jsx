@@ -1,14 +1,10 @@
 import { fetchSearch } from "../api/movies"
-import { useIsFetching, useQuery, useQueryClient } from "@tanstack/react-query"
-import { Loader, RotateCcw, WifiHigh, WifiOff } from "lucide-react";
+import { useQuery} from "@tanstack/react-query"
 import { useEffect, useState } from "react"
-import { fetchMovies } from "../api/movies";
-import { fetchTopRated } from "../api/topratedapi";
-import { fetchTrending } from "../api/trendingapi";
+import { RotateCcw, WifiOff, WifiHigh } from "lucide-react"
 export default function SubSearch(props) {
     const { search, setsearch } = props;
     const [status, setStatus] = useState(navigator.onLine ? "Online" : "Offline");
-
     useEffect(() => {
         const goOnline = () => setStatus("Online");
         const goOffline = () => setStatus("Offline");
@@ -21,32 +17,9 @@ export default function SubSearch(props) {
             window.removeEventListener("offline", goOffline);
         };
     }, []);
-    const queryClient = useQueryClient();
-    useEffect(() => {
-        if (status === "Online") {
-            queryClient.invalidateQueries({ queryKey: ["popular-movies"] });
-            queryClient.invalidateQueries({ queryKey: ["trending"] });
-            queryClient.invalidateQueries({ queryKey: ["top-rated"] });
+    
 
-        }
-    }, [status, queryClient]);
-    const isFetching = useIsFetching() > 0;
-    const fetchingCount = useIsFetching();
     const [spinning, setSpinning] = useState(false);
-
-    useEffect(() => {
-        if (fetchingCount > 0) {
-            setSpinning(true);
-        } else {
-            const timeout = setTimeout(() => {
-                setSpinning(false);
-            }, 300); // minimum visible spin
-            return () => clearTimeout(timeout);
-        }
-    }, [fetchingCount]);
-
-
-    console.log(isFetching)
 
     const { data } = useQuery({
         queryKey: ["search", search],
@@ -63,18 +36,17 @@ export default function SubSearch(props) {
                     <div className='bg-neutral-900 pt-2 flex md:pt-2 pb-2 md:justify-center h-auto items-center '>
                         <input type="text" id="search" placeholder=' Search...' className='p-1 py-[4px] bg-neutral-700 md:w-[350px] md:py-2 ml-12 mx-5 rounded-md text-white '
                             value={search}
-                            onChange={(e) => { setsearch(e.target.value) }}
+                            onChange={(e) => {setsearch(e.target.value) }}
                         />
-                        <span onClick={() => { setsearch("") }} className={`${search.length > 0 ? "block" : "hidden"} cursor-pointer text-red-50`}>✖</span>
+                        <span onClick={() => {setsearch("")}} className={`${search.length > 0 ? "block" : "hidden"} cursor-pointer text-red-50`}>✖</span>
                         <RotateCcw
                             onClick={() => {
                                 if (status === "Online") {
-                                    queryClient.refetchQueries({ queryKey: ["popular-movies"] });
-                                    queryClient.refetchQueries({ queryKey: ["trending"] });
-                                    queryClient.refetchQueries({ queryKey: ["top-rated"] });
+                                    setSpinning(true);
+                                    setTimeout(() => {
+                                    window.location.reload()},[500])
+                                }else{setSpinning(false)}
 
-
-                                }
                             }}
                             className={`text-amber-300 ml-5 ${spinning ? "animate-spin" : "animate-none"}`}
                             size={18}

@@ -4,7 +4,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ChangeTitle } from "../App.jsx"
 import SubSearch from "../components/subsearch.jsx"
-import { Loader2Icon } from "lucide-react"
+import { LoaderPinwheel } from "lucide-react"
 export default function TrendingMovie(props) {
     const { setselectedglobal} = props
     const [movies, setMovies] = useState(null);
@@ -17,10 +17,11 @@ export default function TrendingMovie(props) {
         refetchOnWindowFocus:true,
     })
     
-    if (isLoading) return(<div className="bg-neutral-900 h-[calc(100vh-120px)] pt-32 min-h-full "> 
-    <Loader2Icon className="animate-spin m-auto text-white" size={40} />
-    <div className=" flex justify-center items-center text-rose-100">Loading...</div>
-    <div className="text-center absolute bottom-0 font-sans text-[8px] md:text-[14px] text-stone-400">Results are on their way ! Check your network connection.</div></div>)
+    if (isLoading) return(<div className={`w-full min-h-[calc(100vh-120px)] h-full bg-neutral-900 z-40 flex items-center justify-center whitespace-nowrap text-yellow-50 font-[Inter] font-[600] `}>
+          <LoaderPinwheel className="animate-spin mr-3"/>
+          <div>Loading...</div>
+          <div className='absolute bottom-4 text-center font-sans text-stone-400 md:text-[14px]text-[8px]'>Results are on their way ! <span className="md:flex hidden ">Check your network connection.</span></div>
+        </div>)
     if (error) return <div>Error: {error.message}</div>
     return (
 
