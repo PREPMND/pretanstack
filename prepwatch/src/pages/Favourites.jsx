@@ -18,8 +18,9 @@ export default function Favourites(props){
                                     <div>
                                         <h2 className="text-lg text-white  font-semibold">{movie.title}</h2>
                                         <p className="text-sm text-gray-400">{movie.release_date}</p>   
+                                        <div className={`${movie.adult===true?"flex":""} bg-red-500 text-white px-2 py-1 rounded text-xs absolute right-1 top-3`}>18+</div>
                                     </div>
-                                    <div className={`${movie.adult===true?"flex":""} bg-red-500 text-white px-2 py-1 rounded text-xs absolute right-1 top-3`}>18+</div>
+                                    
                                 </div>
                             </div>
                         )
