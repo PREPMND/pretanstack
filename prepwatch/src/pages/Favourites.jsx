@@ -16,7 +16,7 @@ export default function Favourites(props){
                                 <div className="flex w-full items-center">
                                     <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className="w-16 h-24 rounded-md mr-4" />
                                     <div className="">
-                                        <h2 className="text-lg text-white hover:text-stone-400  font-semibold">{movie.title}</h2>
+                                        <h2 className="text-lg text-white transit hover:text-stone-400  font-semibold">{movie.title}</h2>
                                         <p className="text-sm text-gray-400">{movie.release_date}</p>   
                                         <div className={`${movie.adult===true?"flex":"hidden"} bg-red-500 text-white w-8 px-2 py-1 rounded text-xs right-1 top-3`}>18+</div>
                                     </div>
