@@ -77,7 +77,7 @@ function Popular(props) {
                         setfavourites(prev => [...prev, movie]);
                         setheart([...heart, movie.id]);
                         localStorage.setItem("heart", JSON.stringify([...heart, movie.id]))
-                        localStorage.setItem("favourites", JSON.stringify([...favourites, movie.id]));
+                        localStorage.setItem("favourites", JSON.stringify([...favourites, movie]));
                       }
                     }}
                   className={`opacity-80 absolute bottom-4
