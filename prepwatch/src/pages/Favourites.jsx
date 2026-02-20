@@ -13,7 +13,7 @@ export default function Favourites(props){
                     >{localStorage.getItem("favourites") && JSON.parse(localStorage.getItem("favourites"))?.map((movie)=>{
                         return(
                             <div key={movie.id} className="flex items-center justify-between w-[90%] mx-auto mt-5 p-3 bg-neutral-800 rounded-lg">
-                                <div className="flex w-auto items-center">
+                                <div className="flex w-full items-center">
                                     <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className="w-16 h-24 rounded-md mr-4" />
                                     <div className="min-w-max">
                                         <h2 className="text-lg text-white  font-semibold">{movie.title}</h2>
