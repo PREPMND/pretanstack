@@ -19,7 +19,7 @@ export default function Favourites(props){
                                         <p className="text-sm text-gray-400">{movie.release_date}</p>   
                                     </div>
                                 </div>
-                                
+                            </div>
                         )
                     })}</div>
                 </div>
