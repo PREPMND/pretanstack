@@ -16,7 +16,7 @@ export default function Favourites(props){
                                 <div className="flex items-center">
                                     <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className="w-16 h-24 rounded-md mr-4" />
                                     <div>
-                                        <h2 className="text-lg font-semibold">{movie.title}</h2>
+                                        <h2 className="text-lg text-white  font-semibold">{movie.title}</h2>
                                         <p className="text-sm text-gray-400">{movie.release_date}</p>   
                                     </div>
                                 </div>
