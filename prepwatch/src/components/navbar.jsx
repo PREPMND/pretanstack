@@ -39,7 +39,8 @@ export default function Navbar(props){
             <button onClick={()=>navigate('/movie')} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-4 py-2 rounded-md active:text-slate-50'>Movies</button>
             <button onClick={()=>navigate('/favourites')} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-4 py-2 rounded-md active:text-slate-50'>Favourites</button>
             <button onClick={()=>setbackdrop(false)} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-4 py-2 rounded-md active:text-slate-50'>Close</button>
-            
+            <button onClick={()=>navigate('/about')} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-4 py-2 rounded-md active:text-slate-50'>About</button>
+        </div>}
 
         </>
     )
