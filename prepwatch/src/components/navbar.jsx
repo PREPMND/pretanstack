@@ -65,6 +65,11 @@ export default function Navbar(props){
         <Box className="mr-2"/>
         About
       </button>
+      <button className='hover:text-rose-100 pl-2 w-full hover:bg-neutral-800 flex'
+      onClick={() => { navigate('/'); setbackdrop(false); }}>
+        <BookHeadphones className="mr-2"/>
+        Home
+      </button>
     </div>
   </div>
 )}
