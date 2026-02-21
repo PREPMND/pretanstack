@@ -9,7 +9,7 @@ https://prepwatch.netlify.app
 
 ✨ Features
 
-Trending Movies
+Trending Movies(Using React Query for efficient data fetching and caching)
 Top Rated Movies
 Popular Movies
 Real-time Movie Search
