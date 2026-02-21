@@ -1,7 +1,7 @@
 🎬 Movie Explorer
 
 A modern movie browsing application built with React and powered by the TMDB API.
-This project focuses on clean UI, efficient data fetching, and responsive design.
+This project focuses on clean UI, efficient data fetching using React Query, and responsive design.
 
 🚀 Live Demo
 
