@@ -30,7 +30,7 @@ Tailwind CSS
 
 TMDB API
 
-What This Project Demonstrates
+--->What This Project Demonstrates
 
 API integration & data handling
 
