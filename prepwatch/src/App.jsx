@@ -13,6 +13,7 @@ export default function App(){
     const [page,setpage]=useState(null);
     const [favourites, setfavourites] = useState([]);
     const [heart, setheart] = useState([]);
+    const [backdrop, setbackdrop] = useState(false);
     return(
         <>
         
