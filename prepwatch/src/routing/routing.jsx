@@ -24,12 +24,12 @@ export default function NavRoutes(props) {
     const { selectedglobal, setselectedglobal } = props;
     const {search , setsearch}=props;
     const {page ,setpage}=props;
-    const {favourites, setfavourites} = props;
+    const {backdrop, setbackdrop} = props;
     return (
         <>
 
             <Routes>
-                <Route element={<Layout backdrop={props.backdrop} setbackdrop={props.setbackdrop} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />}>
+                <Route element={<Layout backdrop={backdrop} setbackdrop={props.setbackdrop} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} />}>
                     <Route path="/movie" element={<>
                     <div className='h-full bg-neutral-900'>
                     <Movie setselectedglobal={setselectedglobal}/></div>
