@@ -25,7 +25,7 @@ export default function Navbar(props){
                 <div>
                     <List
                     onClick={()=>{
-                        set
+                        setbackdrop(true);
                     }}
                     className={`md:hidden flex`}/>
                 </div>
