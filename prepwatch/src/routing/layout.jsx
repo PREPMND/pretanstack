@@ -16,7 +16,7 @@ export default function Layout(props) {
     return (
         <>  
         
-            <Navbar heart={heart} setheart={setheart} favourites={favourites} setfavourites={setfavourites} search={search} setsearch={setsearch} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} /> 
+            <Navbar backdrop={backdrop} setbackdrop={setbackdrop} heart={heart} setheart={setheart} favourites={favourites} setfavourites={setfavourites} search={search} setsearch={setsearch} selected={selected} setselected={setselected} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} /> 
             <SubSearch search={search} setsearch={setsearch}  />
             <Outlet />
         </>
