@@ -19,7 +19,7 @@ export default function Navbar(props){
             </div>
             <div>
                 <div>
-                    <button onClick={()=>navigate('/movie')} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-2 py-1 rounded-md ml-4 mr-2  active:text-slate-50 '>Movies</button>
+                    <button onClick={()=>navigate('/movie')} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-2 py-1 rounded-md ml-4 mr-2 md:mr-0 active:text-slate-50 '>Movies</button>
                 </div>
                 <div>
                     <button onClick={()=>navigate('/favourites')} className='bg-emerald-800 md:flex hidden active:scale-95 active:bg-emerald-500 px-2 py-1 rounded-md ml-4 active:text-slate-50'>Favourites</button>
