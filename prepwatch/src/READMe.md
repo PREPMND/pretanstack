@@ -11,11 +11,9 @@ https://prepwatch.netlify.app
 
 Trending Movies
 Top Rated Movies
- Popular Movies
-
-🔎 Real-time Movie Search
-
-🎬 Interactive Movie Preview Modal
+Popular Movies
+Real-time Movie Search
+Interactive Movie Preview Modal
 
 ❤️ Favourites System
 
