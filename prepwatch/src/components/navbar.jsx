@@ -60,12 +60,12 @@ export default function Navbar(props){
         Favourites
       </button>
 
-      <button className='hover:text-rose-100  pl-2 w-full hover:bg-neutral-800 flex'
+      <button className='hover:text-rose-100 px-2 pl-2 w-full hover:bg-neutral-800 flex'
       onClick={() => { navigate('/about'); setbackdrop(false); }}>
         <Box className="mr-2"/>
         About
       </button>
-      <button className='hover:text-rose-100 pl-2 w-full hover:bg-neutral-800 flex'
+      <button className='hover:text-rose-100 px-2 pl-2 w-full hover:bg-neutral-800 flex'
       onClick={() => { navigate('/'); setbackdrop(false); }}>
         <BookHeadphones className="mr-2"/>
         Home
