@@ -66,7 +66,7 @@ Create a .env file:
 VITE_TMDB_KEY=your_api_key_here
 
 Run locally:
-
+(IF Node )
 npm run dev
 🌍 Deployment
 
