@@ -29,7 +29,7 @@ export default function Navbar(props){
                     onClick={()=>{
                         setbackdrop(true);
                     }}
-                    className={`md:hidden flex`}/>
+                    className={`md:hidden ab flex`}/>
                 </div>
                 <div>
                     <button onClick={()=>navigate('/about')} className='bg-emerald-800 active:scale-95 active:bg-emerald-500 px-2 py-1 rounded-md ml-4 md:flex hidden active:text-slate-50'>About</button>
