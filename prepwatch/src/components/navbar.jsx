@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import {List } from'lucide-react'
+import {List, Popcorn } from'lucide-react'
 import { useState } from 'react';
 export default function Navbar(props){
     let navigate=useNavigate();
@@ -49,7 +49,7 @@ export default function Navbar(props){
     >
       <div className="text-xl text-gray-400 pb-4 font-bold">MenuBar</div>
       <button onClick={() => { navigate('/movie'); setbackdrop(false); }}>
-        <Movie 
+        <Popcorn/>< 
         Movies
       </button>
 
