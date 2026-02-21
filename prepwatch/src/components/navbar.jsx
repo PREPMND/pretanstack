@@ -45,7 +45,7 @@ export default function Navbar(props){
     {/* Side Menu */}
     <div
       onClick={(e) => e.stopPropagation()}
-      className="absolute top-0 ml-83  right-[0] h-screen bg-neutral-700 w-[60%] md:w-[40%] flex flex-col   gap-6 items-start transition-colors dur *:ml-2 pt-5 text-rose-50 rounded-l-3xl p-5 "
+      className="absolute top-0 ml-83  right-[0] h-screen bg-neutral-700 w-[60%] md:w-[40%] flex flex-col   gap-6 items-start transition-colors duration-300 ease-in-out *:ml-2 pt-5 text-rose-50 rounded-l-3xl p-5 "
     >
       <div className="text-xl pl-2 text-gray-400 pb-4 w-full font-bold">MenuBar</div>
       <button className='hover:text-rose-100 w-full pl-2 flex hover:bg-neutral-800 '
