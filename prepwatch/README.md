@@ -46,7 +46,7 @@ Clean component structure
 
 Backdrop & Side Menu Implementation
 
-Setup[Locally]
+--->Setup[Locally]
 
 Clone the repository:
 
