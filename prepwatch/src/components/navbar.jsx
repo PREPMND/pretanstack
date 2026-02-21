@@ -60,7 +60,7 @@ export default function Navbar(props){
         Favourites
       </button>
 
-      <button className='hover:text-rose-100 hover:bg-neutral-800 flex'
+      <button className='hover:text-rose-100 w-full hover:bg-neutral-800 flex'
       onClick={() => { navigate('/about'); setbackdrop(false); }}>
         <Box className="mr-2"/>
         About
