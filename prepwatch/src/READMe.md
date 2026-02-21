@@ -14,7 +14,7 @@ Top Rated Movies
 Popular Movies
 Real-time Movie Search(Used inbluit search filter from TMDb for better performance and UX)
 Interactive Movie Preview Modal
-Favourites System
+Favourites System(Currently stored in local state, can be extended to use localStorage or backend)
 Fully Responsive Layout
 Smooth Hover & Overlay Effects
 
