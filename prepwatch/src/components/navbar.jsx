@@ -3,7 +3,7 @@ import {List } from'lucide-react'
 import { useState } from 'react';
 export default function Navbar(props){
     let navigate=useNavigate();
-    const [backdrop, setbackdrop] = useState(false);
+    const [backdrop, setbackdrop = useState(false);
     const APIKEY=import.meta.env.VITE_TMBD_KEY;
     return(
         <>
