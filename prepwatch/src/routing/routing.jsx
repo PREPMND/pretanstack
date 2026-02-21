@@ -24,6 +24,7 @@ export default function NavRoutes(props) {
     const { selectedglobal, setselectedglobal } = props;
     const {search , setsearch}=props;
     const {page ,setpage}=props;
+    const {favourites, setfavourites} = props;
     return (
         <>
 
