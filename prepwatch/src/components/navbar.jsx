@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import {List } 
+import {List } from'lucide-react'
 export default function Navbar(props){
     let navigate=useNavigate();
     
