@@ -54,7 +54,7 @@ export default function Navbar(props){
         Movies
       </button>
 
-      <button className='hover:text-rose-100 py-2 pl-2 w-full hover:bg-neutral-800 flex'
+      <button className='hover:text-rose-100 py-2 pl-2 w-full hover:bg-neutral-950 flex'
       onClick={() => { navigate('/favourites'); setbackdrop(false); }}>
         <BookHeart className="mr-2"/>
         Favourites
