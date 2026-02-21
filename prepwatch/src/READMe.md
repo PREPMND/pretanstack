@@ -14,12 +14,9 @@ Top Rated Movies
 Popular Movies
 Real-time Movie Search
 Interactive Movie Preview Modal
-
-❤️ Favourites System
-
-📱 Fully Responsive Layout
-
-🎛️ Smooth Hover & Overlay Effects
+Favourites System
+Fully Responsive Layout
+Smooth Hover & Overlay Effects
 
 🛠 Tech Stack
 
