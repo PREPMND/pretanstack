@@ -5,7 +5,7 @@ This project focuses on clean UI, efficient data fetching, and responsive design
 
 🚀 Live Demo
 
-prepwatch.netlify.app
+https://prepwatch.netlify.app
 
 ✨ Features
 
