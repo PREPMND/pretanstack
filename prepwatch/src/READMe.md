@@ -72,11 +72,11 @@ npm run dev
 
 Deployed using Vercel.
 
-Notes
+Notes-
 
 This project uses the TMDB API for movie metadata.
 No movie streaming or copyrighted content is hosted.
 
-👨‍💻 Author
+Author
 
-Built as part of my frontend development learning journey, focusing on real-world API-driven application architecture.
+Built as part of frontend development learning journey, focusing on real-world API-driven application architecture.
