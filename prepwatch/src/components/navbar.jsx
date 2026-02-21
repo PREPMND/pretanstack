@@ -38,6 +38,7 @@ export default function Navbar(props){
         {backdrop && <div 
         onClick={()=>{
             setbackdrop(false)
+            e.s
         }}
         className='absolute top-0 right-0  h-screen bg-neutral-900 z-50 flex flex-col items-center justify-center w-[60%] md:w-[40%] gap-4'>
             
