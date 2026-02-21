@@ -51,6 +51,8 @@ UI/UX interaction logic
 
 Clean component structure
 
+Backdrop & Side Menu Implementation
+
 Setup[Locally]
 
 Clone the repository:
