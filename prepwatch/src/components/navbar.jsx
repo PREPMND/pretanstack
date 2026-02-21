@@ -54,7 +54,7 @@ export default function Navbar(props){
       </button>
 
       <button onClick={() => { navigate('/favourites'); setbackdrop(false); }}>
-        
+        <BookH
         Favourites
       </button>
 
