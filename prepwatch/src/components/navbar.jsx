@@ -45,7 +45,7 @@ export default function Navbar(props){
     {/* Side Menu */}
     <div
       onClick={(e) => e.stopPropagation()}
-      className="absolute top-0 right-0 h-screen bg-neutral-900 w-[60%] md:w-[40%] flex flex-col   gap-4 items-start *:ml-3 text-rose-50 "
+      className="absolute top-0 right-0 h-screen bg-neutral-900 w-[60%] md:w-[40%] flex flex-col   gap-4 items-start *:ml-3 mt-5 text-rose-50 "
     >
       <button onClick={() => { navigate('/movie'); setbackdrop(false); }}>
         Movies
