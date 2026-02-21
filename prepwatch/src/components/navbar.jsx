@@ -8,7 +8,9 @@ export default function Navbar(props){
     return(
         <>
         <div 
-        ON
+        onClick={()=>{
+            setbackdrop(false)
+        }}
         className='flex *:flex h-[64px] bg-amber-400 w-full p-4 justify-between *:justify-between md:*:gap-4 *:gap-2
         items-center *:items-center text-white font-semibold'>
             <div>
