@@ -48,8 +48,9 @@ export default function Navbar(props){
       className="absolute top-0 ml-83  right-[0] h-screen bg-neutral-700 w-[60%] md:w-[40%] flex flex-col   gap-4 items-start *:ml-3 pt-5 text-rose-50 rounded-l-3xl p-5 "
     >
       <div className="text-xl text-gray-400 pb-4 font-bold">MenuBar</div>
-      <button onClick={() => { navigate('/movie'); setbackdrop(false); }}>
-        <Popcorn className="mr-2 hover:text-rose-100 hover:bg-neutral-800 "/> 
+      <button 
+      onClick={() => { navigate('/movie'); setbackdrop(false); }}>
+        <Popcorn className="mr-2 "/> 
         Movies
       </button>
 
