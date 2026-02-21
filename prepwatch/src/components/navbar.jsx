@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import {List } from'lucide-react'
 export default function Navbar(props){
     let navigate=useNavigate();
-    const []
+    const [backdrop, setbackdrop] = use
     const APIKEY=import.meta.env.VITE_TMBD_KEY;
     return(
         <>
