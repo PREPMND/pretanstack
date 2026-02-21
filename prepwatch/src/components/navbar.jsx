@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import {List, Popcorn } from'lucide-react'
+import {BookHeadphones, List, Popcorn } from'lucide-react'
 import { useState } from 'react';
 export default function Navbar(props){
     let navigate=useNavigate();
@@ -54,7 +54,7 @@ export default function Navbar(props){
       </button>
 
       <button onClick={() => { navigate('/favourites'); setbackdrop(false); }}>
-        <BookH
+        <BookHear
         Favourites
       </button>
 
