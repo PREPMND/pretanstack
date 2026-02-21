@@ -51,7 +51,7 @@ UI/UX interaction logic
 
 Clean component structure
 
-⚙️ Setup
+Setup[]
 
 Clone the repository:
 
