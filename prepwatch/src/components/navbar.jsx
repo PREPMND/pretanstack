@@ -49,7 +49,7 @@ export default function Navbar(props){
     >
       <div className="text-xl text-gray-400 pb-4 font-bold">MenuBar</div>
       <button onClick={() => { navigate('/movie'); setbackdrop(false); }}>
-        <Popcorn className="mr-2"/> 
+        <Popcorn className="mr-2 *:hover:text-rose-100 *:hover:bg-neutral-800 "/> 
         Movies
       </button>
 
