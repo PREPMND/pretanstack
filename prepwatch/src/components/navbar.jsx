@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import {BookHeadphones, BookHeart, List, Popcorn } from'lucide-react'
+import {BookHeadphones, BookHeart, Box, List, Popcorn } from'lucide-react'
 import { useState } from 'react';
 export default function Navbar(props){
     let navigate=useNavigate();
@@ -59,7 +59,7 @@ export default function Navbar(props){
       </button>
 
       <button onClick={() => { navigate('/about'); setbackdrop(false); }}>
-        <Box
+        <Box className="mr-2"/>
         About
       </button>
     </div>
