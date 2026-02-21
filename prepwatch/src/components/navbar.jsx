@@ -37,14 +37,30 @@ export default function Navbar(props){
 
             </div>
         </div>
-        {backdrop && <div 
-        onClick={(e)=>{
-            setbackdrop(false);
-            e.stopPropagation()
-        }}
-        className='fixed inset-0 top-0 right-0  h-screen bg-neutral-900 z-50 flex flex-col items-center justify-center w-[60%] md:w-[40%] gap-4'>
-            
-        </div>}
+        {backdrop && (
+  <div
+    onClick={() => setbackdrop(false)}
+    className="fixed inset-0 z-50 bg-black/50"
+  >
+    {/* Side Menu */}
+    <div
+      onClick={(e) => e.stopPropagation()}
+      className="absolute top-0 right-0 h-screen bg-neutral-900 w-[60%] md:w-[40%] flex flex-col items-center justify-center gap-4"
+    >
+      <button onClick={() => { navigate('/movie'); setbackdrop(false); }}>
+        Movies
+      </button>
+
+      <button onClick={() => { navigate('/favourites'); setbackdrop(false); }}>
+        Favourites
+      </button>
+
+      <button onClick={() => { navigate('/about'); setbackdrop(false); }}>
+        About
+      </button>
+    </div>
+  </div>
+)}
 
         </>
     )
