@@ -70,7 +70,7 @@ Run locally:
 npm run dev
 🌍 Deployment
 
-Deployed using Vercel.
+Deployed using Netlify.
 
 Notes-
 
