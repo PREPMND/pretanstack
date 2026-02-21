@@ -20,7 +20,7 @@ export default function App(){
         <BrowserRouter>
            
            
-           <NavRoutes  favourites={favourites} setfavourites={setfavourites} heart={heart} setheart={setheart} page={page} setpage={setpage} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selected={selected } setselected={setselected}/>
+           <NavRoutes backdrop={backdrop} setbackdrop={setbackdrop} favourites={favourites} setfavourites={setfavourites} heart={heart} setheart={setheart} page={page} setpage={setpage} selectedglobal={selectedglobal} setselectedglobal={setselectedglobal} selectedtoprated={selectedtoprated} setselectedtoprated={setselectedtoprated} selectedtrending={selectedtrending} setselectedtrending={setselectedtrending} selected={selected } setselected={setselected}/>
            
         </BrowserRouter>
         
