@@ -12,7 +12,7 @@ https://prepwatch.netlify.app
 Trending Movies(Using React Query for efficient data fetching and caching)
 Top Rated Movies
 Popular Movies
-Real-time Movie Search()
+Real-time Movie Search(Used inbluit search component for better performance and UX)
 Interactive Movie Preview Modal
 Favourites System
 Fully Responsive Layout
