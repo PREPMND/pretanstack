@@ -10,10 +10,8 @@ https://prepwatch.netlify.app
 ✨ Features
 
 Trending Movies
-
-⭐ Top Rated Movies
-
-🎥 Popular Movies
+Top Rated Movies
+ Popular Movies
 
 🔎 Real-time Movie Search
 
