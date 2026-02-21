@@ -12,6 +12,7 @@ export default function Layout(props) {
     const [search , setsearch]=useState("");
     const {favourites, setfavourites} = props;
     const {heart, setheart} = props;
+    const {backdrop, setbackdrop} = props;
     return (
         <>  
         
