@@ -6,7 +6,7 @@ export default function Favourites(props){
         
         <>
         <div>
-            <div className="min-h- bg-neutral-900 ">
+            <div className="min-h-[calc(100vh-120px)] bg-neutral-900 ">
                 <div className="text-white text-center pt-12 text-2xl font-semibold">Your favourite movies will appear here !</div>
                 <div>
                     <div className="grid grid-cols-1 md:grid-cols-2"
