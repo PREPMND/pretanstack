@@ -9,7 +9,7 @@ https://prepwatch.netlify.app
 
 ✨ Features
 
-🔥 Trending Movies
+Trending Movies
 
 ⭐ Top Rated Movies
 
