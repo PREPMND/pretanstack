@@ -10,8 +10,8 @@ export default function Trending(props) {
     const { selectedglobal, setselectedglobal } = props;
     const navigate = useNavigate();
 
-    const {heart, setheart} = props;
-    const {favourites, setfavourites} = props;
+    const { heart, setheart } = props;
+    const { favourites, setfavourites } = props;
 
     const { data, isPending, error } = useQuery({
 
@@ -63,21 +63,21 @@ export default function Trending(props) {
                                     <span className="text-red-500">▶</span> Play
                                 </button>
                                 <Heart
-                                    onClick={()=>{
-                      console.log(favourites);
-                      if(favourites.includes(movie)){
-                        setfavourites([...favourites].filter(id => id !== movie));
-                        setheart([...heart].filter(id => id !== movie.id))
-                        localStorage.setItem("heart", JSON.stringify([...heart].filter(id => id !== movie.id)))
-                        localStorage.setItem("favourites", JSON.stringify(favourites.filter(id => id !== movie)))
-                        ;
-                      } else {
-                        setfavourites(prev => [...prev, movie]);
-                        setheart([...heart, movie.id]);
-                        localStorage.setItem("heart", JSON.stringify([...heart, movie.id]))
-                        localStorage.setItem("favourites", JSON.stringify([...favourites, movie]));
-                      }
-                    }}
+                                    onClick={() => {
+                                        console.log(favourites);
+                                        if (favourites.includes(movie)) {
+                                            setfavourites([...favourites].filter(id => id !== movie));
+                                            setheart([...heart].filter(id => id !== movie.id))
+                                            localStorage.setItem("heart", JSON.stringify([...heart].filter(id => id !== movie.id)))
+                                            localStorage.setItem("favourites", JSON.stringify(favourites.filter(id => id !== movie)))
+                                                ;
+                                        } else {
+                                            setfavourites(prev => [...prev, movie]);
+                                            setheart([...heart, movie.id]);
+                                            localStorage.setItem("heart", JSON.stringify([...heart, movie.id]))
+                                            localStorage.setItem("favourites", JSON.stringify([...favourites, movie]));
+                                        }
+                                    }}
                                     className={`opacity-80 absolute bottom-4
                    right-2 text-white ${localStorage.getItem("heart") && JSON.parse(localStorage.getItem("heart")).includes(movie.id) ? "fill-red-500" : ""}`} size={20} />
                             </div>
