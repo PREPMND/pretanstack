@@ -40,7 +40,7 @@ export default function Navbar(props){
         {backdrop && (
   <div
     onClick={() => setbackdrop(false)}
-    className="fixed inset-0 z-50 bg-black/50"
+    className="fixed select-none inset-0 z-50 bg-black/50"
   >
     {/* Side Menu */}
     <div
