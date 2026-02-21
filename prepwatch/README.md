@@ -66,7 +66,7 @@ npm run dev
 
 Deployed using Netlify.
 
-Notes-
+--->Notes-
 
 This project uses the TMDB API for movie metadata.
 No movie streaming or copyrighted content is hosted.
