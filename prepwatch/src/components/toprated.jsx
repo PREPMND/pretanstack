@@ -61,20 +61,21 @@ export default function TopRated(props) {
                                     <span className="text-red-500">▶</span> Play
                                 </button>
                                 <Heart
-                                    onClick={() => {
-                                        if (favourites.some(fav => fav.id === movie.id)) {
-                                            setfavourites([...favourites].filter(fav => fav.id !== movie.id));
-                                            setheart([...heart].filter(id => id !== movie.id))
-                                            localStorage.setItem("heart", JSON.stringify([...heart].filter(id => id !== movie.id)))
-                                            localStorage.setItem("favourites", JSON.stringify(favourites.filter(fav => fav.id !== movie.id)))
-                                                ;
-                                        } else {
-                                            setfavourites(prev => [...prev, movie.id]);
-                                            setheart([...heart, movie.id]);
-                                            localStorage.setItem("heart", JSON.stringify([...heart, movie.id]))
-                                            localStorage.setItem("favourites", JSON.stringify([...favourites, movie.id]));
-                                        }
-                                    }}
+                                    onClick={()=>{
+                      console.log(favourites);
+                      if(favourites.includes(movie)){
+                        setfavourites([...favourites].filter(id => id !== movie));
+                        setheart([...heart].filter(id => id !== movie.id))
+                        localStorage.setItem("heart", JSON.stringify([...heart].filter(id => id !== movie.id)))
+                        localStorage.setItem("favourites", JSON.stringify(favourites.filter(id => id !== movie)))
+                        ;
+                      } else {
+                        setfavourites(prev => [...prev, movie]);
+                        setheart([...heart, movie.id]);
+                        localStorage.setItem("heart", JSON.stringify([...heart, movie.id]))
+                        localStorage.setItem("favourites", JSON.stringify([...favourites, movie]));
+                      }
+                    }}
                                     className={`opacity-80 absolute bottom-4
                    right-2 text-white ${localStorage.getItem("heart") && JSON.parse(localStorage.getItem("heart")).includes(movie.id) ? "fill-red-500" : ""}`} size={20} />
                             </div>
