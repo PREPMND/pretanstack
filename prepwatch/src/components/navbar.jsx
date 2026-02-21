@@ -47,7 +47,7 @@ export default function Navbar(props){
       onClick={(e) => e.stopPropagation()}
       className="absolute top-0 ml-3  right-[0] h-screen bg-neutral-700 w-[60%] md:w-[40%] flex flex-col   gap-4 items-start *:ml-3 pt-5 text-rose-50 rounded-3xl p-5 "
     >
-      <div className="text-xl font-bold">MenuBar</div>
+      <div className="text-xl text-rose-700 efont-bold">MenuBar</div>
       <button onClick={() => { navigate('/movie'); setbackdrop(false); }}>
         Movies
       </button>
