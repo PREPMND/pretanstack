@@ -59,6 +59,7 @@ export default function Navbar(props){
       </button>
 
       <button onClick={() => { navigate('/about'); setbackdrop(false); }}>
+        <Box
         About
       </button>
     </div>
