@@ -37,7 +37,7 @@ Tailwind CSS
 
 TMDB API
 
-🧠 What This Project Demonstrates
+What This Project Demonstrates
 
 API integration & data handling
 
@@ -51,7 +51,7 @@ UI/UX interaction logic
 
 Clean component structure
 
-Setup[]
+Setup[Locally]
 
 Clone the repository:
 
