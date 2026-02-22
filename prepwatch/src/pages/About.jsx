@@ -36,6 +36,9 @@ export default function About() {
           
         </section>
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 transition-transform hover:-translate-x-1 duration-[1200ms] ease-in-out ">Hover Over Them , Info's There</div>
+        <div>
+          
+        </div>
         <div className="absolute bottom-0 w-full text-center p-4 text-sm text-stone-500">
           
         </div>
