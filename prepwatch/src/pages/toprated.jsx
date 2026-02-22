@@ -76,7 +76,7 @@ export default function Topratedpage(props) {
                                     className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center ">
                                     <div onClick={(e) => e.stopPropagation()}
                                         className="relative w-[80%] md:w-[70%] ">
-                                        <h2 className="text-white text-3xl font-semibold absolute top-0 truncate m-auto mt-2 inset-0 w-full text-center" >{movies.title}</h2>
+                                        <h2 className="text-white text-xl font-semibold absolute top-0 truncate m-auto mt-2 inset-0 w-full text-center" >{movies.title}</h2>
                                         <img
                                             src={`https://image.tmdb.org/t/p/original${movies.backdrop_path}`}
                                             className="rounded-lg"
