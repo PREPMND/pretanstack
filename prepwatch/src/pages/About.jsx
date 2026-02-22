@@ -40,7 +40,7 @@ export default function About() {
         onMouseEnter={()=>setselectinfo(true)}
         onMouseLeave={()=>setselectinfo(false)}
         className="absolute left-1/2 top-1/2 transform -translate-x-1/2 transition-transform hover:-translate-x-1 duration-[1200ms] ease-in-out ">Hover Over Them , Info's There</div>
-        <div className="z-90 ">
+        <div className="z-90 flex justify-center items-center h-full">
           <img src="https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg" alt="cat meme" className={`${selectinfo?"opacity-100":"opacity-0"} z-90 w-[200px] md:w-[300px] rounded-lg  transition-opacity duration-300 ease-in-out`} />
         </div>
         <div className="absolute bottom-0 w-full text-center p-4 text-sm text-stone-500">
