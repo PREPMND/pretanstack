@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar.jsx";
-import NavRoutes from "./routing.jsx";
 import { useState } from "react";
 import SubSearch from "../components/subsearch.jsx";
 export default function Layout(props) {
