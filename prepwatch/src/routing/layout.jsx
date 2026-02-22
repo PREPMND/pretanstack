@@ -3,7 +3,6 @@ import Navbar from "../components/navbar.jsx";
 import NavRoutes from "./routing.jsx";
 import { useState } from "react";
 import SubSearch from "../components/subsearch.jsx";
-import { QueryClientProvider,QueryClient } from "@tanstack/react-query";
 export default function Layout(props) {
     const { selected , setselected}=props;
     const {selectedtoprated, setselectedtoprated} = props
