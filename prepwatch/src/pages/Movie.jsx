@@ -7,7 +7,6 @@ export default function Movie(props) {
     const { setselectedglobal} = props
     const [movies, setMovies] = useState(null);
     const [movieHovered, setmovieHovered] = useState(null);
-    const navigate= useNavigate();
     const {page} = props;
     const { data, isLoading, error } = useQuery({
         queryKey: ["movies"],
