@@ -1,7 +1,6 @@
 import { fetchTrending} from "../api/trendingapi.jsx"
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 import { ChangeTitle } from "../App.jsx"
 import SubSearch from "../components/subsearch.jsx"
 import { LoaderPinwheel } from "lucide-react"
