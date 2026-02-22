@@ -36,7 +36,8 @@ export default function About() {
         </div>
           
         </section>
-        <div onMouseEnter={()=>setselectinfo(true)}
+        <div 
+        onMouseEnter={()=>setselectinfo(true)}
         onMouseLeave={()=>setselectinfo(false)}
         className="absolute left-1/2 top-1/2 transform -translate-x-1/2 transition-transform hover:-translate-x-1 duration-[1200ms] ease-in-out ">Hover Over Them , Info's There</div>
         <div>
