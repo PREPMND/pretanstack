@@ -16,6 +16,7 @@ export default function TrendingMovie(props) {
         refetchOnMount: true,
         refetchOnWindowFocus:true,
     })
+    const setl = true
     
     if (isLoading) return(<div className={`w-full min-h-[calc(100vh-120px)] h-full bg-neutral-900 z-40 flex items-center justify-center whitespace-nowrap text-yellow-50 font-[Inter] font-[600] `}>
           <LoaderPinwheel className="animate-spin mr-3"/>
