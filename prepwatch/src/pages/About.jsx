@@ -35,7 +35,7 @@ export default function About() {
         </div>
           
         </section>
-        <div 
+        <div onClick={()=>}
         className="absolute left-1/2 top-1/2 transform -translate-x-1/2 transition-transform hover:-translate-x-1 duration-[1200ms] ease-in-out ">Hover Over Them , Info's There</div>
         <div>
           <img src="https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg" alt="cat meme" className={`absolute bottom-0 left-0 w-[200px] md:w-[300px] rounded-lg m-4 animate-pulse`} />
