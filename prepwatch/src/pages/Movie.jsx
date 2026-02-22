@@ -2,14 +2,13 @@ import { fetchMovies } from "../api/movies"
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { ChangeTitle } from "../App.jsx"
 import { LoaderPinwheel} from "lucide-react"
 export default function Movie(props) {
     const { setselectedglobal} = props
     const [movies, setMovies] = useState(null);
     const [movieHovered, setmovieHovered] = useState(null);
     const navigate= useNavigate();
-    const {page , setpage} = props;
+    const {page} = props;
     const { data, isLoading, error } = useQuery({
         queryKey: ["movies"],
         queryFn: () => fetchMovies(),
