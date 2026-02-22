@@ -1,7 +1,6 @@
 import { fetchMovies } from "../api/movies"
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 import { LoaderPinwheel} from "lucide-react"
 export default function Movie(props) {
     const { setselectedglobal} = props
