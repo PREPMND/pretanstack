@@ -1,7 +1,6 @@
 import { fetchTopRated} from "../api/topratedapi.jsx"
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 import { LoaderPinwheel } from "lucide-react"
 export default function Topratedpage(props) {
     const { setselectedglobal} = props
