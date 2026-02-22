@@ -1,7 +1,5 @@
 
 export default function Favourites(props){
-    const {favourites , setFavourites} = props;
-    const {heart, setheart} = props;
     return(
         
         <>
