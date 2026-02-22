@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function About() {
     const [select, setselect] =useState(false);
     const [selectabout, setselectabout] =useState(false);
+    const [selectinfo, setselectinfo] =useState(false);
     const navigate = useNavigate();
   return (
     <>
