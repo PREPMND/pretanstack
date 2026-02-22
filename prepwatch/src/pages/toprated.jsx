@@ -7,7 +7,6 @@ export default function Topratedpage(props) {
     const { setselectedglobal} = props
     const [movies, setMovies] = useState(null);
     const [movieHovered, setmovieHovered] = useState(null);
-    const navigate= useNavigate();
    
     const { data, isLoading, error } = useQuery({
         queryKey: ["top-rated"],
