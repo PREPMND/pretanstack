@@ -62,7 +62,7 @@ export default function IndvPopular(props) {
                 </div>
                 <div className="text-white p-6">
                     {trailer && (
-                        <div className="mb-8 aspect-[]2">
+                        <div className="mb-8 aspect-[">
                             <h2 className="text-xl mb-3">Trailer</h2>
                             <iframe
                                 className="w-full h-[400px] rounded-lg"
