@@ -6,7 +6,9 @@ import { Popcorn } from "lucide-react"
 export default function IndvPopular(props){
     const { id }=useParams();
     const { selected , setselected}=props;
-    const { data, isLoading, error } = useQuery({}
+    const { data, isLoading, error } = useQuery({
+        queryKey: ["popular"],
+    })
     console.log(selected)
     return(
         <>
