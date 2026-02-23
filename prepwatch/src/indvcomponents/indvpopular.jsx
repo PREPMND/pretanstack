@@ -7,7 +7,7 @@ import { fetchMovieVideos } from "../api/apiextra";
 export default function IndvPopular(props){
     const { id }=useParams();
     const { selected , setselected}=props;
-    const { data:credits, isLoading, error } = useQuery({
+    const { data:teaser, isLoading, error } = useQuery({
         queryKey: ["teaser", id],
         queryFn: () => fetchMovieVideos(id),
     })
