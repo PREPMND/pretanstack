@@ -8,6 +8,7 @@ export default function IndvPopular(props){
     const { selected , setselected}=props;
     const { data, isLoading, error } = useQuery({
         queryKey: ["teaser", id],
+        queryFn: () => fetchPopularMovies(id),
     })
     console.log(selected)
     return(
