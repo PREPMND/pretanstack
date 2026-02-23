@@ -65,7 +65,7 @@ export default function IndvPopular(props) {
                 </div>
                 <div className="text-white p-6">
                     {trailer && (
-                        <div className="mb-8 flex flex-col items-center">
+                        <div className="mb-8 flex h-full flex-col items-center">
                             <h2 className="text-xl mb-3">Trailer</h2>
                             <iframe
                                 className="w-full rounded-lg"
