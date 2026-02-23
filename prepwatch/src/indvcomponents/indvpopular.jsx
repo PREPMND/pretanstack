@@ -10,6 +10,7 @@ export default function IndvPopular(props) {
     const { data: videos, isLoading, error } = useQuery({
         queryKey: ["teaser", id],
         queryFn: () => fetchMovieVideos(id),
+        enabled: !!id,
     })
     const { data: credits } = useQuery({
         queryKey: ["videos", id],
