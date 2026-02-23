@@ -60,8 +60,6 @@ export default function IndvPopular(props) {
                     </div>
                 </div>
                 <div className="text-white p-6">
-
-                    {/* 🎬 Trailer */}
                     {trailer && (
                         <div className="mb-8">
                             <h2 className="text-xl mb-3">Trailer</h2>
