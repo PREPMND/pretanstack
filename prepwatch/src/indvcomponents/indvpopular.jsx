@@ -65,7 +65,7 @@ export default function IndvPopular(props) {
                         <div className="mb-8 aspect-[2/3]">
                             <h2 className="text-xl mb-3">Trailer</h2>
                             <iframe
-                                className="w-full h-[400px]  rounded-lg"
+                                className="w-[70%] object h-[400px]  rounded-lg"
                                 src={`https://www.youtube.com/embed/${trailer.key}`}
                                 title="Trailer"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
