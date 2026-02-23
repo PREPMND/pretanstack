@@ -68,7 +68,7 @@ export default function IndvPopular(props) {
                                 className="w-full h-[400px] rounded-lg"
                                 src={`https://www.youtube.com/embed/${trailer.key}`}
                                 title="Trailer"
-                                allowFullScreen
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             />
                         </div>
                     )}
