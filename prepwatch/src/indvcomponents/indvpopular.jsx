@@ -11,7 +11,7 @@ export default function IndvPopular(props){
         queryKey: ["teaser", id],
         queryFn: () => fetchMovieVideos(id),
     })
-    const
+    const 
     console.log(selected)
     return(
         <>
