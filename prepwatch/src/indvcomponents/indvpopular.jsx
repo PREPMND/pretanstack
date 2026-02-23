@@ -15,6 +15,8 @@ export default function IndvPopular(props) {
     const { data: credits } = useQuery({
         queryKey: ["videos", id],
         queryFn: () => fetchMovieCredits(id),
+        enabled: !!id,
+        staleTime: 1000 * 60 * 60, // Cache for 1 hour
     })
     const trailer = videos?.results?.find((vid) => vid.type === "Trailer"  && vid.site === "YouTube");
     console.log(trailer)
