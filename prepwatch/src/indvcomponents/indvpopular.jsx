@@ -15,7 +15,7 @@ export default function IndvPopular(props) {
         queryKey: ["credits", id],
         queryFn: () => fetchMovieCredits(id),
     })
-    const trailer = videos?.results?.find((vid) => vid.type === "Trailer" || vid.type === "Teaser" && vid.site === "YouTube");
+    const trailer = videos?.results?.find((vid) => (vid.type === "Trailer" || vid.type === "Teaser") && vid.site === "YouTube");
     console.log(selected)
     return (
         <>
