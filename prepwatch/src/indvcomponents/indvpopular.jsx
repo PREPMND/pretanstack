@@ -69,6 +69,7 @@ export default function IndvPopular(props) {
                                 src={`https://www.youtube.com/embed/${trailer.key}`}
                                 title="Trailer"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
                             />
                         </div>
                     )}
