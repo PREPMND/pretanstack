@@ -16,7 +16,7 @@ export default function IndvPopular(props) {
         queryFn: () => fetchMovieCredits(id),
     })
     const trailer = videos?.results?.find((vid) => vid.type === "Trailer"  && vid.site === "YouTube");
-    console.log(trailer)
+    console.log({trailer})
     return (
         <>
             <div className="bg-neutral-900 min-h-[calc(100vh-64px)] md:h-full">
