@@ -12,7 +12,7 @@ export default function IndvPopular(props) {
         queryFn: () => fetchMovieVideos(id),
     })
     const { data: credits } = useQuery({
-        queryKey: ["credits", id],
+        queryKey: ["videos", id],
         queryFn: () => fetchMovieCredits(id),
     })
     const trailer = videos?.results?.find((vid) => vid.type === "Trailer"  && vid.site === "YouTube");
