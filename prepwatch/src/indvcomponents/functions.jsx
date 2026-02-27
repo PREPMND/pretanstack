@@ -1,7 +1,7 @@
 import { Heart } from "lucide-react"
 
 export function GridLayout(navigate, data, x, selected ,movieHovered, setmovieHovered, favourites, setfavourites, heart, setheart){
-    
+    const 
     return(
         <>
         <div className="bg-neutral-900  font-Inter text-slate-50">
