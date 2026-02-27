@@ -1,6 +1,6 @@
 import {GridLayout } from '../indvcomponents/functions'
 import { useNavigate} from "react-router-dom"
-import { fetchPopularMovies } from '../api/apiextra'
+import { fetchPopularMovies ,} from '../api/apiextra'
 import { useQuery } from '@tanstack/react-query'
 
 import { useState } from 'react'
