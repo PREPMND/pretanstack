@@ -17,6 +17,8 @@ const Proto = (props) => {
   const {heart, setheart} = props;
   const {selectedglobal, setselectedglobal} = props;
   const {setselectedtoprated, selectedtoprated} = props;
+  const {selectedtrending, setselectedtrending} = props;
+  const {page , setpage}=props;
   const [movieHovered , setmovieHovered]=useState(null);
   const navigate =useNavigate();
 
