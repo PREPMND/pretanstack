@@ -36,3 +36,4 @@ export function ChangeTitle(moviename){
 
 
 }
+export function 
