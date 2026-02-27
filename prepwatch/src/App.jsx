@@ -36,4 +36,6 @@ export function ChangeTitle(moviename){
 
 
 }
-export function GridLayout
+export function GridLayout(){
+    
+}
