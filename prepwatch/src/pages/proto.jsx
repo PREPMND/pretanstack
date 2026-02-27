@@ -15,6 +15,8 @@ const Proto = (props) => {
   const { selected , setselected }=props;
   const {favourites, setfavourites} = props;
   const {heart, setheart} = props;
+  const {selectedglobal, setselectedglobal} = props;
+  const 
   const [movieHovered , setmovieHovered]=useState(null);
   const navigate =useNavigate();
 
