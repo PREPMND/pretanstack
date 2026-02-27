@@ -1,4 +1,3 @@
-
 import {GridLayout } from '../indvcomponents/functions'
 import { useNavigate} from "react-router-dom"
 import { fetchPopularMovies } from '../api/apiextra'
