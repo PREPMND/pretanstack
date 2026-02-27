@@ -17,6 +17,7 @@ import SubSearch from '../components/subsearch.jsx'
 import Error from '../indvcomponents/error.jsx'
 import Layout from './layout.jsx'
 import Mainpage from './mainpage.jsx'
+import Proto from '../pages/proto.jsx'
 export default function NavRoutes(props) {
     const { selected, setselected } = props;
     const { selectedtoprated, setselectedtoprated } = props
