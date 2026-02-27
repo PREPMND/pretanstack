@@ -1,5 +1,5 @@
 
-import { GridLayout() } from '../indvcomponents/functions'
+import {GridLayout } from '../indvcomponents/functions'
 import { useQuery ,useNavigate } from "@tanstack/react-query"
 import { fetchPopularMovies } from '../api/apiextra'
 
