@@ -23,7 +23,7 @@ const Proto = (props) => {
       
       {GridLayout(navigate, data, x,  movieHovered, setmovieHovered, setselected, selected , favourites, setfavourites, heart, setheart)}
       <div>
-        {GridLayout(navigate, data, x,  movieHovered, setmovieHovered, setselected, selected , favourites, setfavourites, heart, setheart)}
+        {GridLayout(navigate, data, set,  movieHovered, setmovieHovered, setselected, selected , favourites, setfavourites, heart, setheart)}
       </div>
     </div>
     
