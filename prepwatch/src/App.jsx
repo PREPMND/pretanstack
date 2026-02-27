@@ -70,6 +70,7 @@ export function GridLayout(navigate, data, setselected, selected ,movieHovered, 
                   >
                     <span className="text-red-500">▶</span> Play
                   </button>
+                  /*
                   <Heart 
                     onClick={()=>{
                       console.log(favourites);
