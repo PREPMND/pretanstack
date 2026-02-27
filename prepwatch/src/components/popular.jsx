@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchPopularMovies } from "../api/api.jsx";
+import { fetchPopularMovies } from "../api/apiextra.jsx";
 import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { ChangeTitle } from "../App.jsx";

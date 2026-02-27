@@ -1,4 +1,4 @@
-import { fetchTopRated} from "../api/api.jsx"
+import { fetchTopRated} from "../api/apiextra.jsx"
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
 import { LoaderPinwheel } from "lucide-react"

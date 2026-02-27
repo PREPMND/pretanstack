@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query"
-import { fetchPopularMovies } from "../api/api"
+import { fetchPopularMovies } from "../api/apiextra"
 import { useParams } from "react-router-dom";
 import { ChangeTitle } from "../App";
 import { Popcorn } from "lucide-react"
-import { fetchMovieCredits, fetchMovieVideos } from "../api/api";
+import { fetchMovieCredits, fetchMovieVideos } from "../api/apiextra";
 export default function IndvPopular(props) {
     const { id } = useParams();
     const { selected, setselected } = props;

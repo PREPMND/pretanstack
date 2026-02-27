@@ -1,4 +1,4 @@
-import { fetchTrending} from "../api/api.jsx"
+import { fetchTrending} from "../api/apiextra.jsx"
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
 import { ChangeTitle } from "../App.jsx"
