@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React from 'react'
 import { GridLayout } from '../indvcomponents/functions'
 import { useQuery ,useNavigate } from "@tanstack/react-query"
 import { fetchPopularMovies } from '../api/apiextra'
