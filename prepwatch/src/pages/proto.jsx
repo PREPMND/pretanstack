@@ -41,7 +41,8 @@ const Proto = (props) => {
     <button onClick={() => navigate("/movie")}
             className="px-3 font-Inter tracking-wide text-[13px] md:text-[14px]">Popular Movies</button>
           <button onClick={() => setnum(prev => prev + 1)}
-            className="ml-3 mt-2 m-auto md:text-[15px] font-[600] text-[13px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-2 py-1 rounded active:scale-95">More Popular Movies</button>
+            className="ml-3 mt-2 m-auto md:text-[15px] font-[600] text-[13px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-2 py-1 rounded active:scale-95">More Popular Movies
+    </button>
         
     {GridLayout(navigate, data, setselected,  movieHovered, setmovieHovered, setselected, selected , favourites, setfavourites, heart, setheart)}</div>
     <div>
