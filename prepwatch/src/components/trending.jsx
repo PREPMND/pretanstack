@@ -1,4 +1,4 @@
-import { fetchTrending } from "../api/trendingapi.jsx";
+import { fetchTrending } from "../api/api.jsx";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
