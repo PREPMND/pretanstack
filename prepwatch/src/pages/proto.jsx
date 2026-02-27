@@ -35,7 +35,7 @@ const Proto = (props) => {
   const navigate =useNavigate();
 
   return (
-    <div>
+    <div className=''>
     <div
     >
     <button onClick={() => navigate("/movie")}
