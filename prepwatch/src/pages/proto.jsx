@@ -18,7 +18,12 @@ const Proto = (props) => {
     refetchOnMount: true,
     refetchOnWindowFocus:true,
   })
-  const {data:}
+  const {data:toprated} = useQuery({
+    queryKey: ["top-rated"],
+    queryFn: () => fetchTopRated(), 
+    refetchOnMount: true,
+    refetchOnWindowFocus:true,
+  })
   const { selected , setselected }=props;
   const {favourites, setfavourites} = props;
   const {heart, setheart} = props;
