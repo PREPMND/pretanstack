@@ -1,6 +1,6 @@
 import { Heart } from "lucide-react"
 import { useState } from "react";
-export function GridLayout(navigate, data, x, selected ,movieHovered, setmovieHovered, favourites, setfavourites, heart, setheart){
+export function GridLayout(navigate, data, x, selected ,favourites, setfavourites, heart, setheart){
     const [movieHovered, setmovieHovered] = useState(null);
     return(
         <>
