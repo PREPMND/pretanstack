@@ -15,7 +15,9 @@ const Proto = (props) => {
   const {data:trending} = useQuery({
     queryKey: ["trending"],
     queryFn: () => fetchTrending(),
-    
+    refetchOnMount: true,
+    refetchOnWindowFocus:true,
+  })
   const { selected , setselected }=props;
   const {favourites, setfavourites} = props;
   const {heart, setheart} = props;
