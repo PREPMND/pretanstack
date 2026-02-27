@@ -12,6 +12,7 @@ const Proto = (props) => {
     refetchOnMount:true,
     refetchOnWindowFocus:true,
   });
+  const 
   return (
     <div>
       {GridLayout(props.navigate, data, props.setselected,  props.movieHovered, props.setmovieHovered, props.setselected, props.selected , props.favourites, props.setfavourites, props.heart, props.setheart)}
