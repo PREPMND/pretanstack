@@ -1,6 +1,6 @@
 import { Heart } from "lucide-react"
 
-export function GridLayout(navigate, data, setselected, selected ,movieHovered, setmovieHovered, favourites, setfavourites, heart, setheart){
+export function GridLayout(navigate, data, x, selected ,movieHovered, setmovieHovered, favourites, setfavourites, heart, setheart){
     return(
         <>
         <div className="bg-neutral-900  font-Inter text-slate-50">
@@ -28,7 +28,7 @@ export function GridLayout(navigate, data, setselected, selected ,movieHovered, 
                   className={`absolute inset-0 z-30 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${movieHovered === movie.id ? "opacity-100" : "opacity-0"}`}
                 >
                   <button
-                    onClick={() => {setselected(movie)}}
+                    onClick={() => {x(movie)}}
                     className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2`}
                   >
                     <span className="text-red-500">▶</span> Play
