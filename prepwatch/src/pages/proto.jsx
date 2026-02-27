@@ -39,7 +39,7 @@ const Proto = (props) => {
     <div
     >
     <button onClick={() => navigate("/movie")}
-            className="px-3 font-Inter tracking-wide text-[13px] md:text-[14px]">Popular Movies</button>
+            className="px-3 font-Inter text-white tracking-wide text-[13px] md:text-[14px]">Popular Movies</button>
           <button
             className="ml-3 mt-2 m-auto md:text-[15px] font-[600] text-[13px] bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm px-2 py-1 rounded active:scale-95">More Popular Movies
     </button>
