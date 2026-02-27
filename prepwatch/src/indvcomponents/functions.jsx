@@ -30,8 +30,8 @@ export function GridLayout(navigate, data, setselected, selected ,movieHovered, 
                     className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2`}
                   >
                     <span className="text-red-500">▶</span> Play
-                  </button>{
-                  /*
+                  </button>
+                
                   <Heart 
                     onClick={()=>{
                       console.log(favourites);
