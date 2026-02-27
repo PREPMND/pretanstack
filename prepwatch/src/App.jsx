@@ -69,7 +69,7 @@ export function GridLayout(navigate, data, setselected, selected ,movieHovered, 
                     className={`bg-black/70 hover:bg-black/70 px-4 py-2 rounded text-white text-sm flex items-center gap-2`}
                   >
                     <span className="text-red-500">▶</span> Play
-                  </button>
+                  </button>{
                   /*
                   <Heart 
                     onClick={()=>{
@@ -88,7 +88,7 @@ export function GridLayout(navigate, data, setselected, selected ,movieHovered, 
                       }
                     }}
                   className={`opacity-80 absolute bottom-4
-                   right-2 text-white ${localStorage.getItem("heart") && JSON.parse(localStorage.getItem("heart")).includes(movie.id) ? "fill-red-500" : ""}`} size={20} />*/
+                   right-2 text-white ${localStorage.getItem("heart") && JSON.parse(localStorage.getItem("heart")).includes(movie.id) ? "fill-red-500" : ""}`} size={20} />*/}
                 </div>
               </div>
               <h3 className="truncate mt-[6px] md:pb-1 font-Inter font-semibold text-slate-50">{movie.title}</h3>
