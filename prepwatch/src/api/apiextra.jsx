@@ -15,7 +15,7 @@ export const fetchMovieVideos = async (id) => {
   );
   return res.data;
 };
-xport const fetchMovies = async (page = 1, sort = "popularity.desc") => {
+export const fetchMovies = async (page = 1, sort = "popularity.desc") => {
   const res = await axios.get(
     `https://api.themoviedb.org/3/discover/movie`,
     {
