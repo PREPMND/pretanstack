@@ -36,7 +36,7 @@ export function ChangeTitle(moviename){
 
 
 }
-export function GridLayout(){
+export function GridLayout(navigate, data, setselected, movieHovered, setmovieHovered, favourites, setfavourites, heart, setheart){
     return(
         <>
         <div className="bg-neutral-900  font-Inter text-slate-50">
