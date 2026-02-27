@@ -12,7 +12,7 @@ const Mainpage = (props) => {
     const {page ,setpage}=props;
   return (
     <div>
-      {page!=="ant" && <div class>
+      {page!=="ant" && <div className='max-h-[calc(100vh-120px)]'>
         <div className={`w-full  bg-neutral-900 z-40 flex items-center justify-center text-yellow-50 font-[Inter] font-[600] ${page!==null?"hidden":"block"}`}>
           <LoaderPinwheel className="animate-spin mr-3"/>
           <div>Loading...</div>
