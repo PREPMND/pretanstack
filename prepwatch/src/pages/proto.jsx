@@ -1,6 +1,6 @@
 import React, { use } from 'react'
 import { GridLayout } from '../App'
-import { useQuery } from "@tanstack/react-query"
+import { useQuery ,useNavigate } from "@tanstack/react-query"
 import { fetchPopularMovies } from '../api/apiextra'
 import { Heart } from 'lucide-react'
 import { useState } from 'react'
