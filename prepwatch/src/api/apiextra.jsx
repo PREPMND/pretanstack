@@ -43,3 +43,16 @@ export const fetchSearch = async (search) => {
 
   return res.data.results; 
 };
+export const fetchPopularMovies = async (page = 1) => {
+  const res = await axios.get(
+    `https://api.themoviedb.org/3/movie/popular`,
+    {
+      params: {
+        api_key: API_KEY,
+        page: page,
+      },
+    }
+  );
+
+  return res.data.results; 
+};
