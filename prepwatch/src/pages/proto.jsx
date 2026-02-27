@@ -16,7 +16,7 @@ const Proto = (props) => {
   const {favourites, setfavourites} = props;
   const {heart, setheart} = props;
   const [movieHovered , setmovieHovered]=useState(null);
-  
+  const {selectedglobal, setselectedglobal} = props;
   return (
     <div>
       {GridLayout(props.navigate, data, setselected,  movieHovered, setmovieHovered, setselected, selected , favourites, setfavourites, heart, setheart)}
