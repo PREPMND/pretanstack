@@ -5,7 +5,7 @@ import {QueryClient, QueryClientProvider} from "@tanstack/react-query"
 import { useState } from "react"
 import SubSearch from "./components/subsearch"
 import { LoaderPinwheel } from "lucide-react"
-import { }
+import { Heart } from "lucide-react "
 export default function App(){
     const [selectedtoprated,setselectedtoprated]=useState(null)
     const [selectedtrending, setselectedtrending] = useState(null)
