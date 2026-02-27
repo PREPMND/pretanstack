@@ -5,7 +5,7 @@ import { fetchPopularMovies } from '../api/apiextra'
 import { Heart } from 'lucide-react'
 import { useState } from 'react'
 const Proto = (props) => {
-    const { data, isLoading, error } = useQuery({
+    const { data } = useQuery({
     queryKey: ["popular-movies"],
     queryFn: () => fetchPopularMovies(),
     staleTime:0,
