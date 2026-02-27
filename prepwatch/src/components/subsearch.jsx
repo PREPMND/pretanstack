@@ -1,4 +1,4 @@
-import { fetchSearch } from "../api/movies"
+import { fetchSearch } from "../api/api.jsx"
 import { useQuery} from "@tanstack/react-query"
 import { useEffect, useState } from "react"
 import { RotateCcw, WifiOff, WifiHigh } from "lucide-react"
