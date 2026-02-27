@@ -12,7 +12,10 @@ const Proto = (props) => {
     refetchOnMount:true,
     refetchOnWindowFocus:true,
   });
-  const 
+  const { selected , setselected }=props;
+  const {favourites, setfavourites} = props;
+  const {heart, setheart} = props;
+  const [movieHovered , setmovieHovered]=useState(null);
   return (
     <div>
       {GridLayout(props.navigate, data, props.setselected,  props.movieHovered, props.setmovieHovered, props.setselected, props.selected , props.favourites, props.setfavourites, props.heart, props.setheart)}
