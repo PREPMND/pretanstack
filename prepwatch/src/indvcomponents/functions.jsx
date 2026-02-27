@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react "
+import { jsx}
 export function GridLayout(navigate, data, setselected, selected ,movieHovered, setmovieHovered, favourites, setfavourites, heart, setheart){
     return(
         <>
