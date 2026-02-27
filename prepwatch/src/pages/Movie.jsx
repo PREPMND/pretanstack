@@ -1,4 +1,4 @@
-import { fetchMovies } from "../api/api"
+import { fetchMovies } from "../api/api.jsx"
 import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
 import { LoaderPinwheel} from "lucide-react"
