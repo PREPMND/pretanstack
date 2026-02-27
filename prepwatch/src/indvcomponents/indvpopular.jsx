@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query"
-import { fetchPopularMovies } from "../api/apiextra"
 import { useParams } from "react-router-dom";
 import { ChangeTitle } from "../App";
 import { Popcorn } from "lucide-react"
