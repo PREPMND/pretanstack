@@ -1,5 +1,6 @@
 import React from 'react'
 import { GridLayout } from '../App'
+import { useQuery } from "@tanstack/react-query"
 const Proto = (props) => {
     const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
