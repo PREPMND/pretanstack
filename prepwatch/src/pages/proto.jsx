@@ -1,7 +1,8 @@
 
 import {GridLayout } from '../indvcomponents/functions'
-import { useQuery,useNavigate} from "react-router-dom"
+import { useNavigate} from "react-router-dom"
 import { fetchPopularMovies } from '../api/apiextra'
+import { useQuery } from '@tanstack/react-query'
 
 import { useState } from 'react'
 const Proto = (props) => {
