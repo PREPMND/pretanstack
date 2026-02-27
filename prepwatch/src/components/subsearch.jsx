@@ -57,7 +57,7 @@ export default function SubSearch(props) {
                         <div className={`${status === "Offline" ? "block" : "hidden"} text-rose-600 text-[8px]  md:text-sm right-24 absolute `}><div className="md:flex hidden">Looks like you're Offline </div></div>
                         <div className="absolute left-2 md:right-5 md:left-auto">
                             {status === "Offline" && (<WifiOff className="m-auto animate-pulse text-white mb-2 md:mb-1 md:w-8 md:h-8 h-6 w-6"  />)}
-                            {status === "Online" && (<WifiHigh className="m-auto text-green-500 mb-2 w-5 h-5 md:w-8 md:h-8 md:mb-1" />)}
+                            {status === "Online" && (<WifiHigh className="m-auto text-green-500 mb-2 w-5 h-5 md:w-7 md:h-7 md:mb-1" />)}
                         </div>
                     </div>
 
