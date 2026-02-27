@@ -13,7 +13,7 @@ const Mainpage = (props) => {
   return (
     <div>
       <div>
-        <div className={`w-full h-[calc(100vh-120px)] bg-neutral-900 z-40 flex items-center justify-center text-yellow-50 font-[Inter] font-[600] ${page!==null?"hidden":"block"}`}>
+        <div className={`w-full max-h-[calc(100vh-120px)] bg-neutral-900 z-40 flex items-center justify-center text-yellow-50 font-[Inter] font-[600] ${page!==null?"hidden":"block"}`}>
           <LoaderPinwheel className="animate-spin mr-3"/>
           <div>Loading...</div>
           <div className='absolute bottom-0 font-sans text-stone-400 md:text-[14px]text-[8px]'>Results are on their way ! Check your network connection.</div>
