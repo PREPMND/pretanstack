@@ -1,5 +1,4 @@
 import { Heart } from "lucide-react "
-import { WifiOff, WifiHigh } from "lucide-react"
 export function GridLayout(navigate, data, setselected, selected ,movieHovered, setmovieHovered, favourites, setfavourites, heart, setheart){
     return(
         <>
