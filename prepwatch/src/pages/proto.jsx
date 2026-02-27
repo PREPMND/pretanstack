@@ -18,6 +18,7 @@ const Proto = (props) => {
     refetchOnMount: true,
     refetchOnWindowFocus:true,
   })
+  const {data}
   const { selected , setselected }=props;
   const {favourites, setfavourites} = props;
   const {heart, setheart} = props;
