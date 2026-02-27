@@ -1,6 +1,9 @@
 import React from 'react'
 import { GridLayout } from '../App'
 import { useQuery } from "@tanstack/react-query"
+import { fetchPopularMovies } from '../api/apiextra'
+import { Heart } from 'lucide-react'
+import { useState } from 'react'
 const Proto = (props) => {
     const { data, isLoading, error } = useQuery({
     queryKey: ["popular-movies"],
